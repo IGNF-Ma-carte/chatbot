@@ -1,0 +1,6 @@
+.bot-message>:first-child:before {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 60px;
+}

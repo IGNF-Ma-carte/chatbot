@@ -1,0 +1,27 @@
+{
+  "name": "mchat",
+  "version": "1.0.0",
+  "description": "Chatbot Ma carte",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node combine.js",
+    "serve": "node serve.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://"
+  },
+  "keywords": [
+    "macarte",
+    "chatmd"
+  ],
+  "author": "IGNF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IGNF-Ma-carte/"
+  },
+  "homepage": "",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
