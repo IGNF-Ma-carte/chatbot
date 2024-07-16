@@ -1,6 +1,5 @@
 ---
 clavier: true
-typeWriter: false
 gestionGrosMots: true
 rechercheContenu: true
 ---

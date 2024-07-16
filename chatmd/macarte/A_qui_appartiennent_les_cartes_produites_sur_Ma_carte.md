@@ -8,4 +8,5 @@ Ceci concerne toutes les informations que vous avez ajoutées, en particulier le
 
 Si une carte inclue des données, fond de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assuré d'en avoir les droit et de bien spécifier le copyright de la couche dans les informations de la carte publiée.
 
-1. [Comment créer une carte en ligne ?](../mceditor/créer_une_carte.md)
+1. [Qui peut voir mes cartes ?](./Qui_peut_voir_mes_cartes.md)
+2. [Comment créer une carte en ligne ?](../mceditor/créer_une_carte.md)

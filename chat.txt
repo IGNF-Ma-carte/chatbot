@@ -1,6 +1,5 @@
 ---
 clavier: true
-typeWriter: false
 gestionGrosMots: true
 rechercheContenu: true
 ---
@@ -28,12 +27,14 @@ Ceci concerne toutes les informations que vous avez ajoutées, en particulier le
 
 Si une carte inclue des données, fond de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assuré d'en avoir les droit et de bien spécifier le copyright de la couche dans les informations de la carte publiée.
 
-1. [Comment créer une carte en ligne ?](mceditor/créer une carte)
+1. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
+2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
 
 ## macarte/exemples
 - exemple
 - demo
+- recherche
 
 Le site Ma carte propose un [atlas](https://macarte.ign.fr/atlas/?mode=gallery) qui répertorie les cartes faites par les utilisateurs du service.
 
@@ -42,8 +43,17 @@ La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules 
 
 [Voir l'atlas de Ma carte](https://macarte.ign.fr/atlas/?mode=gallery)
 
-1. [Qu'est-ce qu'une carte narrative ?](macarte/qu'est ce qu'une carte narrative)
-2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
+Des outils de recherche vous sont proposés pour filtrer les cartes disponibles dans l'Atlas, comme :
+- la recherche textuelle : un texte libre permet de rechercher le nom, la description ou les thème des cartes.
+- le filtre par thème : pour n'afficher que les cartes d'un thème
+- le filtre par auteur : pour afficher les cartes d'un auteur.
+- le filtre par type : pour distinguer les cartes et les cartes narratives.
+
+Ces différents filtres peuvent être combinés pour affiner votre recherche.
+
+1. [Parle-moi de l'atlas](macarte/Parle-moi de l'atlas)
+2. [Qu'est-ce qu'une carte narrative ?](macarte/qu'est ce qu'une carte narrative)
+3. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
 
 ## macarte/historique
@@ -90,6 +100,28 @@ Les cartes produites peuvent être partagées, intégrées dans un blogue ou uti
 2. [Montre-moi des exemples de cartes](macarte/exemples)
 3. [Comment créer une carte](macarte/créer une carte)
 
+## macarte/Parle-moi de l'atlas
+- ma carte
+- atlas
+- descriptif
+- publication
+- visibilité
+- profil auteur
+
+L'Atlas est un espace de publication de cartes et narration réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et accessible en recherche aux visiteur du site et via les API.
+Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. 
+
+C'est vous qui choisissez à l'enregistrement d'une carte ou dans l'espace dédié aux cartes si vous voulez publier une carte dans l'atlas ou non.
+
+Un profil d'auteur accompagne la description des cartes. Il vous est conseillé de le paramétrer de façon à communiquer les informations qui semblent les plus pertinentes. Restez conscient que le profil est visible par tous et éviter de divulguer des informations personnelles.
+Le paramétrage de votre profil est accessible dans la page "Mes données personnelles".
+
+
+1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
+2. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
+2. [Montre-moi des exemples de cartes](macarte/exemples)
+
+
 ## macarte/qu'est ce qu'une carte narrative
 - carte narrative
 - storymap
@@ -103,6 +135,21 @@ L'affichage d'images et de contenu multimédia (vidéo, son) lorsqu'on clique su
 
 1. [Montre-moi des exemples](macarte/exemples)
 2. [Comment créer une histoire autour d'une carte](mcstory/raconter une histoire)
+
+
+## macarte/Qui peut voir mes cartes
+- carte
+- visibilité
+- accessible
+- atlas
+
+Lorsqu'une carte est publiée, elle est visible par tout internaute qui a accès au lien de publication fourni.
+Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elle seront référencé dans l'atlas de Ma carte et accessible en recherche aux visiteur du site et via les API.
+
+Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les voir.
+
+1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
+2. [Les cartes de l'Atlas](macarte/exemples)
 
 
 ## mcadresse/1 géocodage localiser des adresses
@@ -329,9 +376,143 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 
 1. [Quels sont les outils de Ma carte ?](macarte//macarte)
 
-## mceditor/créer une carte
+## mceditor/comment afficher un fichier distant dans Ma carte
+- ajouter
+- couche
+- layer
+- calque
+- url
+- kml
+- geojson
+- fichier
+- distant
 
-*contenu en cours de saisie*
+Il est possible de connecter un fichier distant (hébergé sur un autre serveur) à une couche Ma carte.
+Pour cela, dans la fenêtre d'ajout de fonds cartographiques (accessible via le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />)
+
+Dans le dialogue, choisissez `Depuis un fichier` puis `Fichier distant...`.
+Entrez l'url du fichier pour vous connecter dessus.
+⚠️ Attention, le fichier doit être accessible en https et les entêtes [CORS](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) doivent être remplies pour permettre d'accéder aux données. Si le fichier n'est pas accessible aucune donnée ne sera chargée.
+
+L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre à jour ce fichier. A chaque nouvel affichage de la carte le fichier va être rechargé et les nouvelle données affichées. Ce peut être pratique pour certains usages (données en temps réel, mise à jour automatique, etc.).
+
+Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
+
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+2. [Comment créer une bibliothèque de symboles ?](mceditor/Comment créer une bibliothèque de symboles)
+
+
+## mceditor/Comment ajouter des flux OGC
+- fonds
+- flux
+- OGC
+
+Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (OGC) pour les ajouter sous forme de couche sur Ma carte.
+
+![](https://macarte.ign.fr/image/voir/afb6160.png)
+
+Vous pouvez ainsi ajouter vos propres couches via des flux WMTS, WMS, XYZ, WFS ou geoRSS.
+
+Si vous avez des fichiers de données (au format KML, GeoJSON, GPX ou CSV) vous pouvez les importer dans une couche. Si le fichier est disponible, vous pouvez le lier via une url.
+
+1. [Montre-moi comment afficher un fichier distant dans Ma carte](mceditor/comment afficher un fichier distant dans Ma carte)
+2. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
+
+
+## mceditor/Comment ajouter des fonds Géoportail
+- geoportail
+- géoportail
+- géoplateforme
+- fonds
+- flux
+- WMTS
+
+
+Vous pouvez ajouter facilement des fonds Géoportail via l'interface d'ajout de couche (en mode simplifié)
+Pour cel, il vous suffit de cliquer sur l'icône `Géoportail`
+![](https://macarte.ign.fr/image/voir/cov6147.png)
+
+Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couches disponibles, classées par thématique :
+![](https://macarte.ign.fr/image/voir/fke6168.png)
+
+1. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
+2. [Ajouter des flux OGC](mceditor/Comment ajouter des flux OGC)
+3. [Ajouter des tuiles vectorielles](mceditor/Comment ajouter des tuiles vectorielles)
+
+## mceditor/Comment ajouter des tuiles vectorielles
+
+![](https://macarte.ign.fr/image/voir/tbn6158.png)
+
+## mceditor/Comment enregistrer les données d'un calque
+- calque
+- couche
+- layer
+- enregistrer
+- données
+- geojson
+- kml
+
+Vous avez la possibilité de récupérer les données saisies dans l'outil d'édition de carte au format GeoJSON ou KML
+Pour cela, sélectionnez le calque qui contient les données dans le gestionnaire de couche (passe en surbrillance bleue) puis ouvrez la fenêtre d'options en cliquant sur le bouton <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA0A-configuration.svg" /> en bas à droite du gestionnaire.
+Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargement <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" />.
+![](https://macarte.ign.fr/image/voir/anr6274.png)
+
+1. [Comment sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+
+
+## mceditor/Comment puis-je sauvegarder une carte
+- enregistrer
+- sauvegarder
+- carte
+- modèle
+
+Chaque utilisateur disposant d'un compte peut enregistrer ses cartes dans son espace personnel via l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA27-save.svg" /> située dans le bandeau en haut à droite.
+ C'est la façon la plus simple et recommandée d'enregistrer une carte.
+
+Il est également possible d'enregistrer une copie de la carte sur son ordinateur (format `.carte`). Ce format est interne à l'application Ma carte et vous pourrez l'ouvrir par glisser/déposer dans une fenêtre de l'[éditeur](https://macarte.ign.fr/edition/carte/).
+
+Pour enregistrer un fichier `.carte` cliquez sur l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" /> située dans le bandeau en haut à droite.
+
+Il est intéressant d'utiliser cette possibilité pour transmettre votre carte en tant que modèle. Le destinataire pourra alors la charger dans l'application Ma carte et la modifier à sa guise.
+Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser les données de votre carte sur internet.
+
+1. [Comment enregistrer les données d'un calque ?](mceditor/Comment enregistrer les données d'un calque)
+
+
+## mceditor/Comment saisir des objets dans Ma carte
+
+
+## mceditor/créer une carte
+- carte
+- création
+- créer
+
+Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche.
+Vous n'avez pas besoins d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site. Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur.
+
+L'interface vous permet d'ajouter des couches cartographique ou de dessin, de charger des fichier géographiques ou dessiner à l'aides des outils fournis.
+
+1. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
+2. [Comment saisir des objets dans Ma carte ?](mceditor/Comment saisir des objets dans Ma carte)
+1. [Comment puis-je sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+
+## mceditor/Quels sont les fonds disponibles dans Ma carte
+- fonds
+- geoportail
+- carte
+- WMTS
+
+Ma carte offre un grand nombre de fonds cartographiques disponibles pour agrémenter vos cartes en ligne.
+Vos pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.
+
+Parmi ceux-ci, on trouve un accès simplifié aux fonds cartographiques du Géoportail par thématique.
+En cliquant sur le bouton `Plus d'options` vous avez accès à un large choix pour ajouter des flux provenant de services tiers dans des formats standardisé (OGC).
+
+![](https://macarte.ign.fr/image/voir/gts6159.png)
+
+1. [Ajouter des fonds Géoportail simplement](mceditor/Comment ajouter des fonds Géoportail)
+2. [Ajouter des flux OGC](mceditor/Comment ajouter des flux OGC)
+3. [Ajouter des tuiles vectorielles](mceditor/Comment ajouter des tuiles vectorielles)
 
 ## mcstat/créer une statistique
 
@@ -340,4 +521,61 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 ## mcstory/raconter une histoire
 
 *contenu en cours de saisie*
+
+## selection/opérateurs
+- opérateur
+- sélection
+- filtrage
+
+Les opérateur de sélection et de filtrage par attribut sont : 
+- des opérateur d'égalité (= égale à, ≠ différent de)
+- de comparaison inférieur / supérieur (<, ≤, ≥ ou >)
+- d'inclusion (⊂ contient, ⊄ ne contient pas)
+- ou une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re) (≃ vérifie, ≄ ne vérifie pas)
+
+⚠️ Attention, les opérateurs de comparaison dépendent du type de l'attribut qu'ils comparent (numérique ou alphanumérique).
+Ainsi : `2 < 10` mais `'2' > '10'`
+
+
+## symboliser/Comment créer une bibliothèque de symboles
+
+*en cours de construction*
+
+## symboliser/Comment symboliser un objet
+- symboliser
+- symbole
+
+*en cours de construction*
+
+
+## symboliser/Qu'est-ce qu'une représentation paramétrique
+- symboliser
+- symbole
+- symbolisation
+- paramétrique
+
+Un symbolisation paramétrique est une manière de symboliser les objets **en fonction de leurs paramètre**.
+Dans ce cas, la symbolisation ne sera plus portée par les objets individuellement mais par une règle de symbolisation sur le calque en fonction des attributs de l'objet (si le type est *gendarmerie*, le point s'affiche en bleu).
+
+Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/edit/uEAAF-color.svg" />) pour activer le style paramétrique.
+![](../../img/style-param.png)
+
+Vous pouvez alors ajouter des symbolisation à la couche en fonction des attributs.
+
+![](../../img/style-layer-param.png)
+
+Vous devez au préalable avoir crée une bibliothèque de symboles correspondant à ce que vous désirez représenter.
+
+Ensuite :
+1. Cliquez sur `Ajoutez une symbolisation` 
+2. Dans la partie droite, donnez choisissez un symbole dans la bibliothèque (précédemment crée)
+3. Ajouter une règle de la forme `attribut` ➜ `opérateur` ➜ `valeur`
+
+On peut ajouter plusieurs critère qui vont se cumuler si `tous les mots` est coché 
+
+
+
+2. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
+1. [Quels sont les opérateurs de sélection ?](selection/opérateurs)
+1. [Comment symboliser un objet ?](symboliser/Comment symboliser un objet)
 
