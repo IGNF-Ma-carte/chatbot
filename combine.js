@@ -6,7 +6,7 @@ const root = './chatmd'
 // Main file
 const mainmd = 'main.md'
 // Destination file
-const destination = './chat.md'
+const destination = './chat.txt'
 
 function nextFile(files, directory) {
   const file = files.shift();
@@ -22,14 +22,26 @@ function nextFile(files, directory) {
   } else {
     // Process file
     let content = fs.readFileSync(directory + '/' + file, { encoding: 'utf8' });
+    // Process local ref
+    const locals = content.matchAll(/\]\(\.(\.)?\/[^)]*\.md\)/g);
+    for (const match of locals) {
+      let st = match[0].replace(/\]\(\.(\.)?\//,'').replace(/\.md\)$/,'').replace(/_/g,' ')
+      if (/\]\(\.\//.test(match[0])) {
+        st = (directory + '/').replace(root+'/', '') + st;
+      }
+      content = content.replace(match[0], ']('+st+')')
+    }
+    /*
     // remove './' and '../'
     content = content.replace(/\]\(\.\.\//g,'](')
     content = content.replace(/\]\(\.\//g,'](')
     // remove mainmd
     const rmmain = new RegExp('\\]\\('+mainmd+'\\)', 'g')
     content = content.replace(rmmain,']()')
+    */
     if (directory !== root) {
-      content = '## ' + (directory + '/' + file).replace(root + '/', '') + '\n' + content;
+      const name = file.replace(/_/g,' ').replace(/\.md$/,'');
+      content = '## ' + (directory + '/' + name).replace(root + '/', '') + '\n' + content;
     }
     fs.appendFileSync(destination, content + '\n\n')
     console.log(directory + '/' + file)

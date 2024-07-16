@@ -9,7 +9,7 @@ Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site Edugéo pr
 D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une image.
 Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-Ma-carte).
 
-1. [Montre-moi des exemples](../macarte/exemples.md)
+1. [Montre-moi des exemples](./exemples.md)
 2. [Comment créer une carte en ligne ?](../mceditor/créer_une_carte.md)
 3. [Localiser une couche d'adresse](../mcadresse/localiser_des_adresses.md)
 4. [Créer une couche statistique](../mcstat/créer_une_statistique.md)

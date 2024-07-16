@@ -88,7 +88,6 @@ function shouldBeRandomized(array) {
 
 // Pour gérer l'URL de la source du chatbot
 function handleURL(url) {
-	console.log('handleurl')
 	if (url !== "") {
 		let addCorsProxy = true;
 		// Vérification de la présence d'un raccourci

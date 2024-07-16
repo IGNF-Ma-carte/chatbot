@@ -8,5 +8,5 @@ La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules 
 
 [Voir l'atlas de Ma carte](https://macarte.ign.fr/atlas/?mode=gallery)
 
-1. [Qu'est-ce qu'une carte narrative ?](../macarte/qu'est-ce-qu'une-carte-narrative.md)
+1. [Qu'est-ce qu'une carte narrative ?](./qu'est_ce_qu'une_carte_narrative.md)
 2. [Comment créer une carte en ligne ?](../mceditor/créer_une_carte.md)

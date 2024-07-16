@@ -7,7 +7,7 @@ avatar: ./img/poibot.svg
 favicon: ./img/poibot.svg
 footer: 'Ma carte'
 ---
-# Ma carte : aide en ligne
+# Chat Ma carte
 
 Je suis un chatbot programmé pour vous aider à utiliser les outils **Ma carte** développés par l'Institut national de l'information géographique et forestière (IGN).
 

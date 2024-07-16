@@ -7,7 +7,16 @@ const controls = document.getElementById("controls");
 function getMarkdownContent() {
 	// Récupération du markdown externe
 	let url = window.location.hash.substring(1).replace(/\?.*/,''); // Récupère l'URL du hashtag sans le #
-	if (!url) url = './chat.md';
+	if (!url) {
+		// Si pas d'url, recherche d'une url dans les data du script
+		const script = document.querySelector('script[data-chat-file]')
+		if (script && script.dataset.chatFile) {
+			url = script.dataset.chatFile
+		} else {
+			// ou url par défaut
+			url = './chat.md';
+		}
+	}
 	if (url !== "") {
 		// On traite l'URL pour pouvoir récupérer correctement la source du chatbot
 		const sourceChatBot = handleURL(url);

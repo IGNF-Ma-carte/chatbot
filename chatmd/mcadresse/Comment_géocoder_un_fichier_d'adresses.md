@@ -12,4 +12,4 @@ Vos données doivent être organisées de façon à rendre la recherche possible
 
 Le fichier doit contenir une adresse dans une colonne ou dans 3 colonnes (rue, code postal et commune) ou un identifiant de parcelle qui permette de retrouver la localisation de la igne.
 
-1. [Quels sont les formats de fichier ?](../mcadresse/les-fichiers-pour-le-géocodage.md)
+1. [Quels sont les formats de fichier ?](./les_fichiers_pour_le_géocodage.md)
