@@ -5,3 +5,20 @@
   background-size: contain;
   height: 60px;
 }
+
+table, th, td {
+  border: 1px solid #999;
+  border-collapse: collapse;
+  padding: .25em .5em;
+}
+table {
+  margin: .5em 0;
+}
+table th {
+  background-color: #ddd;
+  font-weight: normal;
+  text-align: left;
+}
+table tr:nth-child(even){
+  background-color: #f2f2f2;
+}

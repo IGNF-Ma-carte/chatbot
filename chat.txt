@@ -12,7 +12,7 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
-3. [Localiser une couche d'adresse](mcadresse/localiser des adresses)
+3. [Localiser une couche d'adresse](mcadresse/1 géocodage localiser des adresses)
 4. [Créer une couche statistique](mcstat/créer une statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
@@ -46,7 +46,7 @@ Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-M
 
 1. [Montre-moi des exemples](macarte/exemples)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
-3. [Localiser une couche d'adresse](mcadresse/localiser des adresses)
+3. [Localiser une couche d'adresse](mcadresse/1 géocodage localiser des adresses)
 4. [Créer une couche statistique](mcstat/créer une statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
@@ -79,10 +79,106 @@ L'affichage d'images et de contenu multimédia (vidéo, son) lorsqu'on clique su
 2. [Comment créer une histoire autour d'une carte](mcstory/raconter une histoire)
 
 
+## mcadresse/1 géocodage localiser des adresses
+- géolocaliser
+- adresse
+- géocodage
+- qu'est-ce
+
+Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
+Le géocodage est un procédé qui permet de retrouver à partir d'une adresse littérale sa position sur la terre et ainsi l'afficher sur une carte.
+Par exemple, '*73 avenue de Paris, 94160 SAINT-MANDÉ*' est situé à 48,845726 de latitude Nord et 2,424573 de longitude Est.
+Le géocodage peut se faire à partir d'une adresse, d'lieu-dit, une unité administrative on un point d'intérêt ou d'une parcelle cadastrale.
+
+1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
+2. [Que renvoie le géocodage ?](mcadresse/Que renvoie le géocodage)
+3. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
+4. [Comment améliorer le géocodage ?](mcadresse/Comment améliorer le résultat du géocodage)
+
+
+## mcadresse/Comment améliorer le résultat du géocodage
+- geocoder
+- adresse
+- améliorer
+- géocodage
+
+Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, une imprecision dans l'adresse, un caractère parasite ou une faute de frappe risque d'induire le géocodage en erreur.
+
+L'adresse fournie peut contenir des éléments perturbant le résultat tel qu'un complément d'adresse (bâtiment, escalier, étage, zone, etc.)
+Par exemple *19 rue Jean Baptiste Colbert - ZI des Prés de Lyon 10600 LA CHAPELLE SAINT LUC* ne trouvera pas *ZI des Prés de Lyon* et risque de renvoyer un mauvais résultat.
+Pour pallier ce type de problème, il est recommandé d'avoir les éléments informatifs dans une colonne séparée.
+
+Les abréviations peuvent dégrader le résultat du géocodage. 
+
+La localisation sur trois colonnes peut parfois apporter une amélioration grâce à un meilleur filtrage des résultats à la commune.
+Veillez également à ce que les colonnes soient bien respectées et qu'il n'y ait pas de décalage dans votre fichier.
+
+Vous pouvez aussi utiliser l'option pour prioriser autour d'un lieu (une adresse ou une commune) pour limiter la recherche dans une zone géographique et éviter des résultat trop éloignés de votre zone de recherche. 
+
+1. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
+2. [Quels sont les formats de fichier pour le géocodage ?](mcadresse/les fichiers pour le géocodage)
+3. [Comment corriger une erreur de géocodage ?](mcadresse/Comment corriger une erreur de géocodage)
+
+
+## mcadresse/Comment corriger une erreur de géocodage
+- géocoder
+- adresse
+- erreur
+- corriger
+- correction
+- géocodage
+
+Si une adresse est mal positionnée, l'outil propose généralement des adresses alternatives dans le panneau de gauche. 
+Ce sont des adresses ressemblant à celles proposée (mais avec un score inférieur). Vous pouvez alors choisir dans la liste proposée.
+
+Si cela ne suffit pas, lorsqu'un point est sélectionné, deux options s'offrent à vous dans le panneau de gauche : 
+- Modifier l'adresse que vous propose de corriger l'adresse et de relancer un géocodage.
+- Déplacer manuellement un point qui vous permet de bouger le point sur la carte. Une fois le déplacement validé, l'outil recalcule un géocodage sur cette nouvelle position
+![](../../img/geocod.png)
+
+1. [Qu'est-ce que le score de géocodage ?](mcadresse/Qu'est-ce que le score de géocodage)
+1. [Qu'est-ce que l'indice de qualité du géocodage ?](mcadresse/Qu'est-ce que l'indice de qualité du géocodage)
+
+## mcadresse/Comment formater un fichier pour le géocoder
+- formater
+- formatage
+- adresse
+- csv
+- table
+- colonne
+
+Les colonnes utilisées pour le géocodage doivent être organisées de façon à pouvoir retrouver l'adresse :
+- soit dans une seule colonne contenant l'ensemble des informations rue, code postal et commune
+- soit en trois colonnes contenant séparément la rue, le code postal et la commune
+- soit une colonne avec l'identifiant IDU de la parcelle
+
+💡 Une colone contenant le nom de l'entité sera utilisé pour la différencier des autres sur la carte.
+Il est recommandé d'avoir une ligne de titre pour identifier facilement les colonnes mais ce n'est pas obligatoire
+
+Par exemple : 
+| Nom | Adresse |
+|-----|------|
+| IGN | 73 avenue de paris 94160 Saint-Mandé |
+
+| Nom | Rue | Code postal | Commune |
+|-----|-----|-----|-----|
+| IGN | 73 avenue de paris | 94160 |Saint-Mandé |
+
+| Nom | IDU |
+|-----|------|
+| K0214 | 940420000K0214 |
+
+📝 la présence de colonnes supplémentaires non utilisées pour le géocodage ne perturbe pas l'application. Elle seront conservées dans un export du résultat.
+
+1. [Quels sont les formats de fichier pour le géocodage ?](mcadresse/les fichiers pour le géocodage)
+2. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
+
+
 ## mcadresse/Comment géocoder un fichier d'adresses
 - géocoder
 - géocodage
 - fichier
+- csv
 
 Vos données doivent être organisées de façon à rendre la recherche possible.
 
@@ -92,9 +188,30 @@ Vos données doivent être organisées de façon à rendre la recherche possible
 4. Il est possible d'ignorer des lignes dont la première colonne commence par un texte déterminé mais ce n'est pas obligatoire
 5. Il est possible de sélectionner une plage de ligne à traiter mais ce n'est pas obligatoire
 
-Le fichier doit contenir une adresse dans une colonne ou dans 3 colonnes (rue, code postal et commune) ou un identifiant de parcelle qui permette de retrouver la localisation de la igne.
+Le fichier doit contenir une adresse dans une colonne ou dans 3 colonnes (rue, code postal et commune) ou un identifiant de parcelle qui permette de retrouver la localisation de la ligne.
+
+
+1. [Comment géocoder à la parcelle ?](Comment_géocoder_à_la_parcelle.md)
+1. [Quels sont les formats de fichier ?](mcadresse/les fichiers pour le géocodage)
+2. [Comment formater un fichier pour le géocoder ?](mcadresse/Comment formater un fichier pour le géocoder)
+
+## mcadresse/Comment géocoder à la parcelle
+- géocoder
+- parcelle
+
+Pour procéder à ce mode de géocodage vous devez fournir au système des codes parcelles.
+Le code parcelle est formé de 14 caractère comme suit :
+- le code INSEE de le commune sur 5 caractères. Pour les communes à arrondissements (Paris, Lyon et Marseille), il faut préciser le code de l'arrondissement et pas le code INSEE de la commune agrégée.
+- le préfixe de la parcelle. la plupart du temps il correspond à 000. Dans le cas d'une commune associée (Lomme et Hellemmes à Lille par exemple) ou dans les cas des communes à arrondissement, il s'agit de trois chiffres.
+- le code de section cadastrale sur 2 caractères : soit 2 lettres majuscules si la section est sur 2 lettres, soit un zéro et la lettre de la section en majuscule
+- le code de la parcelle sur 4 caractères : La parcelle n°1 est encodée 0001, la parcelle n°10 donne 0010, la parcelle n°100 donne 0100
+
+Par exemple une des parcelles où se situe le pôle Géosciences, siège de l'IGN sera encodée : 940670000D0050.
+
+Dans ce mode, vous pouvez récupérer non seulement le point mais aussi la géométrie de la parcelle (polygone) si cette option est cochée dans les informations supplémentaires.
 
 1. [Quels sont les formats de fichier ?](mcadresse/les fichiers pour le géocodage)
+2. [Comment formater un fichier pour le géocoder ?](mcadresse/Comment formater un fichier pour le géocoder)
 
 ## mcadresse/les fichiers pour le géocodage
 - adresse
@@ -110,12 +227,14 @@ Pour les fichiers au format Excel ou Calc, il recommandé de n'avoir qu'une seul
 
 Pour les fichiers **csv**, il est possible d'avoir une tabulation personnalisée.
 
+1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
+2. [Comment formater un fichier pour le géocoder ?](mcadresse/Comment formater un fichier pour le géocoder)
+
 
 ## mcadresse/les limites du géocodage
 - limite
 - restriction
-- géocodage
-- adresse
+- adresses
 
 Les adresses ne peuvent être localisées que sur le **territoire français** à l'exclusion de tout territoire étranger.
 Certaines territoires ne sont pas couverts par les données de référence :
@@ -125,22 +244,64 @@ Certaines territoires ne sont pas couverts par les données de référence :
 
 Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, une imprecision dans l'adresse, un caractère parasite ou une faute de frappe risque d'induire le géocodage en erreur.
 
-1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
-2. [Comment améliorer le résultat du géocodage ?](mcadresse/Comment-améliorer-le-résultat-du+géocodage)
-
-## mcadresse/localiser des adresses
-- geolocaliser
-- adresse
-- géocodage
-
-Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
-Le géocodage est un procédé qui permet de retrouver à partir d'une adresse littérale sa position sur la terre et ainsi l'afficher sur une carte.
-Par exemple, '*73 avenue de Paris, 94160 SAINT-MANDÉ*' est situé à 48,845726 de latitude Nord et 2,424573 de longitude Est.
-Le géocodage peut se faire à partir d'une adresse, d'lieu-dit, une unité administrative on un point d'intérêt ou d'une parcelle cadastrale.
+Enfin, l'application a des limites techniques, il est déconseillé de traiter un fichier de plus de 25000 adresses. Cette limite dépend aussi de votre ordinateur. Dans ce cas, il est conseillé de découper votre fichier en plusieurs lots plus petits.
 
 1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
+2. [Comment améliorer le résultat du géocodage ?](mcadresse/Comment améliorer le résultat du géocodage)
+
+## mcadresse/Qu'est-ce que l'indice de qualité du géocodage
+- geocodage
+- qualité
+- indice
+
+L'indice de qualité indique le type d'objet trouvé par le géocodeur.
+
+- **Parcelle** : placé par numéro de parcelle
+- **Point d'intérêt** :	placé sur un point d'intérêt
+- **Département** :	placé au centre du département
+- **Ville**	: placé au centre d'une commune
+- **Rue**	: placé au milieu d'une rue
+- **Numéro** : placé au numéro d'adresse
+- **Manuel** : déplacé manuellement
+
+⚠️ l'indice de qualité influe fortement sur le score de géocodage.
+Ainsi une adresse placée à la rue aura une moins bonne position qu'une adresse placée au numéro même si son score est plus faible.
+
+1. [Qu'est-ce que le score de géocodage ?](mcadresse/Qu'est-ce que le score de géocodage)
 2. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
 
+
+## mcadresse/Qu'est-ce que le score de géocodage
+- score
+- géocodage
+
+Le score de géocodage qui caractérise la qualité de la localisation, est un nombre compris entre 1 (correspondance exacte) et 0 (pas de correspondance trouvée). 
+Plus le score est élevé, plus le résultat fourni est statistiquement fiable. Il tient compte d'une valeur lexicale (correspondance avec les mots dans l'adresse), la proximité avec la commune trouvée ou avec la proximité d'un lieu si l'option a été choisie.
+
+⚠️ Le score doit toujours s'interpréter en fonction de l'indice de qualité. 
+Ainsi un score de 1 avec une qualité "rue" est moins précis qu'un score moindre avec une qualité "numéro".
+Dans le premier cas, l'outil a bien trouvé la rue mais pas le numéro et a positionné l'adresse au milieu de la rue.
+
+1. [Qu'est-ce que l'indice de qualité du géocodage ?](mcadresse/Qu'est-ce que l'indice de qualité du géocodage)
+2. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
+
+
+## mcadresse/Que renvoie le géocodage
+- géocodage
+- csv
+- résultat
+
+En plus de la localisation géographique **latitude** et **longitude**, l'application fournit :
+- une **adresse** géocodée qui permet de vérifier à quel élément de la base de référence correspondent les coordonnées calculées
+- une **qualité** qui caractérise la donnée source utilisée pour le point géocodé
+- un **score** de géocodage compris entre 0 et 1
+- des **adresses alternatives** (lorsqu'il en trouve)
+- l'**altitude** du point (lorsque l'option a été choisie)
+
+Le résultat du géocodage peut être enregistré dans un fichier tableur (csv, xlsx) ou géographique (kml, geojson).
+Il peut également être enregistré dans une carte pour être repris dans les autres outils de Ma carte.
+
+1. [Quels sont les outils de Ma carte ?](macarte//macarte)
 
 ## mceditor/créer une carte
 
