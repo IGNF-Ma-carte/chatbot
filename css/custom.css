@@ -1,4 +1,5 @@
 .bot-message>:first-child:before {
+  background-image: url(./img/poibot.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
