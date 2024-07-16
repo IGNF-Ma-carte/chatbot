@@ -4,7 +4,7 @@
 - atlas
 
 Lorsqu'une carte est publiée, elle est visible par tout internaute qui a accès au lien de publication fourni.
-Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elles seront référencées dans l'atlas de Ma carte et accessibles en recherche aux visiteur du site et via les API.
+Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elles seront référencées sur le site Ma carte et accessibles en recherche aux visiteurs du site et via les API.
 
 Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les voir.
 
