@@ -64,7 +64,7 @@ Ces différents filtres peuvent être combinés pour affiner votre recherche.
 - licence
 
 Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignant de créer des cartes et des projets pédagogiques en lignes.
-![](../../img/edugeo.png)
+![](img/edugeo.png)
 D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une image.
 Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-Ma-carte).
 
@@ -207,7 +207,7 @@ Ce sont des adresses ressemblant à celles proposée (mais avec un score inféri
 Si cela ne suffit pas, lorsqu'un point est sélectionné, deux options s'offrent à vous dans le panneau de gauche : 
 - Modifier l'adresse que vous propose de corriger l'adresse et de relancer un géocodage.
 - Déplacer manuellement un point qui vous permet de bouger le point sur la carte. Une fois le déplacement validé, l'outil recalcule un géocodage sur cette nouvelle position
-![](../../img/geocod.png)
+![](img/geocod.png)
 
 1. [Qu'est-ce que le score de géocodage ?](mcadresse/Qu'est-ce que le score de géocodage)
 1. [Qu'est-ce que l'indice de qualité du géocodage ?](mcadresse/Qu'est-ce que l'indice de qualité du géocodage)
@@ -558,17 +558,17 @@ Un symbolisation paramétrique est une manière de symboliser les objets **en fo
 Dans ce cas, la symbolisation ne sera plus portée par les objets individuellement mais par une règle de symbolisation sur le calque en fonction des attributs de l'objet (si le type est *gendarmerie*, le point s'affiche en bleu).
 
 Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/edit/uEAAF-color.svg" />) pour activer le style paramétrique.
-![](../../img/style-param.png)
+![](img/style-param.png)
 
 Vous pouvez alors ajouter des symbolisation à la couche en fonction des attributs.
 
-![](../../img/style-layer-param.png)
+![](img/style-layer-param.png)
 
 Vous devez au préalable avoir crée une bibliothèque de symboles correspondant à ce que vous désirez représenter.
 
 Ensuite :
 1. Cliquez sur `Ajoutez une symbolisation` 
-2. Dans la partie droite, donnez choisissez un symbole dans la bibliothèque (précédemment crée)
+2. Dans la partie droite, choisissez un symbole dans la bibliothèque (précédemment crée) et donné une nom à la condition
 3. Ajouter une règle de la forme `attribut` ➜ `opérateur` ➜ `valeur`
 
 On peut ajouter plusieurs critère qui vont se cumuler si `tous les mots` est coché 

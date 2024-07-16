@@ -23,9 +23,9 @@ function nextFile(files, directory) {
     // Process file
     let content = fs.readFileSync(directory + '/' + file, { encoding: 'utf8' });
     // Process local ref
-    const locals = content.matchAll(/\]\(\.(\.)?\/[^)]*\.md\)/g);
+    const locals = content.matchAll(/\]\(\.(\.)?\/[^)]*(\.md)?\)/g);
     for (const match of locals) {
-      let st = match[0].replace(/\]\(\.(\.)?\//,'').replace(/\.md\)$/,'').replace(/_/g,' ')
+      let st = match[0].replace(/\]\(\.(\.)?\/(\.\.\/)?/,'').replace(/\.md\)$/,'').replace(/\)$/,'').replace(/_/g,' ')
       if (/\]\(\.\//.test(match[0])) {
         st = (directory + '/').replace(root+'/', '') + st;
       }

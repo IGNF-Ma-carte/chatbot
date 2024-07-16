@@ -17,7 +17,7 @@ Vous devez au préalable avoir crée une bibliothèque de symboles correspondant
 
 Ensuite :
 1. Cliquez sur `Ajoutez une symbolisation` 
-2. Dans la partie droite, donnez choisissez un symbole dans la bibliothèque (précédemment crée)
+2. Dans la partie droite, choisissez un symbole dans la bibliothèque (précédemment crée) et donné une nom à la condition
 3. Ajouter une règle de la forme `attribut` ➜ `opérateur` ➜ `valeur`
 
 On peut ajouter plusieurs critère qui vont se cumuler si `tous les mots` est coché 
