@@ -7,7 +7,7 @@
 
 
 Vous pouvez ajouter facilement des fonds Géoportail via l'interface d'ajout de couche (en mode simplifié)
-Pour cel, il vous suffit de cliquer sur l'icône `Géoportail`
+Il vous suffit de cliquer sur l'icône `Géoportail`.
 ![](https://macarte.ign.fr/image/voir/cov6147.png)
 
 Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couches disponibles, classées par thématique :
