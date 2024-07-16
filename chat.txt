@@ -3,9 +3,6 @@ clavier: true
 typeWriter: false
 gestionGrosMots: true
 rechercheContenu: true
-avatar: ./img/poibot.svg
-favicon: ./img/poibot.svg
-footer: 'Ma carte'
 ---
 # Chat Ma carte
 
