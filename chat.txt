@@ -4,7 +4,7 @@ typeWriter: false
 gestionGrosMots: true
 rechercheContenu: true
 ---
-# Chat Ma carte
+# Chat - Ma carte
 
 Je suis un chatbot programmé pour vous aider à utiliser les outils **Ma carte** développés par l'Institut national de l'information géographique et forestière (IGN).
 
@@ -15,6 +15,20 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 3. [Localiser une couche d'adresse](mcadresse/1 géocodage localiser des adresses)
 4. [Créer une couche statistique](mcstat/créer une statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
+
+
+## macarte/A qui appartiennent les cartes produites sur Ma carte
+- propriété
+- cartes
+- responsabilité
+- contenu
+
+Vous restés propriétaire des cartes et des narrations que vous avez créées. A ce titre, vous êtes aussi responsable au sens RGPD des données que vous publiez sur internet via les Géoservices Ma carte. 
+Ceci concerne toutes les informations que vous avez ajoutées, en particulier les images et leur contenu, les informations personnelles - propres ou de tiers – y compris si elles sont issues d'un géocodage.
+
+Si une carte inclue des données, fond de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assuré d'en avoir les droit et de bien spécifier le copyright de la couche dans les informations de la carte publiée.
+
+1. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
 
 ## macarte/exemples
@@ -39,7 +53,7 @@ La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules 
 - Opensource
 - licence
 
-Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site Edugéo propose depuis 2008 aux enseignant de créer des cartes et des projets pédagogiques en lignes.
+Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignant de créer des cartes et des projets pédagogiques en lignes.
 ![](../../img/edugeo.png)
 D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une image.
 Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-Ma-carte).
@@ -51,13 +65,25 @@ Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-M
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
 
+## macarte/licence
+- ma carte
+- module
+- licence
+- code
+
+Le code des outils Ma carte sont disponible en Opensource sous licence MIT (pour les libraries) et GPL (pour les applicatifs).
+Ma carte est référencé sur le [Socle Interministériel des Logiciels Libres](https://code.gouv.fr/sill/detail?name=Ma%20carte).
+
+1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
+
 ## macarte/macarte
 - macarte
 - IGN
 
 Ma carte est un ensemble d'outils en ligne développés par l'Institut national de l'information géographique et forestière (IGN).
-Ils permettent de créer et publier des carte en lignes simplement, directement depuis un navigateur internet.
-Ils sont directement accessible dans un navigateur à l'adresse [macarte.ign.fr](https://macarte.ign.fr).
+Ils permettent de créer et publier des carte en lignes simplement, directement **depuis un navigateur internet**.
+
+Ma carte est directement accessible dans un navigateur à l'adresse [macarte.ign.fr](https://macarte.ign.fr).
 Les cartes produites peuvent être partagées, intégrées dans un blogue ou utilisées dans une communication sur les réseaux sociaux.
 
 1. [En savoir plus sur Ma carte](macarte/historique)
@@ -305,10 +331,13 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 
 ## mceditor/créer une carte
 
+*contenu en cours de saisie*
 
 ## mcstat/créer une statistique
 
+*contenu en cours de saisie*
 
 ## mcstory/raconter une histoire
 
+*contenu en cours de saisie*
 

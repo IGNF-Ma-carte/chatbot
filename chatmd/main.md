@@ -4,7 +4,7 @@ typeWriter: false
 gestionGrosMots: true
 rechercheContenu: true
 ---
-# Chat Ma carte
+# Chat - Ma carte
 
 Je suis un chatbot programmé pour vous aider à utiliser les outils **Ma carte** développés par l'Institut national de l'information géographique et forestière (IGN).
 

@@ -4,7 +4,7 @@
 - Opensource
 - licence
 
-Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site Edugéo propose depuis 2008 aux enseignant de créer des cartes et des projets pédagogiques en lignes.
+Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignant de créer des cartes et des projets pédagogiques en lignes.
 ![](../../img/edugeo.png)
 D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une image.
 Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-Ma-carte).
