@@ -7,7 +7,7 @@ Ma carte offre un grand nombre de fonds cartographiques disponibles pour agréme
 Vos pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.
 
 Parmi ceux-ci, on trouve un accès simplifié aux fonds cartographiques du Géoportail par thématique.
-En cliquant sur le bouton `Plus d'options` vous avez accès à un large choix pour ajouter des flux provenant de services tiers dans des formats standardisé (OGC).
+En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonctionnalités pour ajouter des flux provenant de services tiers dans des formats standardisés (OGC).
 
 ![](https://macarte.ign.fr/image/voir/gts6159.png)
 
