@@ -11,6 +11,7 @@ En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonction
 
 ![](https://macarte.ign.fr/image/voir/gts6159.png)
 
+1. [Parle-moi du gestionnaire de couche](./Parle-moi_du_gestionnaire_de_couche.md)
 1. [Ajouter des fonds Géoportail simplement](./Comment_ajouter_des_fonds_Géoportail.md)
 2. [Ajouter des flux OGC](./Comment_ajouter_des_flux_OGC.md)
 3. [Ajouter des tuiles vectorielles](./Comment_ajouter_des_tuiles_vectorielles.md)

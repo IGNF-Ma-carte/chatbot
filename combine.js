@@ -34,8 +34,8 @@ function nextFile(files, directory) {
       // Replace
       content = content.replace(match[0], ']('+st+')')
     }
-    // Path for images ![](../img)
-    content = content.replace(/\]\((\.\.\/){1,}img\//g,'](./img/');
+    // Path for images ../img
+    content = content.replace(/(\.\.\/){1,}img\//g,'./img/');
     // Path from the root
     if (directory !== root) {
       const name = file.replace(/_/g,' ').replace(/\.md$/,'');

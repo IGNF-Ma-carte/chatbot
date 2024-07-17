@@ -22,21 +22,66 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 - responsabilité
 - contenu
 
-Vous restés propriétaire des cartes et des narrations que vous avez créées. A ce titre, vous êtes aussi responsable au sens RGPD des données que vous publiez sur internet via les Géoservices Ma carte. 
+Vous restez propriétaire des cartes et des narrations que vous avez créées. A ce titre, vous êtes aussi responsable au sens RGPD des données que vous publiez sur internet via les Géoservices Ma carte. 
 Ceci concerne toutes les informations que vous avez ajoutées, en particulier les images et leur contenu, les informations personnelles - propres ou de tiers – y compris si elles sont issues d'un géocodage.
 
-Si une carte inclue des données, fond de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assuré d'en avoir les droit et de bien spécifier le copyright de la couche dans les informations de la carte publiée.
+Si une carte inclue des données, fonds de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assurez d'en avoir les droits et de bien spécifier le copyright des couches dans les informations de la carte publiée.
 
 1. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
+
+## macarte/Comment partager une carte
+- macarte
+- partage
+- url
+- iframe
+- intégrer
+
+Les cartes sont accessibles directement sur le web au travers d'une adresse (URL), qu'il vous suffit de transmettre (par mail par exemple).
+Vous pouvez aussi partager votre carte avec un QR Code lisible sur un Smartphone que vous pourrez intégrer sur une affiche ou un document.
+Sur les pages de création de carte, l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA28-share-alt.svg" /> dans la barre de menu permet de partager la carte par URL, au travers d'un widget (iFrame) à intégrer sur un site internet ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
+Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux internautes d'y accéder plus facilement.
+
+Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
+![](./img/share.png)
+
+Vous trouverez également sur cette page un lien de partage en édition pour travailler à plusieurs sur votre carte.
+
+Si vous ne souhaitez pas que votre carte puisse être vue par une autre personne que vous, en décochant la case "Carte active" vous serez le seul utilisateur à pouvoir la consulter.
+
+1. [Où trouver le QR Code de partage](macarte/Où trouver le QR Code de partage)
+2. [Comment travailler à plusieurs sur une carte ?](macarte/Comment travailler à plusieurs sur une carte)
+3. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
+4. [Parle-moi de l'Atlas](macarte/Parle-moi de l'atlas)
+
+
+## macarte/Comment travailler à plusieurs sur une carte
+- travail
+- travailler
+- plusieurs
+- collaboratif
+- collaborer
+- éditer
+- carte
+
+Lors que vous avez créé une carte, vous pouvez partager un **lien en édition** avec d'autres utilisateurs de Ma carte.
+Vous retrouverez ce lien sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de la carte.
+![](./img/share.png)
+
+Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut être utile si vous voulez travailler à plusieurs sur la carte.
+⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modfication de la dernière qui enregistre qui seront prisent en compte.
+⚠️ Faites attention à qui vous communiquez l'adresse de modification.
+Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
+
+1. [Comment partager une carte](macarte/Comment partager une carte)
 
 ## macarte/exemples
 - exemple
 - demo
 - recherche
 
-Le site Ma carte propose un [atlas](https://macarte.ign.fr/atlas/?mode=gallery) qui répertorie les cartes faites par les utilisateurs du service.
+Le site Ma carte propose un [Atlas](https://macarte.ign.fr/atlas/?mode=gallery) qui répertorie les cartes faites par les utilisateurs du service.
 
 La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules Verne, sous forme de carte narrative.
 <iframe src="https://macarte.ign.fr/carte/5aea2d2515d03442521ddc91347e8427/Nautilus" width="100%" height="480px" allow="geolocation clipboard-read; clipboard-write"></iframe>
@@ -44,14 +89,14 @@ La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules 
 [Voir l'atlas de Ma carte](https://macarte.ign.fr/atlas/?mode=gallery)
 
 Des outils de recherche vous sont proposés pour filtrer les cartes disponibles dans l'Atlas, comme :
-- la recherche textuelle : un texte libre permet de rechercher le nom, la description ou les thème des cartes.
+- la recherche textuelle : un texte libre permet de rechercher une carte par son nom, sa description ou son thème.
 - le filtre par thème : pour n'afficher que les cartes d'un thème
-- le filtre par auteur : pour afficher les cartes d'un auteur.
+- le filtre par auteur : pour afficher les cartes d'un auteur spécifique.
 - le filtre par type : pour distinguer les cartes et les cartes narratives.
 
 Ces différents filtres peuvent être combinés pour affiner votre recherche.
 
-1. [Parle-moi de l'atlas](macarte/Parle-moi de l'atlas)
+1. [Parle-moi de l'Atlas](macarte/Parle-moi de l'atlas)
 2. [Qu'est-ce qu'une carte narrative ?](macarte/qu'est ce qu'une carte narrative)
 3. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
@@ -63,9 +108,9 @@ Ces différents filtres peuvent être combinés pour affiner votre recherche.
 - Opensource
 - licence
 
-Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignant de créer des cartes et des projets pédagogiques en lignes.
-![](img/edugeo.png)
-D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une image.
+Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignants de créer des cartes et des projets pédagogiques en lignes.
+![](./img/edugeo.png)
+D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une carte.
 Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-Ma-carte).
 
 1. [Montre-moi des exemples](macarte/exemples)
@@ -99,6 +144,19 @@ Les cartes produites peuvent être partagées, intégrées dans un blogue ou uti
 1. [En savoir plus sur Ma carte](macarte/historique)
 2. [Montre-moi des exemples de cartes](macarte/exemples)
 3. [Comment créer une carte](macarte/créer une carte)
+4. [Comment partager une carte](macarte/Comment partager une carte)
+
+## macarte/Où trouver le QR Code de partage
+- QRCode
+- QR code
+- partage
+
+Un QR Code (Quick Response Code) est disponible sur la page de visualisation de la carte en cliquant sur le bouton [i] en bas à droite de la carte.
+![](./img//qrcode.png)
+
+Ce QR Code peut être placé sur une affiche ou un document pour facilité l'accès à la carte avec un smartphone ou une tablette.
+
+1. [Comment partager une carte](macarte/Comment partager une carte)
 
 ## macarte/Parle-moi de l'atlas
 - ma carte
@@ -108,13 +166,13 @@ Les cartes produites peuvent être partagées, intégrées dans un blogue ou uti
 - visibilité
 - profil auteur
 
-L'Atlas est un espace de publication de cartes et narration réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et accessible en recherche aux visiteur du site et via les API.
+L'Atlas est un espace de publication de cartes et narrations réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et disponibles en recherche aux visiteur du site et via les API.
 Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. 
 
-C'est vous qui choisissez à l'enregistrement d'une carte ou dans l'espace dédié aux cartes si vous voulez publier une carte dans l'atlas ou non.
+C'est vous qui choisissez, à l'enregistrement d'une carte ou dans l'espace dédié aux cartes, si vous voulez publier une carte dans l'atlas ou non.
 
-Un profil d'auteur accompagne la description des cartes. Il vous est conseillé de le paramétrer de façon à communiquer les informations qui semblent les plus pertinentes. Restez conscient que le profil est visible par tous et éviter de divulguer des informations personnelles.
-Le paramétrage de votre profil est accessible dans la page "Mes données personnelles".
+Un page (profil) de l'auteur accompagne la description des cartes. Il vous est conseillé de le paramétrer de façon à communiquer les informations qui semblent les plus pertinentes. Restez conscient que ce profil sera visible par tous et évitez de divulguer des informations personnelles.
+Le paramétrage de votre profil est accessible dans la page "[Mes données personnelles](https://macarte.ign.fr/mon-compte/)".
 
 
 1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
@@ -131,7 +189,7 @@ Le paramétrage de votre profil est accessible dans la page "Mes données person
 Une carte narrative (ou storymap en anglais) est un récit organisé autour d'une carte.
 Par exemple, un récit de voyage par étapes dans lequel la carte se déplace au fur et à mesure de l'avancement du récit pour présenter le voyage au spectateur.
 Ce peut être aussi une carte comparative avec, sur la même zone, deux phénomènes ou deux époques différents qu'on veut présenter à l'utilisateur.
-L'affichage d'images et de contenu multimédia (vidéo, son) lorsqu'on clique sur la carte participe également à la narration.
+L'affichage d'images et de contenu multimédia (photos, vidéos, sons) lorsqu'on clique sur la carte participe également à la narration.
 
 1. [Montre-moi des exemples](macarte/exemples)
 2. [Comment créer une histoire autour d'une carte](mcstory/raconter une histoire)
@@ -144,7 +202,7 @@ L'affichage d'images et de contenu multimédia (vidéo, son) lorsqu'on clique su
 - atlas
 
 Lorsqu'une carte est publiée, elle est visible par tout internaute qui a accès au lien de publication fourni.
-Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elle seront référencé dans l'atlas de Ma carte et accessible en recherche aux visiteur du site et via les API.
+Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elles seront référencées sur le site Ma carte et accessibles en recherche aux visiteurs du site et via les API.
 
 Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les voir.
 
@@ -156,6 +214,9 @@ Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les
 - géolocaliser
 - adresse
 - géocodage
+- géocoder
+- geocoder
+- geocode
 - qu'est-ce
 
 Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
@@ -207,7 +268,7 @@ Ce sont des adresses ressemblant à celles proposée (mais avec un score inféri
 Si cela ne suffit pas, lorsqu'un point est sélectionné, deux options s'offrent à vous dans le panneau de gauche : 
 - Modifier l'adresse que vous propose de corriger l'adresse et de relancer un géocodage.
 - Déplacer manuellement un point qui vous permet de bouger le point sur la carte. Une fois le déplacement validé, l'outil recalcule un géocodage sur cette nouvelle position
-![](img/geocod.png)
+![](./img/geocod.png)
 
 1. [Qu'est-ce que le score de géocodage ?](mcadresse/Qu'est-ce que le score de géocodage)
 1. [Qu'est-ce que l'indice de qualité du géocodage ?](mcadresse/Qu'est-ce que l'indice de qualité du géocodage)
@@ -376,6 +437,22 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 
 1. [Quels sont les outils de Ma carte ?](macarte//macarte)
 
+## mceditor/A quoi sert la thématique d'une couche
+- thématique
+- gestionnaire
+- couche
+- layer
+- calque
+- logo
+
+Vous pouvez ajouter une thématique aux couches de la carte dans les paramètres (étendus) du calque.
+Pour certaines opérations, les couches seront regroupées sous ces thématique.
+
+Par exemple dans le **gestionnaire thématique**, dans une carte narrative, n'affiche que les couches visibles à l'ouverture et propose à l'utilisateur d'ajouter les autres couches à la demande. Cette option est particulièrement pratique si la carte propose un grand nombre de couches pour ne pas surcharger la liste des couches disponibles.
+
+1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
+
+
 ## mceditor/comment afficher un fichier distant dans Ma carte
 - ajouter
 - couche
@@ -406,6 +483,7 @@ Par contre vous n'aurez pas accès aux données directement pour les symboliser 
 - fonds
 - flux
 - OGC
+- fichier
 
 Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (OGC) pour les ajouter sous forme de couche sur Ma carte.
 
@@ -413,7 +491,8 @@ Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (
 
 Vous pouvez ainsi ajouter vos propres couches via des flux WMTS, WMS, XYZ, WFS ou geoRSS.
 
-Si vous avez des fichiers de données (au format KML, GeoJSON, GPX ou CSV) vous pouvez les importer dans une couche. Si le fichier est disponible, vous pouvez le lier via une url.
+Si vous avez des fichiers de données géographiques (aux formats KML, GeoJSON, GPX ou GeoCSV) vous pouvez les importer dans une couche, via le dialogue ou par glisser/déposer. 
+Si le fichier est disponible sur internet, vous pouvez le lier via une url dans une couche.
 
 1. [Montre-moi comment afficher un fichier distant dans Ma carte](mceditor/comment afficher un fichier distant dans Ma carte)
 2. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
@@ -429,7 +508,7 @@ Si vous avez des fichiers de données (au format KML, GeoJSON, GPX ou CSV) vous 
 
 
 Vous pouvez ajouter facilement des fonds Géoportail via l'interface d'ajout de couche (en mode simplifié)
-Pour cel, il vous suffit de cliquer sur l'icône `Géoportail`
+Il vous suffit de cliquer sur l'icône `Géoportail`.
 ![](https://macarte.ign.fr/image/voir/cov6147.png)
 
 Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couches disponibles, classées par thématique :
@@ -443,11 +522,50 @@ Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couche
 
 ![](https://macarte.ign.fr/image/voir/tbn6158.png)
 
+## mceditor/Comment ajouter une légende à une couche
+- légende
+- legende
+- couche
+- calque
+- layer
+
+Il est possible d'ajouter une légende aux couches dans le gestionnaire de couche de l'outil de création de cartes <img class="icon" src="./img/map-legend.svg" />.
+Vous pouvez créer une légende à partir d'une image existante ou de toute pièce avec les symboles disponibles dans la bibliothèque de symboles.
+Si la couche est un WMS qui a une légende (image) indiquée dans le flux, vous pouvez demander à utiliser celle-ci. Si votre couche a une symbolisation paramétrique l'outil peut déduire la légende à partir de la symbolisation.
+
+📝 la légende du calque n'est pas automatiquement intégrée dans la légende de la carte. Pour cela vous devez l'ajouter à la légende de la carte via le menu `Affichage`. Dans ce cas, la légende ne s'affichera pas si la couche est masquée.
+![](./img/menu-affichage.png)
+
+1. [Comment ajouter une légende à ma carte ?](mceditor/Comment créer une légende)
+1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+
+
+## mceditor/Comment créer une légende
+
+
+## mceditor/Comment créer un masque de découpage
+- masque
+- découpage
+- layer
+- couche
+- calque
+
+L'option de découpe d'un calque permet de n'afficher le calque qu'à l'intérieur du masque. Vous pouvez utiliser une couleur de masque qui s'affichera à l'extérieur. En jouant sur l'opacité de cette couleur, vous pouvez afficher plus ou moins le contenu du calque à l'extérieur.
+Vous pouvez également ajouter un léger ombrage au masque.
+
+Pour spécifier un masque, vous devez au préalable sélectionner un objet surfacique dans une couche vecteur qui servira de découpe (cliquez sur le bouton `Utiliser la sélection` dans le dialogue d'options du calque).
+
+1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
+
+
 ## mceditor/Comment enregistrer les données d'un calque
 - calque
 - couche
 - layer
 - enregistrer
+- download
+- télécharger
 - données
 - geojson
 - kml
@@ -455,9 +573,74 @@ Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couche
 Vous avez la possibilité de récupérer les données saisies dans l'outil d'édition de carte au format GeoJSON ou KML
 Pour cela, sélectionnez le calque qui contient les données dans le gestionnaire de couche (passe en surbrillance bleue) puis ouvrez la fenêtre d'options en cliquant sur le bouton <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA0A-configuration.svg" /> en bas à droite du gestionnaire.
 Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargement <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" />.
-![](https://macarte.ign.fr/image/voir/anr6274.png)
+![](./img/options.png)
 
 1. [Comment sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+
+
+## mceditor/Comment mettre à jour les données d'un calque de dessin
+- mettre à jour
+- mise à jour
+- couche
+- layer
+- data
+- dessin
+
+Dans le module d'édition, il est possible de remplacer ou ajouter des données dans un calque de dessin en chargeant un nouveau lot de données dans le dialogue d'options du calque via le gestionnaire de calque <img class="icon" src = "./img/configuration.svg" />.
+![](./img/options.png)
+
+Les nouvelles données vont venir se charger dans le calque. 
+💡 Vous pouvez choisir de remplacer les données existante en cochant l'option dans le dialogue.
+
+Si le calque a un style paramétrique, celui-ci s'appliquera automatiquement aux nouvelles données.
+
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+
+
+## mceditor/Comment paramétrer l'info-bulle d'un objet
+- bulle
+- info-bulle
+- object
+- sélection
+- selection
+
+Lorsqu'on clique sur un objet de la carte, une bulle d'information va s'afficher.
+Vous pouvez paramétrer cette bulle à l'aide de Markdown dans l'onglet `Bulle`.
+
+![](./img/infobulle.png)
+
+Vous pouvez renseigner un titre, une description (en Markdown) et une image. Vous pouvez aussi choisir d'afficher les coordonnées de l'objet (ceci est surtout valable pour un point car sinon, c'est la position du premier point qui est utilisé).
+
+💡 Le titre et l'image sont de simples aides pour la saisie mais vous pouvez les intégrer directement dans le Markdown pour plus de souplesse dans le rendu. De la même manière la balise MD `%COORD%` (coordonnées) et `%COORDMS%` (coordonnées en degré, minutes, secondes).
+
+⚙️ Si la bulle n'est pas renseignée sur l'objet, c'est la bulle du calque qui sera utilisée.
+
+1. [Qu'est-ce que l'info-bulle d'une couche ?](mceditor/Qu'est-ce que l'info-bulle d'une couche)
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+
+
+## mceditor/Comment personnaliser les attributs d'une couche vecteur
+- couche
+- layer
+- calque
+- attribut
+- attributs
+- propriétés
+- vecteur
+- objets
+- case à cocher
+- liste
+- type
+
+Vous pouvez personnaliser les attributs d'une couche de dessin dans le dialogue des options du calque.
+Un fois les attributs configurés, à chaque fois qu'un objet sera ajouté à la couche, l'outil lui affectera les attributs donnés avec la valeur par défaut fournie.
+![](./img/attributes.png)
+
+Vous pouvez typer les attributs afin d'aider à la saisie. Un attribut peut être de type chaîne de caractères (1 seule ligne) ou une zone de texte (multi-ligne), un nombre (entier ou décimal) une case à cocher ou une liste de valeur (qui s'affichera dans un menu).
+
+![](./img/view-attributes.png)
+
+1. [Qu'est-ce qu'une couche vecteur ?](mceditor/Qu'est-ce qu'une couche vecteur)
 
 
 ## mceditor/Comment puis-je sauvegarder une carte
@@ -480,6 +663,26 @@ Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser le
 
 
 ## mceditor/Comment saisir des objets dans Ma carte
+- dessin
+- couche
+- saisie
+- saisir
+
+Une couche de dessin est une couche sur laquelle on va pouvoir accéder, modifier et ajouter de nouveaux objets à travers l'[outil de création de cartes](https://macarte.ign.fr/edition/carte).
+Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />)
+
+La saisie de nouvelles données se fait à l'aide des outils de dessin en haut de l'écran.
+![](./img/drawtools.png)
+
+Cliquer sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
+
+La saisie se fait dans la couche active (en surlignée bleu dans le gestionnaire de couche).
+
+Vous pouvez saisir des points, de ligne ou des surface ainsi que des trous dans ses surface.
+Des options vous permettent également de vous accrocher aux objets existants ou d'afficher une mesure lors de la saisie.
+
+1. [Quels sont les raccourcis claviers ?](mceditor/Quels sont les raccourcis claviers de dessin)
+2. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 
 
 ## mceditor/créer une carte
@@ -494,7 +697,117 @@ L'interface vous permet d'ajouter des couches cartographique ou de dessin, de ch
 
 1. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
 2. [Comment saisir des objets dans Ma carte ?](mceditor/Comment saisir des objets dans Ma carte)
-1. [Comment puis-je sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+3. [Comment puis-je sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+
+## mceditor/Parle-moi du gestionnaire de couche
+- gestionnaire
+- couche
+- calque
+- layer
+- opacité
+- rendu
+- mode de fusion
+- masquer
+
+Les données géographiques sont regroupées dans des couches pour en faciliter la gestion. Pour des raisons de commodité, celles-ci forment un regroupement thématique ou organisationnel qui permet de manipuler d'un bloc l'ensemble les données qu'elles contiennent (afficher, changer l'ordre d'affichage, appliquer une symbolisation, etc.).
+
+Le gestionnaire de couche permet d'organiser et paramétrer les différentes couches constituant votre carte.
+
+![](https://macarte.ign.fr/api/image/img_lmi8141)
+⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
+
+La barre de menu supérieure, permet de définir la façon dont la couche va se combiné avec les couches inférieurs (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonction de manipulation des calques.
+
+Vient ensuite la liste des couches et des informations indiquant son statut (affiché, verrouillée) ainsi qu'une double flèche pour ordonner les couches par glisser/déposer.
+
+La barre de menu inférieure permet d'ajouter une nouvelle couche ou de modifier les propriétés de la couche courante, en particulier sa symbolisation ou son info-bulle.
+
+1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
+1. [Qu'est-ce que l'info-bulle d'une couche ?](mceditor/Qu'est-ce que l'info-bulle d'une couche)
+1. [Qu'est-ce que le style d'une couche ?](mceditor/Qu'est-ce que le style d'une couche)
+1. [Comment ajouter une légende à une couche ?](mceditor/Comment ajouter une légende à une couche)
+1. [Comment ajouter un fond sur Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
+
+
+## mceditor/Qu'est-ce qu'une couche vecteur
+- couche
+- layer
+- calque
+- vecteur
+- raster
+
+L'information géographique est la représentation d'un objet ou d'un phénomène réel ou imaginaire, présent, passé ou futur, localisé dans l'espace à un moment donné (on parle de géolocalisation).
+
+Elle contient une information liée à sa position sur le globe (ou plus généralement dans l'espace) : sa **géométrie** et des **informations descriptives** sémantiques qui indiquent sa nature, son aspect, ses propriétés, etc. On parle d'attributs.
+Dans certains cas, elle peut également contenir des relations avec d'autres objets : c'est le niveau topologique (le sens de parcours, la communication ou non dans un réseau, etc.). Certaines de ces relations peuvent se déduire de la géométrie des objets (inclusions, adjacences, etc.), d'autres nécessitent un encodage particulier.
+
+On parlera de données vecteur pour les distinguer des données (ou fonds) image (ou raster). Contrairement à ces dernière, onpeut facilement accéder à leurs attributs et à leur symbolisation.
+
+1. [Qu'est-ce qu'une couche de dessin ?](mceditor/Comment saisir des objets dans Ma carte)
+1. [Comment personnaliser les attributs d'une couche vecteur ?](mceditor/Comment personnaliser les attributs d'une couche vecteur)
+
+
+## mceditor/Qu'est-ce que l'info-bulle d'une couche
+- bulle
+- info-bulle
+- infobulle
+- popup
+- calque 
+- couche
+- layer
+
+Vous pouvez ajouter une bulle d'information aux calques. Cette bulle s'affichera lorsqu'un objet du calque est sélectionné (sauf ci celui-ci surcharge la bulle).
+Le contenu de la bulle est défini en Markdown et il est possible d'afficher les attributs de l'objet sélectionné avec la syntaxe `%nom_de_l_attribut%`. 
+Afin de vous aider à paramétrer la bulle, pensez à sélectionner un objet sur le calque afin d'avoir accès en directe à ces attributs lors de la saisie du Markdown.
+
+S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du getFeatureInfo du flux (si celui-ci est paramétré dans le flux et répond en json). Dans ce cas, vous n'aurez pas directement accès aux attributs du clic, vous pouvez indiquer dans le Mardown `%ATTRIBUTES%` pour afficher la liste des attributs renvoyés par le service.
+
+1. [Comment paramétrer l'info-bulle d'un objet ?](mceditor/Comment paramétrer l'info-bulle d'un objet)
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+
+
+## mceditor/Qu'est-ce que le style d'une couche
+- style
+- couche
+- layer
+- calque
+
+Chaque couche vecteur peut avoir un style de représentation des objets qu'elle contient. C'est cette symbolisation qui sera utilisée si elle n'a pas été surchargée par l'objet lui même (dans ce cas on peut revenir à la symbolisation par défaut de la couche).
+
+La couche peut adopter une **symbolisation paramétrique**, dans ce cas, elle sera prioritaire et prendra le pas sur la symbolisation des objets. On utilise alors les règles définies dans la couche pour symboliser son contenu.
+Ceci a l'avantage de pouvoir plus facilement changer la symbolisation d'un groupe d'objet et de la rendre plus dynamique (si l'attribut d'un objet change, sa symbolisation va changer). Cela va également être pratique si on doit mettre à jour une couche de dessin (nouveau millésime de la donnée).
+Dans le cas de couche vecteur en flux, c'est la seule façon d'affecter une symbolisation différente aux objets affichés.
+
+On peut modifier la symbolisation d'une couche via le bouton <img class="icon" src="./img/color.svg" /> dans la barre inférieure du gestionnaire de couche.
+
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+2. [Comment créer une bibliothèque de symboles ?](mceditor/Comment créer une bibliothèque de symboles)
+2. [Comment mettre à jour les données d'un calque de dessin ?](mceditor/Comment mettre à jour les données d'un calque de dessin)
+
+
+## mceditor/Quelles sont les propriétés d'une couche
+- propriété
+- couche
+- layer
+- calque
+- options
+
+Les propriétés d'une couche sont de deux types : 
+
+<img class="icon" src="./img/info-circle.svg" /> Les **informations** qui servent à la décrire et qui seront visible par l'utilisateur dans le gestionnaire de couche. En particulier le nom et la description de la couche ainsi q'un copyright qui s'affichera sur la carte. 
+Une couche contenant des données vecteur peut être exportable (case à cocher), ce qui se traduira par un bouton pour télécharger les données dans le dialogue d'information de la couche.
+Enfin, une couche peut avoir une thématique et un logo.
+
+<img class="icon" src="./img/configuration.svg" /> les options de la couche qui conditionnent son affichage.
+On trouve ici la plage de visibilité qui définit les échelles auxquelles la couche va s'afficher ainsi que le masque de découpage.
+Pour les couches vecteurs, on peut définir le mode d'affichage et les attributs de la couche.
+Le mode d'affichage peut être vecteur (normal), image qui permet d'optimiser l'affichage lors des déplacement (utile pour les couches ayant beaucoup d'objets à afficher) et le mode cluster qui permet de regrouper les objets à petite échelle.
+Pour les objets vecteurs, on peut aussi personnaliser les attributs du calque et la façon dont ils sont stockés/affichés.
+
+1. [Qu'est-ce qu'une couche vecteur ?](mceditor/Qu'est-ce qu'une couche vecteur)
+1. [Comment personnaliser les attributs d'une couche vecteur ?](mceditor/Comment personnaliser les attributs d'une couche vecteur)
+1. [A quoi sert la thématique d'une couche ?](mceditor/A quoi sert la thématique d'une couche)
+1. [Comment créer un masque de découpage ?](mceditor/Comment créer un masque de découpage)
 
 ## mceditor/Quels sont les fonds disponibles dans Ma carte
 - fonds
@@ -506,13 +819,25 @@ Ma carte offre un grand nombre de fonds cartographiques disponibles pour agréme
 Vos pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.
 
 Parmi ceux-ci, on trouve un accès simplifié aux fonds cartographiques du Géoportail par thématique.
-En cliquant sur le bouton `Plus d'options` vous avez accès à un large choix pour ajouter des flux provenant de services tiers dans des formats standardisé (OGC).
+En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonctionnalités pour ajouter des flux provenant de services tiers dans des formats standardisés (OGC).
 
 ![](https://macarte.ign.fr/image/voir/gts6159.png)
 
+1. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 1. [Ajouter des fonds Géoportail simplement](mceditor/Comment ajouter des fonds Géoportail)
 2. [Ajouter des flux OGC](mceditor/Comment ajouter des flux OGC)
 3. [Ajouter des tuiles vectorielles](mceditor/Comment ajouter des tuiles vectorielles)
+
+## mceditor/Quels sont les raccourcis claviers de dessin
+- raccourcis
+- dessin
+- Ctrl+C
+
+Dans l'outil de dessin vous avez accès aux raccourcis suivant : 
+<kbd>Ctrl</kbd>+<kbd>C</kbd> pour copier le ou les objets sélectionnés.
+<kbd>Ctrl</kbd>+<kbd>X</kbd> pour copier le ou les objets sélectionnés en les supprimant du calque dans lequel ils se trouvent.
+<kbd>Ctrl</kbd>+<kbd>V</kbd> pour coller le ou les objets copiés sur le calque de dessin courant (le calque doit être visible <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA2F-visible.svg" /> et déverrouillée (<img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA52-unlock.svg" />))).
+<kbd>Suppr</kbd> pour supprimer les objets sélectionnés.
 
 ## mcstat/créer une statistique
 
@@ -522,13 +847,102 @@ En cliquant sur le bouton `Plus d'options` vous avez accès à un large choix po
 
 *contenu en cours de saisie*
 
+## md/Afficher des attributs en Markdown
+- Markdown
+- attributs
+- propriétés
+- attribut
+
+Il est possible d'afficher des attributs associé à l'objet sélectionné en Markdown en utilisant la syntaxe `%nom_de_l_attribut%`.
+
+Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
+
+1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+
+
+## md/Afficher une diagramme dans Ma carte
+
+
+## md/Intégrer des médias dans Ma carte
+- media
+- média
+- markdown
+- MD
+- images
+- vidéo
+- twitter
+
+La syntaxe pour intégrer un média dans Ma carte est la suivante : 
+```MD
+![info sur le média](url_du_media)
+```
+
+Il peut d'agir d'une image, d'une vidéo ou d'un fichier de son.
+On peut aussi intégrer un tweet avec l'url du tweet.
+
+Utilisez la barre de Markdown pour vous aider à intégrer les images. En particulier pour ajouter un lien d'affichage en plein écran sur une image.
+![](./img/insert-medai.png)
+
+
+Il est également possible d'intégrer un comparateur d'images
+```
+&#96imageSlider
+img1: url_image_1
+img2: url_image_2
+fullscreen: true
+&#96
+```
+
+💡 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
+
+1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+
+
+## md/la barre de Markdown de Ma carte
+- Markdown
+- MD
+- édition
+- barre
+
+La barre d'outil de Ma carte vous permet d'ajouter plus facilement les balises Markdown dans vos créations.
+![](./img/mdbar-small.svg)
+
+En cliquant sur `plus d'options` un dialogue s'ouvre qui offre plus d'options et un espace pour visualiser le rendu du Markdown.
+![](./img/mdbarre.svg)
+
+N'hésitez pas à consulter l'aide en ligne <img class="icon" src="./img/info.svg" />
+
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
+
+
+## md/markdown
+- Markdown
+- définition
+- MD
+- langage
+
+Le Markdown est un format de balisage très léger qui permet d'écrire rapidement du texte formaté.
+
+Par exemple on écrit &#042;&#042;texte en gras&#042;&#042; pour écrire du **texte en gras**, ou alors &#042;texte en italique&#042; pour écrire du *texte en italique*.
+
+Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdowntutorial.com/fr/).
+
+📝 Ma carte utilise une syntaxe étendue pour afficher des attributs, des médias ou des widgets (diagrammes, calendriers, images).
+
+1. [Intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
+1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
+1. [Afficher une diagramme dans Ma carte](md/Afficher une diagramme dans Ma carte)
+
 ## selection/opérateurs
 - opérateur
 - sélection
 - filtrage
 
-Les opérateur de sélection et de filtrage par attribut sont : 
-- des opérateur d'égalité (= égale à, ≠ différent de)
+Les opérateurs de sélection et de filtrage par attribut sont : 
+- des opérateurs d'égalité (= égale à, ≠ différent de)
 - de comparaison inférieur / supérieur (<, ≤, ≥ ou >)
 - d'inclusion (⊂ contient, ⊄ ne contient pas)
 - ou une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re) (≃ vérifie, ≄ ne vérifie pas)
@@ -540,6 +954,8 @@ Ainsi : `2 < 10` mais `'2' > '10'`
 ## symboliser/Comment créer une bibliothèque de symboles
 
 *en cours de construction*
+
+comment partager une bibliothèque de symboles
 
 ## symboliser/Comment symboliser un objet
 - symboliser
@@ -558,11 +974,11 @@ Un symbolisation paramétrique est une manière de symboliser les objets **en fo
 Dans ce cas, la symbolisation ne sera plus portée par les objets individuellement mais par une règle de symbolisation sur le calque en fonction des attributs de l'objet (si le type est *gendarmerie*, le point s'affiche en bleu).
 
 Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/edit/uEAAF-color.svg" />) pour activer le style paramétrique.
-![](img/style-param.png)
+![](./img/style-param.png)
 
 Vous pouvez alors ajouter des symbolisation à la couche en fonction des attributs.
 
-![](img/style-layer-param.png)
+![](./img/style-layer-param.png)
 
 Vous devez au préalable avoir crée une bibliothèque de symboles correspondant à ce que vous désirez représenter.
 
@@ -572,7 +988,6 @@ Ensuite :
 3. Ajouter une règle de la forme `attribut` ➜ `opérateur` ➜ `valeur`
 
 On peut ajouter plusieurs critère qui vont se cumuler si `tous les mots` est coché 
-
 
 
 2. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)

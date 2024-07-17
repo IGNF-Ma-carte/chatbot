@@ -5,7 +5,7 @@
 - visibilité
 - profil auteur
 
-L'Atlas est un espace de publication de cartes et narration réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et accessibles en recherche aux visiteur du site et via les API.
+L'Atlas est un espace de publication de cartes et narrations réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et disponibles en recherche aux visiteur du site et via les API.
 Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. 
 
 C'est vous qui choisissez, à l'enregistrement d'une carte ou dans l'espace dédié aux cartes, si vous voulez publier une carte dans l'atlas ou non.

@@ -10,3 +10,4 @@ Les cartes produites peuvent être partagées, intégrées dans un blogue ou uti
 1. [En savoir plus sur Ma carte](./historique.md)
 2. [Montre-moi des exemples de cartes](./exemples.md)
 3. [Comment créer une carte](./créer_une_carte.md)
+4. [Comment partager une carte](./Comment_partager_une_carte.md)

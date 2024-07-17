@@ -23,7 +23,6 @@ Ensuite :
 On peut ajouter plusieurs critère qui vont se cumuler si `tous les mots` est coché 
 
 
-
 2. [Comment créer une bibliothèque de symboles ?](./Comment_créer_une_bibliothèque_de_symboles.md)
 1. [Quels sont les opérateurs de sélection ?](../selection/opérateurs.md)
 1. [Comment symboliser un objet ?](./Comment_symboliser_un_objet.md)

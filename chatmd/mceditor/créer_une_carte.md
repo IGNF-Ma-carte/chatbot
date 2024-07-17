@@ -9,4 +9,4 @@ L'interface vous permet d'ajouter des couches cartographique ou de dessin, de ch
 
 1. [Quels sont les fonds disponibles dans Ma carte ?](./Quels_sont_les_fonds_disponibles_dans_Ma_carte.md)
 2. [Comment saisir des objets dans Ma carte ?](./Comment_saisir_des_objets_dans_Ma_carte.md)
-1. [Comment puis-je sauvegarder une carte ?](./Comment_puis-je_sauvegarder_une_carte.md)
+3. [Comment puis-je sauvegarder une carte ?](./Comment_puis-je_sauvegarder_une_carte.md)

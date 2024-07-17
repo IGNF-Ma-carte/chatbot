@@ -37,18 +37,37 @@ code {
   font-weight: bold;
   letter-spacing: -0.05em;
   vertical-align: baseline;
+  padding: 0 .1em;
   line-height: 1em;
 }
-/*
-h1:before {
-  content: "";
-  background-image: url(../img/poibot.svg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 60px;
-  height: 60px;
-  display: inline-block;
+
+kbd {
+  text-shadow: 1px 1px #fff;
   vertical-align: middle;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: default;
+  background-color: #eee;
+  border-radius: 3px / 100%;
+  min-width: 1.3em;
+  min-height: 1.4em;
+  margin: -3px .3em 0 .2em;
+  padding: 0 .3em;
+  font-size: .9em;
+  display: inline-block;
+  box-shadow: inset 1px 1px 3px 2px #fff, 3px 2px 2px #999, 0 0 0 1px #999;
 }
-*/
+
+pre {
+  width: 100%;
+  border-radius: 0;
+  background: #efefef;
+  padding: 1em
+}
+pre code {
+  color: #444;
+  letter-spacing: unset;
+  font-weight: normal;
+  line-height: unset;
+  font-size: 1.2em
+}

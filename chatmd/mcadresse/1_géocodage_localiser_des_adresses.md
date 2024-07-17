@@ -1,6 +1,9 @@
 - géolocaliser
 - adresse
 - géocodage
+- géocoder
+- geocoder
+- geocode
 - qu'est-ce
 
 Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
