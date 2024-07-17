@@ -22,27 +22,26 @@ function nextFile(files, directory) {
   } else {
     // Process file
     let content = fs.readFileSync(directory + '/' + file, { encoding: 'utf8' });
-    // Process local ref
-    const locals = content.matchAll(/\]\(\.(\.)?\/[^)]*(\.md)?\)/g);
+    // Process local ref [](./ref) or [](../ref)
+    const locals = content.matchAll(/\]\(\.(\.)?\/[^)]*(\.md)\)/g);
     for (const match of locals) {
+      // File name without '.md' and '_'
       let st = match[0].replace(/\]\(\.(\.)?\/(\.\.\/)?/,'').replace(/\.md\)$/,'').replace(/\)$/,'').replace(/_/g,' ')
+      // Path from the root
       if (/\]\(\.\//.test(match[0])) {
         st = (directory + '/').replace(root+'/', '') + st;
       }
+      // Replace
       content = content.replace(match[0], ']('+st+')')
     }
-    /*
-    // remove './' and '../'
-    content = content.replace(/\]\(\.\.\//g,'](')
-    content = content.replace(/\]\(\.\//g,'](')
-    // remove mainmd
-    const rmmain = new RegExp('\\]\\('+mainmd+'\\)', 'g')
-    content = content.replace(rmmain,']()')
-    */
+    // Path for images ![](../img)
+    content = content.replace(/\]\((\.\.\/){1,}img\//g,'](./img/');
+    // Path from the root
     if (directory !== root) {
       const name = file.replace(/_/g,' ').replace(/\.md$/,'');
       content = '## ' + (directory + '/' + name).replace(root + '/', '') + '\n' + content;
     }
+    // Write file
     fs.appendFileSync(destination, content + '\n\n')
     console.log(directory + '/' + file)
   }
