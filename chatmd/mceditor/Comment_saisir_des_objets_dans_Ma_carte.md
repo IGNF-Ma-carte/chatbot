@@ -17,4 +17,5 @@ Vous pouvez saisir des points, de ligne ou des surface ainsi que des trous dans 
 Des options vous permettent également de vous accrocher aux objets existants ou d'afficher une mesure lors de la saisie.
 
 1. [Quels sont les raccourcis claviers ?](./Quels_sont_les_raccourcis_claviers_de_dessin.md)
-2. [Parle-moi du gestionnaire de couche](./Parle-moi_du_gestionnaire_de_couche.md)
+1. [Comment symboliser un objet ?](../symboliser/Comment_symboliser_un_objet.md)
+1. [Parle-moi du gestionnaire de couche](./Parle-moi_du_gestionnaire_de_couche.md)

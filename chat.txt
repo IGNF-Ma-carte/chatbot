@@ -109,6 +109,8 @@ Vous retrouverez ce lien sur la page de la [carte sur votre compte](https://maca
 ![](./img/share.png)
 
 Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut être utile si vous voulez travailler à plusieurs sur la carte.
+![](./img/partage.png)
+
 ⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modfication de la dernière qui enregistre qui seront prisent en compte.
 ⚠️ Faites attention à qui vous communiquez l'adresse de modification.
 Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
@@ -185,6 +187,24 @@ Les cartes produites peuvent être partagées, intégrées dans un blogue ou uti
 3. [Comment créer une carte](macarte/créer une carte)
 4. [Comment partager une carte](macarte/Comment partager une carte)
 
+## macarte/Ma carte peut-il héberger des images
+- image
+- galerie
+
+Vous disposez d'un espace personnel pour déposer des images. Il est destiné à simplifier l'utilisation de Ma carte.
+Cet espace est limité à 10 Mo. Les utilisateurs désirant utiliser un volume d'images supérieur doivent l'héberger sur un espace tiers.
+Les images peuvent être classées dans des galeries. Ceci vous permet de les organiser et d'utiliser le filtrage.
+
+Dans l'application Ma carte le bouton <i class="fi-galerie-image"></i> vous permet d'accéder directement à vos images.
+
+Pour utiliser celles-ci en tant que symbole ponctuel sur une carte ou en Markdown (dans une info-bulle).
+
+![](https://macarte.ign.fr/image/voir/kxx6177.png)
+
+Une page est dédiée à vos images dans [votre espace personnel](https://macarte.ign.fr/mon-compte/#medias).
+
+1. [Pourquoi ma carte ne s'imprime pas ?](macarte/Problème pourquoi ma carte ne s'imprime pas)
+
 ## macarte/Où trouver le QR Code de partage
 - QRCode
 - QR code
@@ -218,6 +238,25 @@ Le paramétrage de votre profil est accessible dans la page "[Mes données perso
 2. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
 2. [Montre-moi des exemples de cartes](macarte/exemples)
 
+
+## macarte/Problème pourquoi ma carte ne s'imprime pas
+- problème
+- erreur
+- impression
+- ne s'imprime pas
+- imprime pas
+
+Si vous n'arriver pas à enregistrer une image de votre carte (une alerte `Impossible d'enregistrer la carte` apparaît), cela vient du fait qu'une image inclue dans la carte interdit ce type d'opération. En effet, dans un navigateur, l'accès aux ressources est restreinte si les entêtes de ces ressources ne sont pas correctement remplis (voir CORS).
+
+L'impression via une imprimante fonctionne, mais l'enregistrement est bloqué.
+
+![](https://macarte.ign.fr/api/image/img_kfq7956)
+
+Il peut s'agir d'une image utilisée comme symbolisation sur un point ou d'un service inclus dans un calque (WMS, WMTS, etc.).
+Pour débloquer la situation, recherchez le calque qui pose problème (lorsqu'il est masqué, la sauvegarde va fonctionner) et si vous en avez la possibilité demandez au fournisseur d'activer les entêtes CORS.
+Pour l'utilisation d'image comme symbolisation sur un objet, vous pouvez demander à Ma carte de l'héberger pour l'utiliser ensuite sans restriction sur vos cartes.
+
+1. [Ma carte peut-il héberger des images ?](macarte/Ma carte peut-il héberger des images)
 
 ## macarte/qu'est ce qu'une carte narrative
 - carte narrative
@@ -597,8 +636,11 @@ Lorsque vous chargez un fichier volumineux, il est fortement conseillé de param
 
 Les modes conseillés sont :
 - **cluster** qui regroupe les objets en un seul selon des paramètres personnalisables de proximité et de zoom. En plus d'accélérer l'affichage, la lisibilité de votre carte est meilleure.
-- **image** qui est visuellement identique au mode vecteur à la différence qu'il est plus rapide.
+- **image** qui va fluidifier l'affichage (sans recalculer l'image de la carte lors des déplacements).
 ![](https://macarte.ign.fr/image/voir/qze5417.png)
+
+📝 L'inconvénient de ce mode est que l'affichage ne va pas suivre la rotation de la carte.
+Aussi, si vous avez des étiquettes ou des symboles qui s'affichent sur cette couche ils vont se retrouver penchés, ce qui peut nuire à la lisibilité.
 
 Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
 Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveau de zoom pour lesquels la couche est masquée.
@@ -790,7 +832,8 @@ Vous pouvez saisir des points, de ligne ou des surface ainsi que des trous dans 
 Des options vous permettent également de vous accrocher aux objets existants ou d'afficher une mesure lors de la saisie.
 
 1. [Quels sont les raccourcis claviers ?](mceditor/Quels sont les raccourcis claviers de dessin)
-2. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
+1. [Comment symboliser un objet ?](symboliser/Comment symboliser un objet)
+1. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 
 
 ## mceditor/créer une carte
@@ -1058,12 +1101,12 @@ Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'
 - narration
 
 Voici quelques exemples de cartes narratives : 
-- Modèle standard : [patrimoine de la biodiversité](https://macarte.ign.fr/carte-narrative/voir/12ca4efdf0956c7c9945b3cd2feab687/Patrimoine-naturel-de-la-biodiversite) -  J-M. Viglino
-- Modèle volet : [lieux de tournage à Paris](https://macarte.ign.fr/carte-narrative/voir/aad127aedc4c7d10e372ad6d617c8c95/Lieux_de_tournage_a_Paris)] -  J-M. Viglino
-- Modèle photo : [BnF Route des Alpes](https://macarte.ign.fr/carte-narrative/voir/1e99baa82a09055d0aecd8a7cdd5c1d4/BnF-Route-des-Alpes) -  J-M. Viglino
-- Modèle diaporama : [les lieux du stade](https://macarte.ign.fr/carte/5SkrR6/Les-lieux-du-stade) -  A. Sandrin
-- Modèle étapes : [l'attractivité urbaine en France](https://macarte.ign.fr/carte-narrative/voir/95b97c69c0d2713614845761857ea034/Attractivite_urbaine_France) -  M. Chartier
-- Modèle onglet : [la France face à la montée des eaux](https://macarte.ign.fr/carte-narrative/voir/baca818328b9ea4d3a2d36332033c842/La_France_face_a_la_montee_des_eaux) -  J. Pouzin
+- Modèle standard : [Patrimoine de la biodiversité](https://macarte.ign.fr/carte-narrative/voir/12ca4efdf0956c7c9945b3cd2feab687/Patrimoine-naturel-de-la-biodiversite) -  J-M. Viglino
+- Modèle volet : [Lieux de tournage à Paris](https://macarte.ign.fr/carte-narrative/voir/aad127aedc4c7d10e372ad6d617c8c95/Lieux_de_tournage_a_Paris)] -  J-M. Viglino
+- Modèle photo : [La Route des Alpes - BnF](https://macarte.ign.fr/carte-narrative/voir/1e99baa82a09055d0aecd8a7cdd5c1d4/BnF-Route-des-Alpes) -  J-M. Viglino
+- Modèle diaporama : [Les lieux du stade](https://macarte.ign.fr/carte/5SkrR6/Les-lieux-du-stade) -  A. Sandrin
+- Modèle étapes : [L'attractivité urbaine en France](https://macarte.ign.fr/carte-narrative/voir/95b97c69c0d2713614845761857ea034/Attractivite_urbaine_France) -  M. Chartier
+- Modèle onglet : [La France face à la montée des eaux](https://macarte.ign.fr/carte-narrative/voir/baca818328b9ea4d3a2d36332033c842/La_France_face_a_la_montee_des_eaux) -  J. Pouzin
 - Modèle comparaison : [Lyon Métropole face à une crue majeure](https://macarte.ign.fr/carte-narrative/voir/722968cde123b481d4eb39c6e8c8efa2/Risque_inondation_a_Lyon) -  M. Chartier
 - Modèle différentiel : [Occupation du sol Bourgogne-Franche-Comté](https://macarte.ign.fr/carte/UP9ae8/OCS-BFC-indicateurs) -  J-M. Viglino
 
@@ -1302,6 +1345,38 @@ Vous pouvez appliquer un symbole de la bibliothèque à l'objet sélectionné vi
 1. [Comment ajouter une légende à ma carte ?](mceditor/Comment créer une légende)
 
 
+## symboliser/Comment mettre en forme une étiquette sur la carte
+- etiquette
+- étiquette
+- étiquettes
+- mettre en forme
+- dessiner
+- toponyme
+
+Une étiquette est un texte placé sur la carte pour caractériser un lieu ou un objet. Ce peut être une annotation ou un toponyme.
+
+Lorsqu'un ou plusieurs objets sont sélectionnés vous pouvez leur ajouter une étiquette dans l'onglet Étiquette de l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
+Vous pouvez choisir la police, la taille, l'emplacement, la couleur de l'étiquette et mettre un fond afin de rendre les écritures plus lisibles sur les fonds de carte.
+Cette étiquette peut être la valeur d'un attribut sous la forme `%nom_de_l_attribut%`. Vous pouvez afficher plusieurs attributs `%attribut_1% - %attribut_2%` mais si un des attribut est vide, l'étiquette ne s'affichera pas.
+
+Sur un point, l'étiquette peut s'afficher sur plusieurs lignes, il est possible de l'encadrer et de lui donner une couleur de fond.
+![](https://macarte.ign.fr/api/image/img_fab8154)
+
+Sur une surface, l'étiquette va s'afficher au milieu de la surface.
+Sur une ligne, vous pouvez choisir d'afficher l'étiquette le long de la ligne.
+![](https://macarte.ign.fr/api/image/img_ndv8157)
+
+
+Il peut être gênant que les étiquettes se chevauchent sur la carte, la rendant illisible.
+Pour cela, vous pouvez dans le style de l'objet interdire les dépassements, dans ce cas, l'étiquette ne pourra pas dépasser de l'objet (ligne ou surface).
+
+Vous pouvez également **nettoyer les chevauchements** dans le style du calque (via le menu <i class="fg-color"></i>  du gestionnaire de couche).
+![](https://macarte.ign.fr/api/image/img_wyn8152)
+
+1. [Comment éviter que les étiquettes se chevauchent ?](symboliser/Comment éviter que les étiquettes se chevauchent)
+1. [Comment symboliser un objet ?](symboliser/Comment symboliser un objet)
+
+
 ## symboliser/comment partager une bibliothèque de symboles
 - partager
 - utiliser
@@ -1326,8 +1401,46 @@ Le fichier `.carte` ainsi généré pourra être récupérer simplement par glis
 ## symboliser/Comment symboliser un objet
 - symboliser
 - symbole
+- objet
 
-*en cours de construction*
+Vous pouvez symboliser l'objet sélectionné dans une couche de dessin via l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
+
+Vous pouvez choisir la couleur, la taille, la forme, le remplissage des objets à afficher.
+La symbolisation dépend du type de l'objet (ponctuel, linéaire, surfacique).
+
+
+Pour les objets ponctuels, Ma carte propose une liste symboles personnalisable, vous pouvez choisir la couleur et les inclure dans une forme (rond, carré, blazon, etc.) afin d'harmoniser l'affichage sur la carte.
+![](https://viglino.github.io/Macarte-MI/assets/img/ch2.2-form.png)
+
+Vous avez la possibilité d'utiliser une image, sur le net ou dans votre galerie d'image. Le point peut aussi être une annotation, dans ce cas, seul l'étiquette associée va s'afficher.
+![](./img//symboliser.png)
+
+Pour chaque objet, vous pouvez ajouter une étiquette, constituée d'un texte qui s'affiche sur la carte pour caractériser l'objet.
+La mise en forme de l'étiquette sur la carte va dépendre du type d'objet auquel elle se rapporte.
+
+1. [Comment ajouter des images à ma galerie ?](macarte//Ma carte peut-il héberger des images)
+1. [Comment mettre en forme une étiquette sur la carte ?](symboliser/Comment mettre en forme une étiquette sur la carte)
+1. [Bien utiliser la bibliothèque de symboles](symboliser/Comment créer une bibliothèque de symboles)
+
+## symboliser/Comment éviter que les étiquettes se chevauchent
+- étiquettes
+- chevauchement
+- textes
+
+Il peut être gênant que les étiquettes se chevauchent sur la carte, la rendant illisible.
+
+Pour cela, vous pouvez tout d'abord dans le style de l'objet interdire les dépassements, dans ce cas, l'étiquette ne pourra pas dépasser de l'objet (ligne ou surface).
+
+Vous pouvez également **nettoyer les chevauchements** dans le style du calque (via le menu <i class="fg-color"></i>  du gestionnaire de couche).
+![](https://macarte.ign.fr/api/image/img_wyn8152)
+
+Dans ce cas, si une étiquette en chevauche une autre, elle ne sera pas afficher, améliorant la lisibilité. Il suffit généralement de zoomer pour que celle-ci réapparaisse.
+C'est la première étiquette qui s'affiche qui va conditionner l'affichage, si vous avez des étiquettes que vous voulez prioritaires, il est conseillé d'afficher cet objet en premier, pour cela, vous pouvez jouer sur l'empilement dans le style des objets.
+
+📝 le nettoyage de l'empilement joue sur tous les calques dont l'option est activée. Dans ce cas, c'est le calque le plus haut placé dans le gestionnaire de calque qui est prioritaire.
+
+1. [Comment mettre en forme une étiquette sur la carte ?](symboliser/Comment mettre en forme une étiquette sur la carte)
+1. [Comment symboliser un objet ?](symboliser/Comment symboliser un objet)
 
 
 ## symboliser/Qu'est-ce qu'une représentation paramétrique

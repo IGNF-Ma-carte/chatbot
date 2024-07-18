@@ -12,8 +12,11 @@ Lorsque vous chargez un fichier volumineux, il est fortement conseillé de param
 
 Les modes conseillés sont :
 - **cluster** qui regroupe les objets en un seul selon des paramètres personnalisables de proximité et de zoom. En plus d'accélérer l'affichage, la lisibilité de votre carte est meilleure.
-- **image** qui est visuellement identique au mode vecteur à la différence qu'il est plus rapide.
+- **image** qui va fluidifier l'affichage (sans recalculer l'image de la carte lors des déplacements).
 ![](https://macarte.ign.fr/image/voir/qze5417.png)
+
+📝 L'inconvénient de ce mode est que l'affichage ne va pas suivre la rotation de la carte.
+Aussi, si vous avez des étiquettes ou des symboles qui s'affichent sur cette couche ils vont se retrouver penchés, ce qui peut nuire à la lisibilité.
 
 Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
 Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveau de zoom pour lesquels la couche est masquée.

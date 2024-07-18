@@ -11,6 +11,8 @@ Vous retrouverez ce lien sur la page de la [carte sur votre compte](https://maca
 ![](../../img/share.png)
 
 Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut être utile si vous voulez travailler à plusieurs sur la carte.
+![](../../img/partage.png)
+
 ⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modfication de la dernière qui enregistre qui seront prisent en compte.
 ⚠️ Faites attention à qui vous communiquez l'adresse de modification.
 Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
