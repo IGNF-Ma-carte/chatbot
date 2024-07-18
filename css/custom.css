@@ -71,3 +71,17 @@ pre code {
   line-height: unset;
   font-size: 1.2em
 }
+
+/* icons */
+[class^="fg-"], 
+[class^="fi-"] {
+  margin: 0 .2em;
+}
+
+[class^="fg-"].colored, 
+[class^="fi-"].colored {
+  background-color: #3993f3;
+  color: #fff;
+  border-radius: 50%;
+  padding: .4em;
+}

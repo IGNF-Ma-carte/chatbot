@@ -14,3 +14,4 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 3. [Localiser une couche d'adresse](./mcadresse/1_géocodage_localiser_des_adresses.md)
 4. [Créer une couche statistique](./mcstat/créer_une_statistique.md)
 5. [Raconter une histoire sur une carte](./mcstory/raconter_une_histoire.md)
+6. [Qui est l'IGN ?](./IGN.md)
