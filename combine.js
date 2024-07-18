@@ -62,17 +62,21 @@ function nextFile(files, directory, options) {
   nextFile(files, directory, options);
 }
 
-function combine() {
-  let files = fs.readdirSync(root);
-  // Place main on top
-  const index = files.indexOf(mainmd);
-  if (index > -1) { 
-    files.splice(index, 1);
-  }
-  files.unshift(mainmd)
-  // Clear file
-  fs.writeFileSync(destination, '');
-  nextFile(files, root, { nb:0, nbdir:0 })
+let delayTout
+function combine(e) {
+  clearTimeout(delayTout)
+  delayTout = setTimeout(() => {
+    let files = fs.readdirSync(root);
+    // Place main on top
+    const index = files.indexOf(mainmd);
+    if (index > -1) { 
+      files.splice(index, 1);
+    }
+    files.unshift(mainmd)
+    // Clear file
+    fs.writeFileSync(destination, '');
+    nextFile(files, root, { nb:0, nbdir:0 })
+  }, e ? 100 : 0)
 }
 
 // Start

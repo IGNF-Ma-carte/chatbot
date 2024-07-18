@@ -353,7 +353,7 @@ Par exemple :
 - fichier
 - csv
 
-Vos données doivent être organisées de façon à rendre la recherche possible.
+POur que le géocodage réussisse, vos données doivent être organisées de façon à rendre la recherche possible.
 
 1. Une adresse correspond à une ligne du fichier
 2. Les informations doivent être organisées de la même façon pour chaque ligne
@@ -582,6 +582,37 @@ Dans ce cas, la légende ne s'affichera pas si la couche est masquée.
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 
 
+## mceditor/Comment améliorer l'affichage d'une carte
+- optimiser
+- améliorer
+- affichage
+- carte
+- cluster
+- affichage image
+- mode image
+
+La lenteur d'affichage peut avoir plusieurs origines dont certaines ne dépendent pas de l'application Ma carte : surcharge du réseau, serveur de données surchargé, terminal déficient.
+Cependant, les données vecteur que vous chargez peuvent conduire à des ralentissements voire un blocage total. Il n'y a pas de limite théorique mais la pratique conduit à déconseiller les fichiers de plus de **50 Mo**.
+Lorsque vous chargez un fichier volumineux, il est fortement conseillé de paramétrer **son mode de visualisation**, accessible via le bouton de configuration du calque <i class="fi-configuration"></i> en bas du gestionnaire de couche.
+
+Les modes conseillés sont :
+- **cluster** qui regroupe les objets en un seul selon des paramètres personnalisables de proximité et de zoom. En plus d'accélérer l'affichage, la lisibilité de votre carte est meilleure.
+- **image** qui est visuellement identique au mode vecteur à la différence qu'il est plus rapide.
+![](https://macarte.ign.fr/image/voir/qze5417.png)
+
+Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
+Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveau de zoom pour lesquels la couche est masquée.
+
+![](./img//visibility-range.png)
+
+L'utilisation de flux tuilés est aussi recommandée : WMTS plutôt WMS et tuiles vectorielles plutôt que WFS.
+
+Pour les statistiques impliquant de nombreux îlots IRIS, communes ou EPCI, il faut choisir la version du maillage "allégé" à la création de la statistique.
+
+1. [Qu'est-ce que le mode cluster ?](mceditor/Qu'est-ce que le mode cluster)
+1. [Comment optimiser une carte statistique ?](mcstat//Comment optimiser une carte statistique)
+
+
 ## mceditor/Comment créer une légende
 - légende
 - legende
@@ -595,12 +626,14 @@ La légende est accessible dans l'onglet `Affichage` <i class="fg-map-legend col
 ![](./img/legend.png)
 
 Vous devez au préalable avoir ajouté des symboles dans la bibliothèque de symbole de la carte. Ce sont ces symboles qui seront utilisés dans la légende. Sélectionnez un symbole dans la bibliothèque puis cliquez sur la flèche bleue pour l'ajouter à la légende.
-Si vous avez associé une légende à une couche vous pouvez l'ajouter via le menu disponible en bas du dialogue. Dans ce cas la légende du  calque ne 
-Les différentes 
+Si vous avez associé une légende à une couche vous pouvez l'ajouter via le menu disponible en bas du dialogue. Dans ce cas la légende du  calque ne s'affichera que si le calque est visible.
 
-1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
-1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+Vous pouvez ajouter des lignes de titre et ordonner les lignes de la légende à votre guise.
+La légende va affiche (si l'option est cochée) en bas à droite de votre carte.
+
+1. [Comment ajouter des symboles à une bibliothèque ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Comment ajouter une légende à une couche ?](mceditor/Comment ajouter une légende à une couche)
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 
 
 ## mceditor/Comment créer un masque de découpage
@@ -635,6 +668,22 @@ Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargeme
 ![](./img/options.png)
 
 1. [Comment sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+
+
+## mceditor/Comment importer une couche d'une autre carte
+- importer
+- couche
+- calque
+- layer
+- dans une carte
+- dans ma carte
+
+Vous pouvez importer une couche depuis une carte existante dans votre carte.
+Pour cela, rendez-vous dans le gestionnaire de couches et cliquer sur le bouton d'ajout <i class="fg-layer-alt-add-o"></i> dans la barre inférieure, puis cliquer sur `Depuis une autre carte...`. Sélectionnez ensuite la carte dans la liste proposée.
+Dans le dialogue qui s'ouvre cocher la couche que vous voulez importer.
+![](./img/import-layer.png)
+
+1. [Comment créer une carte en ligne ?](mceditor/mceditor/créer une carte)
 
 
 ## mceditor/Comment mettre à jour les données d'un calque de dessin
@@ -825,6 +874,27 @@ S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du ge
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 
 
+## mceditor/Qu'est-ce que le mode cluster
+- couche
+- calque
+- layer
+- cluster
+- grappes
+
+Pour les objets ponctuels ou pour des objets surfaciques de petite taille, on peut utiliser la méthode des **clusters**.
+
+![](https://viglino.github.io/Macarte-MI/assets/img/ch4.1-cluster.png)
+
+Le principe des clusters (ou grappes) permet de regrouper un ensemble de données en différents “paquets” homogènes suivant un critère de proximité que l'on définit en introduisant une distance entre objets (40 pixels par défaut). En dessous de cette distance les points vont s'agréger.
+
+![](https://viglino.github.io/Macarte-MI/assets/img/ch4.1-clusters.gif)
+
+Cela a l'avantage d'améliorer la lisibilité de la carte en présentant les regroupements. On peut également définir un niveau de zoom à partir duquel les objets ne seront plus regroupés afin de permettre une meilleure visibilité de l'information granulaire.
+
+⚠️ En mode édition il n'est plus possible d'accéder aux objets que contiennent les clusters. En particulier vous ne pourrez plus modifier le style des objets ou les déplacer (vous déplacerez le cluster qui se recalculera au prochain déplacement). Vous devrez déactiver le mode d'affichage des clusters ou zoomer au-delà du seuil de clusterisation.
+
+
+
 ## mceditor/Qu'est-ce que le style d'une couche
 - style
 - couche
@@ -898,13 +968,183 @@ Dans l'outil de dessin vous avez accès aux raccourcis suivant :
 <kbd>Ctrl</kbd>+<kbd>V</kbd> pour coller le ou les objets copiés sur le calque de dessin courant (le calque doit être visible <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA2F-visible.svg" /> et déverrouillée (<img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA52-unlock.svg" />))).
 <kbd>Suppr</kbd> pour supprimer les objets sélectionnés.
 
+## mcstat/Comment formater un fichier pour faire une carte statistique
+- formater
+- csv
+- excel
+- xls
+- statistique
+- jointure
+
+Dans votre fichier, vos données doivent être organisées de façon à rendre la statistique possible :
+1. Une donnée correspond à une ligne du fichier
+2. Les informations doivent être organisées de la même façon pour chaque ligne
+3. Les données doivent contenir une colonne permettant d'indiquer à quel objet géographique il se réfère (maillage) ou une colonne indiquant la longitude et latitude de l'information
+4. Enfin il est nécessaire d'avoir une colone codant une statistique à représenter...
+
+1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
+1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
+
+
+## mcstat/Comment optimiser une carte statistique
+- optimiser
+- améliorer
+- statistique
+- alléger
+- allégé
+- maillage
+- découpage
+
+Une carte statistique peut contenir beaucoup d'objets (un découpage par commune contient plus de 3600 objets), ce qui peut altérer les performances. Dans ce cas, il est conseillé d'utiliser une version allégée des maillages proposés par l'outils.
+La version allégée des maillages diminue le nombre de points (et la taille des données). Elle va donc permettre d'optimiser le chargement et l'affichage des données.
+
+Ainsi il est conseillé d'utiliser le maillage par commune allégé pour une représentation nationale. Par contre, pour présenter une statistique sur un département ou une région un maillage communal standard peut être plus adapté.
+Si vous voulez faire une symbolisation ponctuel (par symboles ou sectorielle), le maillage allégé est à privilégié (de toute façon, c'est le centre de la maille qui sera utilisé).
+
+1. [Comment améliorer l'affichage d'une carte ?](mceditor/Comment améliorer l'affichage d'une carte)
+1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
+1. [Comment formater un fichier pour faire une carte statistique ?](mcstat/Comment formater un fichier pour faire une carte statistique)
+
+
 ## mcstat/créer une statistique
 
-*contenu en cours de saisie*
+- éditeur
+- création
+- statistique
+- carte
+
+Ma carte propose un outil de création de [couches statistiques](https://macarte.ign.fr/edition/statistique/).
+Il permet de mettre en forme des données provenant d'un fichier tableur ou géographique sous forme de cartes de dégradés (ou choroplèthe), de carte de catégories, de symboles, avec une représentation par symbole ou carte de chaleur.
+Vous pouvez choisir la méthode de classification ainsi que les couleurs ou les symboles qui seront utilisés sur la carte.
+
+Une fois la carte enregistrée, vous pouvez la reprendre sous forme de carte pour changer les fonds de carte ou ajouter de l'information par dessus. 
+
+Vous pouvez également charger une nouvelle couche statistique depuis une carte existante afin de les croiser avec la statistique courante.
+
+1. [Comment formater un fichier pour faire une carte statistique ?](mcstat/Comment formater un fichier pour faire une carte statistique)
+1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
+1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
+1. [Comment importer une couche d'une autre carte ?](mceditor/Comment importer une couche d'une autre carte)
+
+## mcstat/Quels sont les maillages disponibles pour les statistiques
+- maillage
+- statistique
+- découpage
+- commune
+- département
+
+Afin de représenter un phénomène sur une carte, il est nécessaire d'avoir sa position dans l'espace.
+Cette position peut être intégrée dans le fichier géographique (GeoJSON) ou liée à un découpage existant (maillage).
+Différents maillages sont proposés par l'outil (communes, départements, EPCI, bassin de vie, IRIS, régions, états). Certains maillages dépendent de l'année des données utilisées (ainsi des communes peuvent fusionner et modifier le maillage d'une année sur l'autre).
+
+Il faudra préciser lors de l'import des données le type de découpage (maillage) utilisé et l'attribut servant à coder le lien :
+- pour les départements, le lien se fait sur le numéro de département (01 = département de l'Ain),
+- pour les communes il s'agit du code INSEE de la commune (01001 = commune de L'Abergement-Clémenciat),
+- pour les pays, on utilise le code ISO (fr = France).
+
+Certains maillages sont données avec une version allégée pour optimiser l'affichage des statistiques.
+
+Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de géocodage pour en déduire des coordonnées.
+
+1. [Comment géocoder un fichier d'adresse ?](mcstat/mcadresse/1 géocodage localiser des adresses)
+1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
+
+
+## mcstory/exemples de cartes narratives
+- exemple
+- carte
+- narrative
+- storymap
+- narration
+
+Voici quelques exemples de cartes narratives : 
+- Modèle standard : [patrimoine de la biodiversité](https://macarte.ign.fr/carte-narrative/voir/12ca4efdf0956c7c9945b3cd2feab687/Patrimoine-naturel-de-la-biodiversite) -  J-M. Viglino
+- Modèle volet : [lieux de tournage à Paris](https://macarte.ign.fr/carte-narrative/voir/aad127aedc4c7d10e372ad6d617c8c95/Lieux_de_tournage_a_Paris)] -  J-M. Viglino
+- Modèle photo : [BnF Route des Alpes](https://macarte.ign.fr/carte-narrative/voir/1e99baa82a09055d0aecd8a7cdd5c1d4/BnF-Route-des-Alpes) -  J-M. Viglino
+- Modèle diaporama : [les lieux du stade](https://macarte.ign.fr/carte/5SkrR6/Les-lieux-du-stade) -  A. Sandrin
+- Modèle étapes : [l'attractivité urbaine en France](https://macarte.ign.fr/carte-narrative/voir/95b97c69c0d2713614845761857ea034/Attractivite_urbaine_France) -  M. Chartier
+- Modèle onglet : [la France face à la montée des eaux](https://macarte.ign.fr/carte-narrative/voir/baca818328b9ea4d3a2d36332033c842/La_France_face_a_la_montee_des_eaux) -  J. Pouzin
+- Modèle comparaison : [Lyon Métropole face à une crue majeure](https://macarte.ign.fr/carte-narrative/voir/722968cde123b481d4eb39c6e8c8efa2/Risque_inondation_a_Lyon) -  M. Chartier
+- Modèle différentiel : [Occupation du sol Bourgogne-Franche-Comté](https://macarte.ign.fr/carte/UP9ae8/OCS-BFC-indicateurs) -  J-M. Viglino
+
+1. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
+
+
+## mcstory/Quels sont les modèles de carte narrative proposés
+- modèle
+- carte narrative
+- narration
+- storymap
+
+Un modèle est une mise en forme prédéfinie prête à accueillir vos cartes réalisées précédemment avec l'application Ma carte, de les habiller en leur ajoutant un titre, un logo, des couleurs, une description et de bâtir à partir de là une carte avantageuse et dynamique.
+
+De nombreux modèles de carte narrative vous sont proposés afin de satisfaire vos attentes.
+
+### Modèle standard
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/standard.png" /> 
+À l'exception de la barre de titre et de la légende optionnelle, la carte remplit tout l'espace. L'info-bulle s'affiche par dessus la carte.
+💡 Idéal pour une utilisation simple et rapide de votre carte sur un écran d'ordinateur.
+
+### Modèle volet
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/volet.png" /> 
+À la sélection, les informations s'affichent dans un volet latéral. Sur les appareils mobiles, le volet est rétracté si aucun objet n'est sélectionné afin de laisser un maximum d'espace à la carte.
+💡 Idéal pour une utilisation de votre carte avec un smartphone comme sur un écran d'ordinateur.
+
+### Modèle photo
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/photo.png" /> 
+Un bandeau affiche une vue réduite de toutes les photos associées aux objets présents dans la fenêtre cartographique et un volet latéral affiche les informations de l'objet sélectionné. Un clic sur une photo dans le bandeau permet de sélectionner l'objet correspondant.
+💡 Idéal pour une présentation visuelle de lieux et des informations associées.
+
+### Modèle diaporama
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/diapo.png" /> 
+Un bandeau affiche une vue réduite de toutes les photos associées aux objets présents dans la fenêtre cartographique. Un clic sur une photo réduite dans le bandeau affiche celle-ci en grand sur la carte.
+💡 Idéal pour présenter des photos de lieux de façon dynamique et intuitive.
+
+### Modèle étapes
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/etape.png" /> 
+Lors de la création de la carte différents états sont enregistrés (calques visibles, centrage, échelle d'affichage) et commentés. À la lecture de la carte les étapes sont enchainées avec les commentaires affichés dans un volet latéral.
+💡 Idéal pour présenter une narration basée sur un itinéraire.
+
+### Modèle onglet
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/onglet.png" /> 
+Plusieurs cartes narratives sont associées en une seule, chacune étant accessible via un onglet.
+💡 Idéal pour regrouper des cartes partielles en un tout cohérent.
+
+### Modèle comparaison
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/compare.png" /> 
+Deux cartes sont affichées côte à côte à la même échelle, centrées de façon identique. Les déplacements des deux cartes sont synchronisées et présentent toujours la même zone.
+💡 Idéal pour étudier ou présenter des évolutions ou comparer des données.
+
+### Modèle différentiel
+<img class="small left" src="https://macarte.ign.fr/edition/narration/models/differentiel.png" /> 
+Le modèle différentiel permet de comparer deux objets en affichant conjointement leur fiche.
+💡 Idéal pour comparer des données statistiques.
+
+
+1. [Montre-moi des exemples de cartes narratives](mcstory/exemples de cartes narratives)
 
 ## mcstory/raconter une histoire
+- carte narrative
+- narrative
+- storymap
+- narration
+- personnaliser
+- expérience
+- histoire
 
-*contenu en cours de saisie*
+Une carte narrative permet de personnaliser une carte pour **raconter une histoire** et accompagner le public dans la découverte des cartes que vous produisez.
+Plusieurs modèles de cartes narratives sont proposés afin de personnaliser la façon dont l'utilisateur va interagir avec la carte et la façon dont celle-ci s'affichera.
+
+⚠️ Une carte narrative ne peut pas être réalisée sans avoir préalablement fait une carte avec l'application Ma carte. Cette carte contient les données, la narration ne contient que l'habillage de la carte.
+Si vous modifiez la carte intégrée à la narration, la modification sera répercutée sur la narration. Attention donc à ne pas faire des modification qui la rendront incompréhensible.
+Vous pouvez réaliser plusieurs cartes narratives différentes avec une même carte pour offrir une expérience utilisateur différente et raconter une histoire.
+
+Comme une carte standard, une carte narrative peut être partagée via une url, dans une iFrame ou sur les réseaux sociaux.
+Elle peuvent être publiées dans l'Atlas.
+
+1. [Quels sont les modèles de carte narrative proposés ?](mcstory/Quels sont les modèles de carte narrative proposés)
+1. [Montre-moi des exemples de cartes narratives](mcstory/exemples de cartes narratives)
+
 
 ## md/Afficher des attributs en Markdown
 - Markdown
@@ -1040,10 +1280,48 @@ Ainsi : `2 < 10` mais `'2' > '10'`
 
 
 ## symboliser/Comment créer une bibliothèque de symboles
+- bibliothèque
+- symbole
+- symboles
 
-*en cours de construction*
+Une bibliothèque de symbole est un moyen pratique de recenser les symboles présents dans la carte pour les réutiliser pour symboliser un objet, pour les ajouter dans la légende ou pour créer une représentation paramétrique.
+La bibliothèque de symbole est disponible dans l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
+![](./img/biblio.png)
 
-comment partager une bibliothèque de symboles
+Vous pouvez ajouter de nouveaux symboles à la bibliothèque :
+- si un objet est sélectionné, vous pouvez ajouter sa représentation à la bibliothèque en cliquant sur le bouton `<i class="fi-add"></i> Ajouter` dans l'onglet `Symboliser`.
+- dans le le dialogue de la bibliothèque, vous pouvez créer un nouveau symbole ou dupliquer un symbole existant dans la liste
+- vous pouvez également copier un symbole de la légende dans la bibliothèque en passant par le dialogue de la légende, en sélectionnant la ligne de la légende et en cliquant sur la flèche bleue.
+
+Vous pouvez également utiliser la bibliothèque de symbole d'une carte existante.
+
+Vous pouvez appliquer un symbole de la bibliothèque à l'objet sélectionné via le bouton `<i class="fa fa-book"></i> Utiliser` dans l'onglet `Symboliser`.
+
+1. [Comment utiliser la bibliothèque de symbole d'une carte existante ?](symboliser/comment partager une bibliothèque de symboles)
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+1. [Comment ajouter une légende à ma carte ?](mceditor/Comment créer une légende)
+
+
+## symboliser/comment partager une bibliothèque de symboles
+- partager
+- utiliser
+- bibliothèque
+- symbole
+- symboles
+- existante
+
+Vous pouvez charger la bibliothèque de symbole d'une carte existante pour la réutiliser dans votre carte.
+Pour cela, rendez-vous dans le gestionnaire de couches et cliquer sur le bouton d'ajout <i class="fg-layer-alt-add-o"></i> dans la barre inférieure, puis cliquer sur `Depuis une autre carte...`. Sélectionnez ensuite la carte dans la liste proposée.
+Dans le dialogue qui s'ouvre cocher `importer la bibliothèque de symboles` :
+![](./img/loadlib.png)
+
+Vous pouvez également enregistrer une carte modèle sur votre ordinateur contenant la bibliothèque de symbole via le bouton <i class="fi-download"></i> de la barre de menu de l'éditeur de carte. 
+Le fichier `.carte` ainsi généré pourra être récupérer simplement par glissé/déposé sur la carte en cours de saisie. Vous pouvez également partager ce fichier avec d'autres utilisateur en leur envoyant par mail, par exemple.
+
+1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
+1. [Où est le gestionnaire de couche](mceditor//Parle-moi du gestionnaire de couche)
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+
 
 ## symboliser/Comment symboliser un objet
 - symboliser

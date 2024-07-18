@@ -78,10 +78,24 @@ pre code {
   margin: 0 .2em;
 }
 
+[class^="fg-"].colored:before, 
+[class^="fi-"].colored:before {
+  line-height: 1.8em;
+}
 [class^="fg-"].colored, 
 [class^="fi-"].colored {
   background-color: #3993f3;
   color: #fff;
   border-radius: 50%;
-  padding: .4em;
+  width: 1.8em;
+  text-align: center;
+}
+
+#chat img.left {
+  float: left;
+}
+#chat img.small {
+  max-height: 5em;
+  max-width: 6em;
+  margin: 0 .5em 0 0;
 }
