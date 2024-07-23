@@ -9,11 +9,11 @@ Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnair
 La saisie de nouvelles données se fait à l'aide des outils de dessin en haut de l'écran.
 ![](../../img/drawtools.png)
 
-Cliquer sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
+Cliquez sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
 
-La saisie se fait dans la couche active (en surlignée bleu dans le gestionnaire de couche).
+La saisie se fait dans la couche active (surlignée en bleu dans le gestionnaire de couche).
 
-Vous pouvez saisir des points, de ligne ou des surface ainsi que des trous dans ses surface.
+Vous pouvez saisir des points, des lignes ou des surfaces ainsi que des trous dans les surfaces.
 Des options vous permettent également de vous accrocher aux objets existants ou d'afficher une mesure lors de la saisie.
 
 1. [Quels sont les raccourcis claviers ?](./Quels_sont_les_raccourcis_claviers_de_dessin.md)

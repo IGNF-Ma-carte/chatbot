@@ -6,7 +6,7 @@
 - géocodage
 
 Si une adresse est mal positionnée, l'outil propose généralement des adresses alternatives dans le panneau de gauche. 
-Ce sont des adresses ressemblant à celles proposée (mais avec un score inférieur). Vous pouvez alors choisir dans la liste proposée.
+Ce sont des adresses ressemblant à celles proposées (mais avec un score inférieur). Vous pouvez alors choisir dans la liste proposée.
 
 Si cela ne suffit pas, lorsqu'un point est sélectionné, deux options s'offrent à vous dans le panneau de gauche : 
 - Modifier l'adresse que vous propose de corriger l'adresse et de relancer un géocodage.

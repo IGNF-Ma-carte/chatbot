@@ -9,7 +9,7 @@ Dans le module d'édition, il est possible de remplacer ou ajouter des données 
 ![](../../img/options.png)
 
 Les nouvelles données vont venir se charger dans le calque. 
-💡 Vous pouvez choisir de remplacer les données existante en cochant l'option dans le dialogue.
+💡 Vous pouvez choisir de remplacer les données existantes en cochant l'option dans le dialogue.
 
 Si le calque a un style paramétrique, celui-ci s'appliquera automatiquement aux nouvelles données.
 

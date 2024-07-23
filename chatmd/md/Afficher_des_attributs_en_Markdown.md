@@ -4,8 +4,8 @@
 - propriétés
 - attribut
 
-Il est possible d'afficher des attributs associé à l'objet sélectionné en Markdown en utilisant la syntaxe `%nom_de_l_attribut%`.
-Divers options sont disponibles pour formater les attributs (complément d'affichage, affichage conditionnel, etc.).
+Il est possible d'afficher des attributs associés à l'objet sélectionné en Markdown en utilisant la syntaxe `%nom_de_l_attribut%`.
+Diverses options sont disponibles pour formater les attributs (complément d'affichage, affichage conditionnel, etc.).
 
 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
 

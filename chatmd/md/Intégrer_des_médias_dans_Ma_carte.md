@@ -11,7 +11,7 @@ La syntaxe pour intégrer un média dans Ma carte est la suivante :
 ![info sur le média](url_du_media)
 ```
 
-Il peut d'agir d'une image, d'une vidéo ou d'un fichier de son.
+Il peut s'agir d'une image, d'une vidéo ou d'un fichier de son.
 On peut aussi intégrer un tweet avec l'url du tweet.
 
 Utilisez la barre de Markdown pour vous aider à intégrer les images. En particulier pour ajouter un lien d'affichage en plein écran sur une image.

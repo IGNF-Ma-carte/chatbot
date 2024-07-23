@@ -5,11 +5,11 @@
 
 Un modèle est une mise en forme prédéfinie prête à accueillir vos cartes réalisées précédemment avec l'application Ma carte, de les habiller en leur ajoutant un titre, un logo, des couleurs, une description et de bâtir à partir de là une carte avantageuse et dynamique.
 
-De nombreux modèles de carte narrative vous sont proposés afin de satisfaire vos attentes.
+De nombreux modèles de cartes narratives vous sont proposés afin de satisfaire vos attentes.
 
 ### Modèle standard
 <img class="small left" src="https://macarte.ign.fr/edition/narration/models/standard.png" /> 
-À l'exception de la barre de titre et de la légende optionnelle, la carte remplit tout l'espace. L'info-bulle s'affiche par dessus la carte.
+À l'exception de la barre de titre et de la légende optionnelle, la carte remplit tout l'espace. L'info-bulle s'affiche par-dessus la carte.
 💡 Idéal pour une utilisation simple et rapide de votre carte sur un écran d'ordinateur.
 
 ### Modèle volet
@@ -39,7 +39,7 @@ Plusieurs cartes narratives sont associées en une seule, chacune étant accessi
 
 ### Modèle comparaison
 <img class="small left" src="https://macarte.ign.fr/edition/narration/models/compare.png" /> 
-Deux cartes sont affichées côte à côte à la même échelle, centrées de façon identique. Les déplacements des deux cartes sont synchronisées et présentent toujours la même zone.
+Deux cartes sont affichées côte à côte à la même échelle, centrées de façon identique. Les déplacements des deux cartes sont synchronisés et présentent toujours la même zone.
 💡 Idéal pour étudier ou présenter des évolutions ou comparer des données.
 
 ### Modèle différentiel

@@ -14,11 +14,11 @@ Le gestionnaire de couche permet d'organiser et paramétrer les différentes cou
 ![](https://macarte.ign.fr/api/image/img_lmi8141)
 ⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
 
-La barre de menu supérieure, permet de définir la façon dont la couche va se combiné avec les couches inférieurs (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonction de manipulation des calques.
+La barre de menus supérieure, permet de définir la façon dont la couche va se combiner avec les couches inférieures (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
 
 Vient ensuite la liste des couches et des informations indiquant son statut (affiché, verrouillée) ainsi qu'une double flèche pour ordonner les couches par glisser/déposer.
 
-La barre de menu inférieure permet d'ajouter une nouvelle couche ou de modifier les propriétés de la couche courante, en particulier sa symbolisation ou son info-bulle.
+La barre de menus inférieure permet d'ajouter une nouvelle couche ou de modifier les propriétés de la couche courante, en particulier sa symbolisation ou son info-bulle.
 
 1. [Quelles sont les propriétés d'une couche ?](./Quelles_sont_les_propriétés_d'une_couche.md)
 1. [Qu'est-ce que l'info-bulle d'une couche ?](./Qu'est-ce_que_l'info-bulle_d'une_couche.md)

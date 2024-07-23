@@ -12,7 +12,7 @@ L'Institut national de l'information géographique et forestière (IGN) est un �
 
 Il développe et diffuse des données à caractère géographique ainsi que des outils tels que Ma carte pour réaliser et publier des cartes en ligne.
 
-[En savoir plus](https://www.ign.fr/)
+[En savoir plus...](https://www.ign.fr/)
 
 1. [Qu'est ce que Ma carte ?](./macarte/macarte.md)
 2. [Comment créer une carte en ligne ?](./mceditor/créer_une_carte.md)

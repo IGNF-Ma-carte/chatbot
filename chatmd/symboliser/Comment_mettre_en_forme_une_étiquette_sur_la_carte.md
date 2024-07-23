@@ -8,8 +8,8 @@
 Une étiquette est un texte placé sur la carte pour caractériser un lieu ou un objet. Ce peut être une annotation ou un toponyme.
 
 Lorsqu'un ou plusieurs objets sont sélectionnés vous pouvez leur ajouter une étiquette dans l'onglet Étiquette de l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
-Vous pouvez choisir la police, la taille, l'emplacement, la couleur de l'étiquette et mettre un fond afin de rendre les écritures plus lisibles sur les fonds de carte.
-Cette étiquette peut être la valeur d'un attribut sous la forme `%nom_de_l_attribut%`. Vous pouvez afficher plusieurs attributs `%attribut_1% - %attribut_2%` mais si un des attribut est vide, l'étiquette ne s'affichera pas.
+Vous pouvez choisir la police, la taille, l'emplacement, la couleur de l'étiquette et mettre un fond afin de rendre les écritures plus lisibles sur les fonds de cartes.
+Cette étiquette peut être la valeur d'un attribut sous la forme `%nom_de_l_attribut%`. Vous pouvez afficher plusieurs attributs `%attribut_1% - %attribut_2%` mais si un des attributs est vide, l'étiquette ne s'affichera pas.
 
 Sur un point, l'étiquette peut s'afficher sur plusieurs lignes, il est possible de l'encadrer et de lui donner une couleur de fond.
 ![](https://macarte.ign.fr/api/image/img_fab8154)

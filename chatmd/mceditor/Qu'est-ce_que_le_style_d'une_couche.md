@@ -3,7 +3,7 @@
 - layer
 - calque
 
-Chaque couche vecteur peut avoir un style de représentation des objets qu'elle contient. C'est cette symbolisation qui sera utilisée si elle n'a pas été surchargée par l'objet lui même (dans ce cas on peut revenir à la symbolisation par défaut de la couche).
+Chaque couche vecteur peut avoir un style de représentation des objets qu'elle contient. C'est cette symbolisation qui sera utilisée si elle n'a pas été surchargée par l'objet lui-même (dans ce cas on peut revenir à la symbolisation par défaut de la couche).
 
 La couche peut adopter une **symbolisation paramétrique**, dans ce cas, elle sera prioritaire et prendra le pas sur la symbolisation des objets. On utilise alors les règles définies dans la couche pour symboliser son contenu.
 Ceci a l'avantage de pouvoir plus facilement changer la symbolisation d'un groupe d'objet et de la rendre plus dynamique (si l'attribut d'un objet change, sa symbolisation va changer). Cela va également être pratique si on doit mettre à jour une couche de dessin (nouveau millésime de la donnée).

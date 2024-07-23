@@ -3,7 +3,7 @@
 - fichier
 - csv
 
-POur que le géocodage réussisse, vos données doivent être organisées de façon à rendre la recherche possible.
+Pour que le géocodage réussisse, vos données doivent être organisées de façon à rendre la recherche possible.
 
 1. Une adresse correspond à une ligne du fichier
 2. Les informations doivent être organisées de la même façon pour chaque ligne

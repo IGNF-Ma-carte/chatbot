@@ -31,4 +31,4 @@ Tu veux que je te chante une chanson ?
 - chante
 
 Non Dave, pas aujourd'hui.
-Tu ne préfère pas qu'on parle de Ma carte ?
+Tu ne préfères pas qu'on parle de Ma carte ?

@@ -13,7 +13,7 @@ Il faudra préciser lors de l'import des données le type de découpage (maillag
 - pour les communes il s'agit du code INSEE de la commune (01001 = commune de L'Abergement-Clémenciat),
 - pour les pays, on utilise le code ISO (fr = France).
 
-Certains maillages sont données avec une version allégée pour optimiser l'affichage des statistiques.
+Certains maillages sont fournis avec une version allégée pour optimiser l'affichage des statistiques.
 
 Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de géocodage pour en déduire des coordonnées.
 
