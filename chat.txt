@@ -49,7 +49,7 @@ Tu veux que je te chante une chanson ?
 - chante
 
 Non Dave, pas aujourd'hui.
-Tu ne préfère pas qu'on parle de Ma carte ?
+Tu ne préfères pas qu'on parle de Ma carte ?
 
 
 ## IGN
@@ -66,7 +66,7 @@ L'Institut national de l'information géographique et forestière (IGN) est un �
 
 Il développe et diffuse des données à caractère géographique ainsi que des outils tels que Ma carte pour réaliser et publier des cartes en ligne.
 
-[En savoir plus](https://www.ign.fr/)
+[En savoir plus...](https://www.ign.fr/)
 
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
@@ -83,7 +83,7 @@ Il développe et diffuse des données à caractère géographique ainsi que des 
 Vous restez propriétaire des cartes et des narrations que vous avez créées. A ce titre, vous êtes aussi responsable au sens RGPD des données que vous publiez sur internet via les Géoservices Ma carte. 
 Ceci concerne toutes les informations que vous avez ajoutées, en particulier les images et leur contenu, les informations personnelles - propres ou de tiers – y compris si elles sont issues d'un géocodage.
 
-Si une carte inclue des données, fonds de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assurez d'en avoir les droits et de bien spécifier le copyright des couches dans les informations de la carte publiée.
+Si une carte inclut des données, fonds de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assurer d'en avoir les droits et de bien spécifier le copyright des couches dans les informations de la carte publiée.
 
 1. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
@@ -98,7 +98,7 @@ Si une carte inclue des données, fonds de plan provenant de services non fourni
 
 Les cartes sont accessibles directement sur le web au travers d'une adresse (URL), qu'il vous suffit de transmettre (par mail par exemple).
 Vous pouvez aussi partager votre carte avec un QR Code lisible sur un Smartphone que vous pourrez intégrer sur une affiche ou un document.
-Sur les pages de création de carte, l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA28-share-alt.svg" /> dans la barre de menu permet de partager la carte par URL, au travers d'un widget (iFrame) à intégrer sur un site internet ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
+Sur les pages de création de cartes, l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA28-share-alt.svg" /> dans la barre de menus permet de partager la carte par URL, au travers d'un widget (iFrame) à intégrer sur un site internet ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
 Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux internautes d'y accéder plus facilement.
 
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
@@ -123,14 +123,14 @@ Si vous ne souhaitez pas que votre carte puisse être vue par une autre personne
 - éditer
 - carte
 
-Lors que vous avez créé une carte, vous pouvez partager un **lien en édition** avec d'autres utilisateurs de Ma carte.
+Lorsque vous avez créé une carte, vous pouvez partager un **lien en édition** avec d'autres utilisateurs de Ma carte.
 Vous retrouverez ce lien sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de la carte.
 ![](./img/share.png)
 
 Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut être utile si vous voulez travailler à plusieurs sur la carte.
 ![](./img/partage.png)
 
-⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modfication de la dernière qui enregistre qui seront prisent en compte.
+⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modifications de la dernière qui enregistre qui seront prises en compte.
 ⚠️ Faites attention à qui vous communiquez l'adresse de modification.
 Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
 
@@ -168,9 +168,9 @@ Ces différents filtres peuvent être combinés pour affiner votre recherche.
 - Opensource
 - licence
 
-Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignants de créer des cartes et des projets pédagogiques en lignes.
+Fruit d'un partenariat entre l'Éducation nationale et l'IGN, le site **Édugéo** propose depuis 2008 aux enseignants de créer des cartes et des projets pédagogiques en ligne.
 ![](./img/edugeo.png)
-D'abord réservé aux enseignant, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoire autour d'une carte.
+D'abord réservé aux enseignants, le projet est proposé au grand public en 2015 sous le nom de Ma carte et s'étoffe de nouveaux modules pour localiser des adresses, créer des couches statistiques et raconter des histoires autour d'une carte.
 Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-Ma-carte).
 
 1. [Montre-moi des exemples](macarte/exemples)
@@ -186,8 +186,8 @@ Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-M
 - licence
 - code
 
-Le code des outils Ma carte sont disponible en Opensource sous licence MIT (pour les libraries) et GPL (pour les applicatifs).
-Ma carte est référencé sur le [Socle Interministériel des Logiciels Libres](https://code.gouv.fr/sill/detail?name=Ma%20carte).
+Le code des outils Ma carte est disponible en Opensource sous licence MIT (pour les librairies) et GPL (pour les applicatifs).
+Ma carte est référencée sur le [Socle Interministériel des Logiciels Libres](https://code.gouv.fr/sill/detail?name=Ma%20carte).
 
 1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
 
@@ -196,7 +196,7 @@ Ma carte est référencé sur le [Socle Interministériel des Logiciels Libres](
 - IGN
 
 Ma carte est un ensemble d'outils en ligne développés par l'Institut national de l'information géographique et forestière (IGN).
-Ils permettent de créer et publier des carte en lignes simplement, directement **depuis un navigateur internet**.
+Ils permettent de créer et publier des cartes en lignes simplement, directement **depuis un navigateur internet**.
 
 Ma carte est directement accessible dans un navigateur à l'adresse [macarte.ign.fr](https://macarte.ign.fr).
 Les cartes produites peuvent être partagées, intégrées dans un blogue ou utilisées dans une communication sur les réseaux sociaux.
@@ -232,7 +232,7 @@ Une page est dédiée à vos images dans [votre espace personnel](https://macart
 Un QR Code (Quick Response Code) est disponible sur la page de visualisation de la carte en cliquant sur le bouton [i] en bas à droite de la carte.
 ![](./img//qrcode.png)
 
-Ce QR Code peut être placé sur une affiche ou un document pour facilité l'accès à la carte avec un smartphone ou une tablette.
+Ce QR Code peut être placé sur une affiche ou un document pour faciliter l'accès à la carte avec un smartphone ou une tablette.
 
 1. [Comment partager une carte](macarte/Comment partager une carte)
 
@@ -244,7 +244,7 @@ Ce QR Code peut être placé sur une affiche ou un document pour facilité l'acc
 - visibilité
 - profil auteur
 
-L'Atlas est un espace de publication de cartes et narrations réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et disponibles en recherche aux visiteur du site et via les API.
+L'Atlas est un espace de publication de cartes et narrations réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et disponibles en recherche aux visiteurs du site et via les API.
 Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. 
 
 C'est vous qui choisissez, à l'enregistrement d'une carte ou dans l'espace dédié aux cartes, si vous voulez publier une carte dans l'atlas ou non.
@@ -265,17 +265,35 @@ Le paramétrage de votre profil est accessible dans la page "[Mes données perso
 - ne s'imprime pas
 - imprime pas
 
-Si vous n'arriver pas à enregistrer une image de votre carte (une alerte `Impossible d'enregistrer la carte` apparaît), cela vient du fait qu'une image inclue dans la carte interdit ce type d'opération. En effet, dans un navigateur, l'accès aux ressources est restreinte si les entêtes de ces ressources ne sont pas correctement remplis (voir CORS).
+Si vous n'arrivez pas à enregistrer une image de votre carte (une alerte `Impossible d'enregistrer la carte` apparaît), cela vient du fait qu'une image incluse dans la carte interdit ce type d'opération. En effet, dans un navigateur, l'accès aux ressources est restreint si les entêtes de ces ressources ne sont pas correctement remplis (voir CORS).
 
 L'impression via une imprimante fonctionne, mais l'enregistrement est bloqué.
 
 ![](https://macarte.ign.fr/api/image/img_kfq7956)
 
 Il peut s'agir d'une image utilisée comme symbolisation sur un point ou d'un service inclus dans un calque (WMS, WMTS, etc.).
-Pour débloquer la situation, recherchez le calque qui pose problème (lorsqu'il est masqué, la sauvegarde va fonctionner) et si vous en avez la possibilité demandez au fournisseur d'activer les entêtes CORS.
-Pour l'utilisation d'image comme symbolisation sur un objet, vous pouvez demander à Ma carte de l'héberger pour l'utiliser ensuite sans restriction sur vos cartes.
+Pour débloquer la situation, recherchez le calque qui pose problème (lorsqu'il est masqué, la sauvegarde va fonctionner) et si vous en avez la possibilité de demande au fournisseur d'activer les entêtes CORS.
+Pour l'utilisation d'images comme symbolisation sur un objet, vous pouvez demander à Ma carte de l'héberger pour l'utiliser ensuite sans restriction sur vos cartes.
 
 1. [Ma carte peut-il héberger des images ?](macarte/Ma carte peut-il héberger des images)
+
+## macarte/Qu'est-ce que le vecteur tuilé
+- vecteur tuilé
+
+Le tuilage vecteur est un mode de diffusion des données analogue au WMTS (de la tuile "image"), mais qui transmet des objets plutôt que des pixels. Le tuilage vecteur vient apporter de nouvelles possibilités de personnalisation de l'affichage des données.
+
+Les données sont prédécoupées par le serveur et diffusées sous forme de dalles vecteur (tuiles) adaptées à l'échelle de visualisation, ce qui permet à l'utilisateur de ne charger que les données sur la zone concernée, d'avoir des données suffisamment généralisées pour être affichées aux petites échelles et de conserver les dalles calculées dans un cache.
+
+![](./img/WMTStilematrix.png)
+
+Les avantages apportés par les tuiles vectorielles multiples :
+- Rapidité d'accès à la donnée : les données chargées sont adaptées à l'échelle de visualisation et la navigation sur ces données est donc très fluide.
+- Facilité de modification du style : les données étant côté client au format vecteur, on peut appliquer un nouveau style sans entraîner un nouveau téléchargement.
+- Interaction directe des utilisateurs avec les objets : les données étant servies avec des attributs, on peut y accéder au clic ou changer de style au survol…
+
+Des outils permettent de modifier et d'adapter les styles d'affichage des tuiles en fonction de vos besoins (voir [l'outil proposé sur les tuiles IGN](https://viglino.github.io/ol-ext/examples/layer/map.layer.gppvtile.html?embed=1)).
+
+1. [Comment ajouter des tuiles vectorielles à une carte ?](mceditor/Comment ajouter des tuiles vectorielles)
 
 ## macarte/qu'est ce qu'une carte narrative
 - carte narrative
@@ -319,7 +337,7 @@ Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les
 Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
 Le géocodage est un procédé qui permet de retrouver à partir d'une adresse littérale sa position sur la terre et ainsi l'afficher sur une carte.
 Par exemple, '*73 avenue de Paris, 94160 SAINT-MANDÉ*' est situé à 48,845726 de latitude Nord et 2,424573 de longitude Est.
-Le géocodage peut se faire à partir d'une adresse, d'lieu-dit, une unité administrative on un point d'intérêt ou d'une parcelle cadastrale.
+Le géocodage peut se faire à partir d'une adresse, de lieu-dit, une unité administrative ont un point d'intérêt ou d'une parcelle cadastrale.
 
 1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
 2. [Que renvoie le géocodage ?](mcadresse/Que renvoie le géocodage)
@@ -333,7 +351,7 @@ Le géocodage peut se faire à partir d'une adresse, d'lieu-dit, une unité admi
 - améliorer
 - géocodage
 
-Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, une imprecision dans l'adresse, un caractère parasite ou une faute de frappe risque d'induire le géocodage en erreur.
+Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, une imprécision dans l'adresse, un caractère parasite ou une faute de frappe risque d'induire le géocodage en erreur.
 
 L'adresse fournie peut contenir des éléments perturbant le résultat tel qu'un complément d'adresse (bâtiment, escalier, étage, zone, etc.)
 Par exemple *19 rue Jean Baptiste Colbert - ZI des Prés de Lyon 10600 LA CHAPELLE SAINT LUC* ne trouvera pas *ZI des Prés de Lyon* et risque de renvoyer un mauvais résultat.
@@ -344,7 +362,7 @@ Les abréviations peuvent dégrader le résultat du géocodage.
 La localisation sur trois colonnes peut parfois apporter une amélioration grâce à un meilleur filtrage des résultats à la commune.
 Veillez également à ce que les colonnes soient bien respectées et qu'il n'y ait pas de décalage dans votre fichier.
 
-Vous pouvez aussi utiliser l'option pour prioriser autour d'un lieu (une adresse ou une commune) pour limiter la recherche dans une zone géographique et éviter des résultat trop éloignés de votre zone de recherche. 
+Vous pouvez aussi utiliser l'option pour prioriser autour d'un lieu (une adresse ou une commune) pour limiter la recherche dans une zone géographique et éviter des résultats trop éloignés de votre zone de recherche. 
 
 1. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
 2. [Quels sont les formats de fichier pour le géocodage ?](mcadresse/les fichiers pour le géocodage)
@@ -360,7 +378,7 @@ Vous pouvez aussi utiliser l'option pour prioriser autour d'un lieu (une adresse
 - géocodage
 
 Si une adresse est mal positionnée, l'outil propose généralement des adresses alternatives dans le panneau de gauche. 
-Ce sont des adresses ressemblant à celles proposée (mais avec un score inférieur). Vous pouvez alors choisir dans la liste proposée.
+Ce sont des adresses ressemblant à celles proposées (mais avec un score inférieur). Vous pouvez alors choisir dans la liste proposée.
 
 Si cela ne suffit pas, lorsqu'un point est sélectionné, deux options s'offrent à vous dans le panneau de gauche : 
 - Modifier l'adresse que vous propose de corriger l'adresse et de relancer un géocodage.
@@ -383,7 +401,7 @@ Les colonnes utilisées pour le géocodage doivent être organisées de façon �
 - soit en trois colonnes contenant séparément la rue, le code postal et la commune
 - soit une colonne avec l'identifiant IDU de la parcelle
 
-💡 Une colone contenant le nom de l'entité sera utilisé pour la différencier des autres sur la carte.
+💡 Une colonne contenant le nom de l'entité sera utilisée pour la différencier des autres sur la carte.
 Il est recommandé d'avoir une ligne de titre pour identifier facilement les colonnes mais ce n'est pas obligatoire
 
 Par exemple : 
@@ -399,7 +417,7 @@ Par exemple :
 |-----|------|
 | K0214 | 940420000K0214 |
 
-📝 la présence de colonnes supplémentaires non utilisées pour le géocodage ne perturbe pas l'application. Elle seront conservées dans un export du résultat.
+📝 la présence de colonnes supplémentaires non utilisées pour le géocodage ne perturbe pas l'application. Elles seront conservées dans un export du résultat.
 
 1. [Quels sont les formats de fichier pour le géocodage ?](mcadresse/les fichiers pour le géocodage)
 2. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
@@ -411,7 +429,7 @@ Par exemple :
 - fichier
 - csv
 
-POur que le géocodage réussisse, vos données doivent être organisées de façon à rendre la recherche possible.
+Pour que le géocodage réussisse, vos données doivent être organisées de façon à rendre la recherche possible.
 
 1. Une adresse correspond à une ligne du fichier
 2. Les informations doivent être organisées de la même façon pour chaque ligne
@@ -431,10 +449,10 @@ Le fichier doit contenir une adresse dans une colonne ou dans 3 colonnes (rue, c
 - parcelle
 
 Pour procéder à ce mode de géocodage vous devez fournir au système des codes parcelles.
-Le code parcelle est formé de 14 caractère comme suit :
-- le code INSEE de le commune sur 5 caractères. Pour les communes à arrondissements (Paris, Lyon et Marseille), il faut préciser le code de l'arrondissement et pas le code INSEE de la commune agrégée.
+Le code parcelle est formé de 14 caractères comme suit :
+- le code INSEE de la commune sur 5 caractères. Pour les communes à arrondissements (Paris, Lyon et Marseille), il faut préciser le code de l'arrondissement et pas le code INSEE de la commune agrégée.
 - le préfixe de la parcelle. la plupart du temps il correspond à 000. Dans le cas d'une commune associée (Lomme et Hellemmes à Lille par exemple) ou dans les cas des communes à arrondissement, il s'agit de trois chiffres.
-- le code de section cadastrale sur 2 caractères : soit 2 lettres majuscules si la section est sur 2 lettres, soit un zéro et la lettre de la section en majuscule
+- le code de section cadastrale sur 2 caractères : soit 2 lettres majuscules si la section est sur 2 lettres, soit un zéro et la lettre de la section en majuscules
 - le code de la parcelle sur 4 caractères : La parcelle n°1 est encodée 0001, la parcelle n°10 donne 0010, la parcelle n°100 donne 0100
 
 Par exemple une des parcelles où se situe le pôle Géosciences, siège de l'IGN sera encodée : 940670000D0050.
@@ -454,7 +472,7 @@ Dans ce mode, vous pouvez récupérer non seulement le point mais aussi la géom
 
 Le fichier doit être tabulé dans un format reconnu de l'application : **Excel**, **Calc** ou **csv**.
 
-Pour les fichiers au format Excel ou Calc, il recommandé de n'avoir qu'une seule feuille dans le fichier. S'il y en a plusieurs, c'est la première qui sera utilisée
+Pour les fichiers au format Excel ou Calc, il est recommandé de n'avoir qu'une seule feuille dans le fichier. S'il y en a plusieurs, c'est la première qui sera utilisée
 
 Pour les fichiers **csv**, il est possible d'avoir une tabulation personnalisée.
 
@@ -468,12 +486,12 @@ Pour les fichiers **csv**, il est possible d'avoir une tabulation personnalisée
 - adresses
 
 Les adresses ne peuvent être localisées que sur le **territoire français** à l'exclusion de tout territoire étranger.
-Certaines territoires ne sont pas couverts par les données de référence :
+Certains territoires ne sont pas couverts par les données de référence :
 - La BD TOPO® et le PCI ne couvrent pas la Polynésie Française, Wallis-et-Futuna, la Nouvelle-Calédonie et Clipperton.
 - Le PCI ne couvre pas Saint-Pierre-et-Miquelon.
 - La BAN couvre l’ensemble des départements français ainsi que les collectivités d’Outre-Mer (Saint-Barthélemy, Saint-Martin, Saint-Pierre-et-Miquelon, Wallis-et-Futuna, Polynésie Française) et d’autres territoires (Nouvelle-Calédonie et Clipperton).
 
-Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, une imprecision dans l'adresse, un caractère parasite ou une faute de frappe risque d'induire le géocodage en erreur.
+Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, une imprécision dans l'adresse, un caractère parasite ou une faute de frappe risque d'induire le géocodage en erreur.
 
 Enfin, l'application a des limites techniques, il est déconseillé de traiter un fichier de plus de 25000 adresses. Cette limite dépend aussi de votre ordinateur. Dans ce cas, il est conseillé de découper votre fichier en plusieurs lots plus petits.
 
@@ -543,7 +561,7 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 - logo
 
 Vous pouvez ajouter une thématique aux couches de la carte dans les paramètres (étendus) du calque.
-Pour certaines opérations, les couches seront regroupées sous ces thématique.
+Pour certaines opérations, les couches seront regroupées sous ces thématiques.
 
 Par exemple dans le **gestionnaire thématique**, dans une carte narrative, n'affiche que les couches visibles à l'ouverture et propose à l'utilisateur d'ajouter les autres couches à la demande. Cette option est particulièrement pratique si la carte propose un grand nombre de couches pour ne pas surcharger la liste des couches disponibles.
 
@@ -562,13 +580,13 @@ Par exemple dans le **gestionnaire thématique**, dans une carte narrative, n'af
 - distant
 
 Il est possible de connecter un fichier distant (hébergé sur un autre serveur) à une couche Ma carte.
-Pour cela, dans la fenêtre d'ajout de fonds cartographiques (accessible via le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />)
+Pour cela, dans la fenêtre d'ajout de fonds cartographiques (accessible via le gestionnaire de couches <i class="fg-layer-alt-add-o"></i>)
 
 Dans le dialogue, choisissez `Depuis un fichier` puis `Fichier distant...`.
 Entrez l'url du fichier pour vous connecter dessus.
 ⚠️ Attention, le fichier doit être accessible en https et les entêtes [CORS](https://fr.wikipedia.org/wiki/Cross-origin_resource_sharing) doivent être remplies pour permettre d'accéder aux données. Si le fichier n'est pas accessible aucune donnée ne sera chargée.
 
-L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre à jour ce fichier. A chaque nouvel affichage de la carte le fichier va être rechargé et les nouvelle données affichées. Ce peut être pratique pour certains usages (données en temps réel, mise à jour automatique, etc.).
+L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre à jour ce fichier. A chaque nouvel affichage de la carte le fichier va être rechargé et les nouvelles données affichées. Ce peut être pratique pour certains usages (données en temps réel, mise à jour automatique, etc.).
 
 Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
 
@@ -608,7 +626,7 @@ Vous pouvez ajouter facilement des fonds Géoportail via l'interface d'ajout de 
 Il vous suffit de cliquer sur l'icône `Géoportail`.
 ![](https://macarte.ign.fr/image/voir/cov6147.png)
 
-Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couches disponibles, classées par thématique :
+Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couches disponibles, classées par thématiques :
 ![](https://macarte.ign.fr/image/voir/fke6168.png)
 
 1. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
@@ -616,8 +634,29 @@ Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couche
 3. [Ajouter des tuiles vectorielles](mceditor/Comment ajouter des tuiles vectorielles)
 
 ## mceditor/Comment ajouter des tuiles vectorielles
+- couche
+- layer
+- calque
+- tuiles
+- vecteur tuilé
+- tuile vecteur
+- tuiles vectorielles
+- MVT
+- TMS
+- PBF
+- tuilé
+
+Vous pouvez ajouter une couche vecteur tuilé (MVT) via le gestionnaire de couches <i class="fg-layer-alt-add-o"></i>, puis dans l'onglet tuiles vectorielles du dialogue.
 
 ![](https://macarte.ign.fr/image/voir/tbn6158.png)
+
+Vous pouvez alors choisir un des flux proposés par le Géoportail ou vous brancher sur un autre flux vecteur tuilé. Dans ce cas, vous devez renseigner l'adresse du flux, soit via un fichier de style (.json) fourni par le service, soit directement sur les données (.pbf).
+
+Vous pouvez également fournir un fichier style local (attention cependant les données du flux devront être disponibles en ligne), ceci peut être intéressant pour personnaliser un flux existant (par exemple un flux IGN en utilisant [l'outil proposé](https://viglino.github.io/ol-ext/examples/layer/map.layer.gppvtile.html?embed=1))
+
+1. [Qu'est-ce que le vecteur tuilé ?](macarte/Qu'est-ce que le vecteur tuilé)
+1. [Comment ajouter des flux OGC ?](./mceditor/Comment ajouter des flux OGC)
+
 
 ## mceditor/Comment ajouter une légende à une couche
 - légende
@@ -627,7 +666,7 @@ Dans la fenêtre qui s'ouvre, vous pouvez rechercher parmi les nombreuses couche
 - layer
 
 Il est possible d'ajouter une légende aux couches dans le gestionnaire de couche de l'outil de création de cartes <i class="fg-map-legend"></i>.
-Vous pouvez créer une légende à partir d'une image existante ou de toute pièce avec les symboles disponibles dans la bibliothèque de symboles.
+Vous pouvez créer une légende à partir d'une image existante ou de toute pièces avec les symboles disponibles dans la bibliothèque de symboles.
 Si la couche est un WMS qui a une légende (image) indiquée dans le flux, vous pouvez demander à utiliser celle-ci. Si votre couche a une symbolisation paramétrique l'outil peut déduire la légende à partir de la symbolisation.
 
 📝 la légende du calque n'est pas automatiquement intégrée dans la légende de la carte. 
@@ -662,7 +701,7 @@ Les modes conseillés sont :
 Aussi, si vous avez des étiquettes ou des symboles qui s'affichent sur cette couche ils vont se retrouver penchés, ce qui peut nuire à la lisibilité.
 
 Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
-Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveau de zoom pour lesquels la couche est masquée.
+Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveaux de zoom pour lesquels la couche est masquée.
 
 ![](./img//visibility-range.png)
 
@@ -723,7 +762,7 @@ Pour spécifier un masque, vous devez au préalable sélectionner un objet surfa
 - geojson
 - kml
 
-Vous avez la possibilité de récupérer les données saisies dans l'outil d'édition de carte au format GeoJSON ou KML
+Vous avez la possibilité de récupérer les données saisies dans l'outil d'édition de cartes au format GeoJSON ou KML
 Pour cela, sélectionnez le calque qui contient les données dans le gestionnaire de couche (passe en surbrillance bleue) puis ouvrez la fenêtre d'options en cliquant sur le bouton <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA0A-configuration.svg" /> en bas à droite du gestionnaire.
 Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargement <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" />.
 ![](./img/options.png)
@@ -740,7 +779,7 @@ Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargeme
 - dans ma carte
 
 Vous pouvez importer une couche depuis une carte existante dans votre carte.
-Pour cela, rendez-vous dans le gestionnaire de couches et cliquer sur le bouton d'ajout <i class="fg-layer-alt-add-o"></i> dans la barre inférieure, puis cliquer sur `Depuis une autre carte...`. Sélectionnez ensuite la carte dans la liste proposée.
+Pour cela, rendez-vous dans le gestionnaire de couches et cliquez sur le bouton d'ajout <i class="fg-layer-alt-add-o"></i> dans la barre inférieure, puis cliquer sur `Depuis une autre carte...`. Sélectionnez ensuite la carte dans la liste proposée.
 Dans le dialogue qui s'ouvre cocher la couche que vous voulez importer.
 ![](./img/import-layer.png)
 
@@ -759,7 +798,7 @@ Dans le module d'édition, il est possible de remplacer ou ajouter des données 
 ![](./img/options.png)
 
 Les nouvelles données vont venir se charger dans le calque. 
-💡 Vous pouvez choisir de remplacer les données existante en cochant l'option dans le dialogue.
+💡 Vous pouvez choisir de remplacer les données existantes en cochant l'option dans le dialogue.
 
 Si le calque a un style paramétrique, celui-ci s'appliquera automatiquement aux nouvelles données.
 
@@ -780,12 +819,12 @@ Vous pouvez paramétrer cette bulle à l'aide de Markdown dans l'onglet `Bulle`.
 
 Vous pouvez renseigner un titre, une description (en Markdown) et une image. Vous pouvez aussi choisir d'afficher les coordonnées de l'objet (ceci est surtout valable pour un point car sinon, c'est la position du premier point qui est utilisé).
 
-💡 Le titre et l'image sont de simples aides pour la saisie mais vous pouvez les intégrer directement dans le Markdown pour plus de souplesse dans le rendu. De la même manière la balise MD `%COORD%` (coordonnées) et `%COORDMS%` (coordonnées en degré, minutes, secondes).
+💡 Le titre et l'image sont de simples aides pour la saisie mais vous pouvez les intégrer directement dans le Markdown pour plus de souplesse dans le rendu. De la même manière la balise MD `%COORD%` (coordonnées) et `%COORDMS%` (coordonnées en degrés, minutes, secondes).
 
 ⚙️ Si la bulle n'est pas renseignée sur l'objet, c'est la bulle du calque qui sera utilisée.
 
 1. [Qu'est-ce que l'info-bulle d'une couche ?](mceditor/Qu'est-ce que l'info-bulle d'une couche)
-1. [Qu'est-ce que le Makdown ?](md/markdown)
+1. [Qu'est-ce que le Markdown ?](md/markdown)
 
 
 ## mceditor/Comment personnaliser les attributs d'une couche vecteur
@@ -802,7 +841,7 @@ Vous pouvez renseigner un titre, une description (en Markdown) et une image. Vou
 - type
 
 Vous pouvez personnaliser les attributs d'une couche de dessin dans le dialogue des options du calque.
-Un fois les attributs configurés, à chaque fois qu'un objet sera ajouté à la couche, l'outil lui affectera les attributs donnés avec la valeur par défaut fournie.
+Une fois les attributs configurés, à chaque fois qu'un objet sera ajouté à la couche, l'outil lui affectera les attributs donnés avec la valeur par défaut fournie.
 ![](./img/attributes.png)
 
 Vous pouvez typer les attributs afin d'aider à la saisie. Un attribut peut être de type chaîne de caractères (1 seule ligne) ou une zone de texte (multi-ligne), un nombre (entier ou décimal) une case à cocher ou une liste de valeur (qui s'affichera dans un menu).
@@ -823,7 +862,7 @@ Chaque utilisateur disposant d'un compte peut enregistrer ses cartes dans son es
 
 Il est également possible d'enregistrer une copie de la carte sur son ordinateur (format `.carte`). Ce format est interne à l'application Ma carte et vous pourrez l'ouvrir par glisser/déposer dans une fenêtre de l'[éditeur](https://macarte.ign.fr/edition/carte/).
 
-Pour enregistrer un fichier `.carte` cliquez sur l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" /> située dans le bandeau en haut à droite.
+Pour enregistrer un fichier `.carte`, cliquez sur l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" /> située dans le bandeau en haut à droite.
 
 Il est intéressant d'utiliser cette possibilité pour transmettre votre carte en tant que modèle. Le destinataire pourra alors la charger dans l'application Ma carte et la modifier à sa guise.
 Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser les données de votre carte sur internet.
@@ -843,11 +882,11 @@ Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnair
 La saisie de nouvelles données se fait à l'aide des outils de dessin en haut de l'écran.
 ![](./img/drawtools.png)
 
-Cliquer sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
+Cliquez sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
 
-La saisie se fait dans la couche active (en surlignée bleu dans le gestionnaire de couche).
+La saisie se fait dans la couche active (surlignée en bleu dans le gestionnaire de couche).
 
-Vous pouvez saisir des points, de ligne ou des surface ainsi que des trous dans ses surface.
+Vous pouvez saisir des points, des lignes ou des surfaces ainsi que des trous dans les surfaces.
 Des options vous permettent également de vous accrocher aux objets existants ou d'afficher une mesure lors de la saisie.
 
 1. [Quels sont les raccourcis claviers ?](mceditor/Quels sont les raccourcis claviers de dessin)
@@ -861,9 +900,9 @@ Des options vous permettent également de vous accrocher aux objets existants ou
 - créer
 
 Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche.
-Vous n'avez pas besoins d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site. Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur.
+Vous n'avez pas besoin d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site. Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur.
 
-L'interface vous permet d'ajouter des couches cartographique ou de dessin, de charger des fichier géographiques ou dessiner à l'aides des outils fournis.
+L'interface vous permet d'ajouter des couches cartographiques ou de dessin, de charger des fichiers géographiques ou dessiner à l'aide des outils fournis.
 
 1. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
 2. [Comment saisir des objets dans Ma carte ?](mceditor/Comment saisir des objets dans Ma carte)
@@ -886,11 +925,11 @@ Le gestionnaire de couche permet d'organiser et paramétrer les différentes cou
 ![](https://macarte.ign.fr/api/image/img_lmi8141)
 ⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
 
-La barre de menu supérieure, permet de définir la façon dont la couche va se combiné avec les couches inférieurs (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonction de manipulation des calques.
+La barre de menus supérieure, permet de définir la façon dont la couche va se combiner avec les couches inférieures (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
 
 Vient ensuite la liste des couches et des informations indiquant son statut (affiché, verrouillée) ainsi qu'une double flèche pour ordonner les couches par glisser/déposer.
 
-La barre de menu inférieure permet d'ajouter une nouvelle couche ou de modifier les propriétés de la couche courante, en particulier sa symbolisation ou son info-bulle.
+La barre de menus inférieure permet d'ajouter une nouvelle couche ou de modifier les propriétés de la couche courante, en particulier sa symbolisation ou son info-bulle.
 
 1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
 1. [Qu'est-ce que l'info-bulle d'une couche ?](mceditor/Qu'est-ce que l'info-bulle d'une couche)
@@ -911,7 +950,7 @@ L'information géographique est la représentation d'un objet ou d'un phénomèn
 Elle contient une information liée à sa position sur le globe (ou plus généralement dans l'espace) : sa **géométrie** et des **informations descriptives** sémantiques qui indiquent sa nature, son aspect, ses propriétés, etc. On parle d'attributs.
 Dans certains cas, elle peut également contenir des relations avec d'autres objets : c'est le niveau topologique (le sens de parcours, la communication ou non dans un réseau, etc.). Certaines de ces relations peuvent se déduire de la géométrie des objets (inclusions, adjacences, etc.), d'autres nécessitent un encodage particulier.
 
-On parlera de données vecteur pour les distinguer des données (ou fonds) image (ou raster). Contrairement à ces dernière, onpeut facilement accéder à leurs attributs et à leur symbolisation.
+On parlera de données vecteur pour les distinguer des données (ou fonds) image (ou raster). Contrairement à ces dernières, on peut facilement accéder à leurs attributs et à leur symbolisation.
 
 1. [Qu'est-ce qu'une couche de dessin ?](mceditor/Comment saisir des objets dans Ma carte)
 1. [Comment personnaliser les attributs d'une couche vecteur ?](mceditor/Comment personnaliser les attributs d'une couche vecteur)
@@ -928,7 +967,7 @@ On parlera de données vecteur pour les distinguer des données (ou fonds) image
 
 Vous pouvez ajouter une bulle d'information aux calques. Cette bulle s'affichera lorsqu'un objet du calque est sélectionné (sauf ci celui-ci surcharge la bulle).
 Le contenu de la bulle est défini en Markdown et il est possible d'afficher les attributs de l'objet sélectionné avec la syntaxe `%nom_de_l_attribut%`. 
-Afin de vous aider à paramétrer la bulle, pensez à sélectionner un objet sur le calque afin d'avoir accès en directe à ces attributs lors de la saisie du Markdown.
+Afin de vous aider à paramétrer la bulle, pensez à sélectionner un objet sur le calque afin d'avoir accès en direct à ces attributs lors de la saisie du Markdown.
 
 S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du getFeatureInfo du flux (si celui-ci est paramétré dans le flux et répond en json). Dans ce cas, vous n'aurez pas directement accès aux attributs du clic, vous pouvez indiquer dans le Mardown `%ATTRIBUTES%` pour afficher la liste des attributs renvoyés par le service.
 
@@ -953,7 +992,7 @@ Le principe des clusters (ou grappes) permet de regrouper un ensemble de donnée
 
 Cela a l'avantage d'améliorer la lisibilité de la carte en présentant les regroupements. On peut également définir un niveau de zoom à partir duquel les objets ne seront plus regroupés afin de permettre une meilleure visibilité de l'information granulaire.
 
-⚠️ En mode édition il n'est plus possible d'accéder aux objets que contiennent les clusters. En particulier vous ne pourrez plus modifier le style des objets ou les déplacer (vous déplacerez le cluster qui se recalculera au prochain déplacement). Vous devrez déactiver le mode d'affichage des clusters ou zoomer au-delà du seuil de clusterisation.
+⚠️ En mode édition il n'est plus possible d'accéder aux objets que contiennent les clusters. En particulier vous ne pourrez plus modifier le style des objets ou les déplacer (vous déplacerez le cluster qui se recalculera au prochain déplacement). Vous devrez déactiver le mode d'affichage des clusters ou zoomer au-delà du seuil de clustérisation.
 
 
 
@@ -963,7 +1002,7 @@ Cela a l'avantage d'améliorer la lisibilité de la carte en présentant les reg
 - layer
 - calque
 
-Chaque couche vecteur peut avoir un style de représentation des objets qu'elle contient. C'est cette symbolisation qui sera utilisée si elle n'a pas été surchargée par l'objet lui même (dans ce cas on peut revenir à la symbolisation par défaut de la couche).
+Chaque couche vecteur peut avoir un style de représentation des objets qu'elle contient. C'est cette symbolisation qui sera utilisée si elle n'a pas été surchargée par l'objet lui-même (dans ce cas on peut revenir à la symbolisation par défaut de la couche).
 
 La couche peut adopter une **symbolisation paramétrique**, dans ce cas, elle sera prioritaire et prendra le pas sur la symbolisation des objets. On utilise alors les règles définies dans la couche pour symboliser son contenu.
 Ceci a l'avantage de pouvoir plus facilement changer la symbolisation d'un groupe d'objet et de la rendre plus dynamique (si l'attribut d'un objet change, sa symbolisation va changer). Cela va également être pratique si on doit mettre à jour une couche de dessin (nouveau millésime de la donnée).
@@ -985,14 +1024,14 @@ On peut modifier la symbolisation d'une couche via le bouton <img class="icon" s
 
 Les propriétés d'une couche sont de deux types : 
 
-<img class="icon" src="./img/info-circle.svg" /> Les **informations** qui servent à la décrire et qui seront visible par l'utilisateur dans le gestionnaire de couche. En particulier le nom et la description de la couche ainsi q'un copyright qui s'affichera sur la carte. 
+<img class="icon" src="./img/info-circle.svg" /> Les **informations** qui servent à la décrire et qui seront visibles par l'utilisateur dans le gestionnaire de couche. En particulier le nom et la description de la couche ainsi qu'un copyright qui s'affichera sur la carte. 
 Une couche contenant des données vecteur peut être exportable (case à cocher), ce qui se traduira par un bouton pour télécharger les données dans le dialogue d'information de la couche.
 Enfin, une couche peut avoir une thématique et un logo.
 
 <img class="icon" src="./img/configuration.svg" /> les options de la couche qui conditionnent son affichage.
 On trouve ici la plage de visibilité qui définit les échelles auxquelles la couche va s'afficher ainsi que le masque de découpage.
 Pour les couches vecteurs, on peut définir le mode d'affichage et les attributs de la couche.
-Le mode d'affichage peut être vecteur (normal), image qui permet d'optimiser l'affichage lors des déplacement (utile pour les couches ayant beaucoup d'objets à afficher) et le mode cluster qui permet de regrouper les objets à petite échelle.
+Le mode d'affichage peut être vecteur (normal), image qui permet d'optimiser l'affichage lors des déplacements (utile pour les couches ayant beaucoup d'objets à afficher) et le mode cluster qui permet de regrouper les objets à petite échelle.
 Pour les objets vecteurs, on peut aussi personnaliser les attributs du calque et la façon dont ils sont stockés/affichés.
 
 1. [Qu'est-ce qu'une couche vecteur ?](mceditor/Qu'est-ce qu'une couche vecteur)
@@ -1007,7 +1046,7 @@ Pour les objets vecteurs, on peut aussi personnaliser les attributs du calque et
 - WMTS
 
 Ma carte offre un grand nombre de fonds cartographiques disponibles pour agrémenter vos cartes en ligne.
-Vos pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.
+Vous pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.
 
 Parmi ceux-ci, on trouve un accès simplifié aux fonds cartographiques du Géoportail par thématique.
 En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonctionnalités pour ajouter des flux provenant de services tiers dans des formats standardisés (OGC).
@@ -1042,7 +1081,7 @@ Dans votre fichier, vos données doivent être organisées de façon à rendre l
 1. Une donnée correspond à une ligne du fichier
 2. Les informations doivent être organisées de la même façon pour chaque ligne
 3. Les données doivent contenir une colonne permettant d'indiquer à quel objet géographique il se réfère (maillage) ou une colonne indiquant la longitude et latitude de l'information
-4. Enfin il est nécessaire d'avoir une colone codant une statistique à représenter...
+4. Enfin il est nécessaire d'avoir une colonne codant une statistique à représenter...
 
 1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
 1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
@@ -1057,11 +1096,11 @@ Dans votre fichier, vos données doivent être organisées de façon à rendre l
 - maillage
 - découpage
 
-Une carte statistique peut contenir beaucoup d'objets (un découpage par commune contient plus de 3600 objets), ce qui peut altérer les performances. Dans ce cas, il est conseillé d'utiliser une version allégée des maillages proposés par l'outils.
+Une carte statistique peut contenir beaucoup d'objets (un découpage par commune contient plus de 3600 objets), ce qui peut altérer les performances. Dans ce cas, il est conseillé d'utiliser une version allégée des maillages proposés par l'outil.
 La version allégée des maillages diminue le nombre de points (et la taille des données). Elle va donc permettre d'optimiser le chargement et l'affichage des données.
 
 Ainsi il est conseillé d'utiliser le maillage par commune allégé pour une représentation nationale. Par contre, pour présenter une statistique sur un département ou une région un maillage communal standard peut être plus adapté.
-Si vous voulez faire une symbolisation ponctuel (par symboles ou sectorielle), le maillage allégé est à privilégié (de toute façon, c'est le centre de la maille qui sera utilisé).
+Si vous voulez faire une symbolisation ponctuelle (par symboles ou sectorielle), le maillage allégé est à privilégier (de toute façon, c'est le centre de la maille qui sera utilisé).
 
 1. [Comment améliorer l'affichage d'une carte ?](mceditor/Comment améliorer l'affichage d'une carte)
 1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
@@ -1076,10 +1115,10 @@ Si vous voulez faire une symbolisation ponctuel (par symboles ou sectorielle), l
 - carte
 
 Ma carte propose un outil de création de [couches statistiques](https://macarte.ign.fr/edition/statistique/).
-Il permet de mettre en forme des données provenant d'un fichier tableur ou géographique sous forme de cartes de dégradés (ou choroplèthe), de carte de catégories, de symboles, avec une représentation par symbole ou carte de chaleur.
+Il permet de mettre en forme des données provenant d'un fichier tableur ou géographique sous forme de cartes de dégradés (ou choroplèthe), de cartes de catégories, de symboles, avec une représentation par symbole ou carte de chaleur.
 Vous pouvez choisir la méthode de classification ainsi que les couleurs ou les symboles qui seront utilisés sur la carte.
 
-Une fois la carte enregistrée, vous pouvez la reprendre sous forme de carte pour changer les fonds de carte ou ajouter de l'information par dessus. 
+Une fois la carte enregistrée, vous pouvez la reprendre sous forme de carte pour changer les fonds de cartes ou ajouter de l'information par-dessus. 
 
 Vous pouvez également charger une nouvelle couche statistique depuis une carte existante afin de les croiser avec la statistique courante.
 
@@ -1104,7 +1143,7 @@ Il faudra préciser lors de l'import des données le type de découpage (maillag
 - pour les communes il s'agit du code INSEE de la commune (01001 = commune de L'Abergement-Clémenciat),
 - pour les pays, on utilise le code ISO (fr = France).
 
-Certains maillages sont données avec une version allégée pour optimiser l'affichage des statistiques.
+Certains maillages sont fournis avec une version allégée pour optimiser l'affichage des statistiques.
 
 Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de géocodage pour en déduire des coordonnées.
 
@@ -1140,11 +1179,11 @@ Voici quelques exemples de cartes narratives :
 
 Un modèle est une mise en forme prédéfinie prête à accueillir vos cartes réalisées précédemment avec l'application Ma carte, de les habiller en leur ajoutant un titre, un logo, des couleurs, une description et de bâtir à partir de là une carte avantageuse et dynamique.
 
-De nombreux modèles de carte narrative vous sont proposés afin de satisfaire vos attentes.
+De nombreux modèles de cartes narratives vous sont proposés afin de satisfaire vos attentes.
 
 ### Modèle standard
 <img class="small left" src="https://macarte.ign.fr/edition/narration/models/standard.png" /> 
-À l'exception de la barre de titre et de la légende optionnelle, la carte remplit tout l'espace. L'info-bulle s'affiche par dessus la carte.
+À l'exception de la barre de titre et de la légende optionnelle, la carte remplit tout l'espace. L'info-bulle s'affiche par-dessus la carte.
 💡 Idéal pour une utilisation simple et rapide de votre carte sur un écran d'ordinateur.
 
 ### Modèle volet
@@ -1174,7 +1213,7 @@ Plusieurs cartes narratives sont associées en une seule, chacune étant accessi
 
 ### Modèle comparaison
 <img class="small left" src="https://macarte.ign.fr/edition/narration/models/compare.png" /> 
-Deux cartes sont affichées côte à côte à la même échelle, centrées de façon identique. Les déplacements des deux cartes sont synchronisées et présentent toujours la même zone.
+Deux cartes sont affichées côte à côte à la même échelle, centrées de façon identique. Les déplacements des deux cartes sont synchronisés et présentent toujours la même zone.
 💡 Idéal pour étudier ou présenter des évolutions ou comparer des données.
 
 ### Modèle différentiel
@@ -1198,11 +1237,11 @@ Une carte narrative permet de personnaliser une carte pour **raconter une histoi
 Plusieurs modèles de cartes narratives sont proposés afin de personnaliser la façon dont l'utilisateur va interagir avec la carte et la façon dont celle-ci s'affichera.
 
 ⚠️ Une carte narrative ne peut pas être réalisée sans avoir préalablement fait une carte avec l'application Ma carte. Cette carte contient les données, la narration ne contient que l'habillage de la carte.
-Si vous modifiez la carte intégrée à la narration, la modification sera répercutée sur la narration. Attention donc à ne pas faire des modification qui la rendront incompréhensible.
+Si vous modifiez la carte intégrée à la narration, la modification sera répercutée sur la narration. Attention donc à ne pas faire des modifications qui la rendront incompréhensible.
 Vous pouvez réaliser plusieurs cartes narratives différentes avec une même carte pour offrir une expérience utilisateur différente et raconter une histoire.
 
 Comme une carte standard, une carte narrative peut être partagée via une url, dans une iFrame ou sur les réseaux sociaux.
-Elle peuvent être publiées dans l'Atlas.
+Elles peuvent être publiées dans l'Atlas.
 
 1. [Quels sont les modèles de carte narrative proposés ?](mcstory/Quels sont les modèles de carte narrative proposés)
 1. [Montre-moi des exemples de cartes narratives](mcstory/exemples de cartes narratives)
@@ -1215,8 +1254,8 @@ Elle peuvent être publiées dans l'Atlas.
 - propriétés
 - attribut
 
-Il est possible d'afficher des attributs associé à l'objet sélectionné en Markdown en utilisant la syntaxe `%nom_de_l_attribut%`.
-Divers options sont disponibles pour formater les attributs (complément d'affichage, affichage conditionnel, etc.).
+Il est possible d'afficher des attributs associés à l'objet sélectionné en Markdown en utilisant la syntaxe `%nom_de_l_attribut%`.
+Diverses options sont disponibles pour formater les attributs (complément d'affichage, affichage conditionnel, etc.).
 
 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
 
@@ -1268,7 +1307,7 @@ La syntaxe pour intégrer un média dans Ma carte est la suivante :
 ![info sur le média](url_du_media)
 ```
 
-Il peut d'agir d'une image, d'une vidéo ou d'un fichier de son.
+Il peut s'agir d'une image, d'une vidéo ou d'un fichier de son.
 On peut aussi intégrer un tweet avec l'url du tweet.
 
 Utilisez la barre de Markdown pour vous aider à intégrer les images. En particulier pour ajouter un lien d'affichage en plein écran sur une image.
@@ -1333,7 +1372,7 @@ Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdo
 
 Les opérateurs de sélection et de filtrage par attribut sont : 
 - des opérateurs d'égalité (= égale à, ≠ différent de)
-- de comparaison inférieur / supérieur (<, ≤, ≥ ou >)
+- de comparaison, inférieur / supérieur (<, ≤, ≥ ou >)
 - d'inclusion (⊂ contient, ⊄ ne contient pas)
 - ou une [expression régulière](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re) (≃ vérifie, ≄ ne vérifie pas)
 
@@ -1352,7 +1391,7 @@ La bibliothèque de symbole est disponible dans l'onglet `Symboliser` <i class="
 
 Vous pouvez ajouter de nouveaux symboles à la bibliothèque :
 - si un objet est sélectionné, vous pouvez ajouter sa représentation à la bibliothèque en cliquant sur le bouton `<i class="fi-add"></i> Ajouter` dans l'onglet `Symboliser`.
-- dans le le dialogue de la bibliothèque, vous pouvez créer un nouveau symbole ou dupliquer un symbole existant dans la liste
+- dans le dialogue de la bibliothèque, vous pouvez créer un nouveau symbole ou dupliquer un symbole existant dans la liste
 - vous pouvez également copier un symbole de la légende dans la bibliothèque en passant par le dialogue de la légende, en sélectionnant la ligne de la légende et en cliquant sur la flèche bleue.
 
 Vous pouvez également utiliser la bibliothèque de symbole d'une carte existante.
@@ -1375,8 +1414,8 @@ Vous pouvez appliquer un symbole de la bibliothèque à l'objet sélectionné vi
 Une étiquette est un texte placé sur la carte pour caractériser un lieu ou un objet. Ce peut être une annotation ou un toponyme.
 
 Lorsqu'un ou plusieurs objets sont sélectionnés vous pouvez leur ajouter une étiquette dans l'onglet Étiquette de l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
-Vous pouvez choisir la police, la taille, l'emplacement, la couleur de l'étiquette et mettre un fond afin de rendre les écritures plus lisibles sur les fonds de carte.
-Cette étiquette peut être la valeur d'un attribut sous la forme `%nom_de_l_attribut%`. Vous pouvez afficher plusieurs attributs `%attribut_1% - %attribut_2%` mais si un des attribut est vide, l'étiquette ne s'affichera pas.
+Vous pouvez choisir la police, la taille, l'emplacement, la couleur de l'étiquette et mettre un fond afin de rendre les écritures plus lisibles sur les fonds de cartes.
+Cette étiquette peut être la valeur d'un attribut sous la forme `%nom_de_l_attribut%`. Vous pouvez afficher plusieurs attributs `%attribut_1% - %attribut_2%` mais si un des attributs est vide, l'étiquette ne s'affichera pas.
 
 Sur un point, l'étiquette peut s'afficher sur plusieurs lignes, il est possible de l'encadrer et de lui donner une couleur de fond.
 ![](https://macarte.ign.fr/api/image/img_fab8154)
@@ -1405,12 +1444,12 @@ Vous pouvez également **nettoyer les chevauchements** dans le style du calque (
 - existante
 
 Vous pouvez charger la bibliothèque de symbole d'une carte existante pour la réutiliser dans votre carte.
-Pour cela, rendez-vous dans le gestionnaire de couches et cliquer sur le bouton d'ajout <i class="fg-layer-alt-add-o"></i> dans la barre inférieure, puis cliquer sur `Depuis une autre carte...`. Sélectionnez ensuite la carte dans la liste proposée.
+Pour cela, rendez-vous dans le gestionnaire de couches et cliquez sur le bouton d'ajout <i class="fg-layer-alt-add-o"></i> dans la barre inférieure, puis cliquez sur `Depuis une autre carte...`. Sélectionnez ensuite la carte dans la liste proposée.
 Dans le dialogue qui s'ouvre cocher `importer la bibliothèque de symboles` :
 ![](./img/loadlib.png)
 
-Vous pouvez également enregistrer une carte modèle sur votre ordinateur contenant la bibliothèque de symbole via le bouton <i class="fi-download"></i> de la barre de menu de l'éditeur de carte. 
-Le fichier `.carte` ainsi généré pourra être récupérer simplement par glissé/déposé sur la carte en cours de saisie. Vous pouvez également partager ce fichier avec d'autres utilisateur en leur envoyant par mail, par exemple.
+Vous pouvez également enregistrer une carte modèle sur votre ordinateur contenant la bibliothèque de symbole via le bouton <i class="fi-download"></i> de la barre de menus de l'éditeur de cartes. 
+Le fichier `.carte` ainsi généré pourra être récupérée simplement par glissé/déposé sur la carte en cours de saisie. Vous pouvez également partager ce fichier avec d'autres utilisateurs en leur envoyant par mail, par exemple.
 
 1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Où est le gestionnaire de couche](mceditor//Parle-moi du gestionnaire de couche)
@@ -1428,10 +1467,10 @@ Vous pouvez choisir la couleur, la taille, la forme, le remplissage des objets �
 La symbolisation dépend du type de l'objet (ponctuel, linéaire, surfacique).
 
 
-Pour les objets ponctuels, Ma carte propose une liste symboles personnalisable, vous pouvez choisir la couleur et les inclure dans une forme (rond, carré, blazon, etc.) afin d'harmoniser l'affichage sur la carte.
+Pour les objets ponctuels, Ma carte propose une liste symboles personnalisable, vous pouvez choisir la couleur et les inclure dans une forme (rond, carré, blason, etc.) afin d'harmoniser l'affichage sur la carte.
 ![](https://viglino.github.io/Macarte-MI/assets/img/ch2.2-form.png)
 
-Vous avez la possibilité d'utiliser une image, sur le net ou dans votre galerie d'image. Le point peut aussi être une annotation, dans ce cas, seul l'étiquette associée va s'afficher.
+Vous avez la possibilité d'utiliser une image, sur le net ou dans votre galerie d'images. Le point peut aussi être une annotation, dans ce cas, seule l'étiquette associée va s'afficher.
 ![](./img//symboliser.png)
 
 Pour chaque objet, vous pouvez ajouter une étiquette, constituée d'un texte qui s'affiche sur la carte pour caractériser l'objet.
@@ -1453,7 +1492,7 @@ Pour cela, vous pouvez tout d'abord dans le style de l'objet interdire les dépa
 Vous pouvez également **nettoyer les chevauchements** dans le style du calque (via le menu <i class="fg-color"></i>  du gestionnaire de couche).
 ![](https://macarte.ign.fr/api/image/img_wyn8152)
 
-Dans ce cas, si une étiquette en chevauche une autre, elle ne sera pas afficher, améliorant la lisibilité. Il suffit généralement de zoomer pour que celle-ci réapparaisse.
+Dans ce cas, si une étiquette en chevauche une autre, elle ne sera pas affichée, améliorant la lisibilité. Il suffit généralement de zoomer pour que celle-ci réapparaisse.
 C'est la première étiquette qui s'affiche qui va conditionner l'affichage, si vous avez des étiquettes que vous voulez prioritaires, il est conseillé d'afficher cet objet en premier, pour cela, vous pouvez jouer sur l'empilement dans le style des objets.
 
 📝 le nettoyage de l'empilement joue sur tous les calques dont l'option est activée. Dans ce cas, c'est le calque le plus haut placé dans le gestionnaire de calque qui est prioritaire.
@@ -1468,24 +1507,24 @@ C'est la première étiquette qui s'affiche qui va conditionner l'affichage, si 
 - symbolisation
 - paramétrique
 
-Un symbolisation paramétrique est une manière de symboliser les objets **en fonction de leurs paramètre**.
+Un symbolisation paramétrique est une manière de symboliser les objets **en fonction de leurs paramètres**.
 Dans ce cas, la symbolisation ne sera plus portée par les objets individuellement mais par une règle de symbolisation sur le calque en fonction des attributs de l'objet (si le type est *gendarmerie*, le point s'affiche en bleu).
 
 Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/edit/uEAAF-color.svg" />) pour activer le style paramétrique.
 ![](./img/style-param.png)
 
-Vous pouvez alors ajouter des symbolisation à la couche en fonction des attributs.
+Vous pouvez alors ajouter des symbolisations à la couche en fonction des attributs.
 
 ![](./img/style-layer-param.png)
 
-Vous devez au préalable avoir crée une bibliothèque de symboles correspondant à ce que vous désirez représenter.
+Vous devez au préalable avoir créé une bibliothèque de symboles correspondant à ce que vous désirez représenter.
 
 Ensuite :
 1. Cliquez sur `Ajoutez une symbolisation` 
-2. Dans la partie droite, choisissez un symbole dans la bibliothèque (précédemment crée) et donné une nom à la condition
+2. Dans la partie droite, choisissez un symbole dans la bibliothèque (précédemment créée) et donnez un nom à la condition
 3. Ajouter une règle de la forme `attribut` ➜ `opérateur` ➜ `valeur`
 
-On peut ajouter plusieurs critère qui vont se cumuler si `tous les mots` est coché 
+On peut ajouter plusieurs critères qui vont se cumuler si `tous les mots` est coché 
 
 
 2. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
