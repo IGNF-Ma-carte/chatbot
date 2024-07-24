@@ -99,3 +99,7 @@ pre code {
   max-width: 6em;
   margin: 0 .5em 0 0;
 }
+
+#footer a {
+  display: inline-block;
+}
