@@ -1260,6 +1260,7 @@ Diverses options sont disponibles pour formater les attributs (complément d'aff
 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
 
 1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
+1. [Comment ne pas afficher un attribut vide ?](md/Comment ne pas afficher un attribut vide)
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 
 
@@ -1291,6 +1292,36 @@ Vous pouvez également utiliser les attributs de l'objet sélectionné pour affi
 1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
 1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
 1. [Qu'est-ce que le Makdown ?](md/markdown)
+
+
+## md/Comment ne pas afficher un attribut vide
+- afficher
+- formater
+- attribut
+- attributs
+- vide
+- null
+- affichage conditionnel
+- conditionnel
+- test conditionnels
+- MD
+- Markdown
+
+Il est possible de conditionner l'affichage à la présence (ou non) d'un attribut lors de l'affichage de la fiche d'un objet.
+Pour cela, il suffit de mettre l'attribut entre double parenthèses `((%attr%))`.
+Dans ce cas, l'ensemble de l'expression entre parenthèses s'affiche ou non suivant la valeur de l'attribut.
+Par exemple : `((longueur : %length% km))` n'affichera rien si length est vide (ou nul) et affichera `longueur : 10 km` si length=10.
+
+Il est possible d'ajouter un texte alternatif qui s'affichera en lieu et place si l'attribut n'est pas défini en l'ajoutant dans les parenthèses après une double barre : `||`
+Par exemple : `((valeur : %val% || pas de valeur))`
+
+On peut aussi tester explicitement l'existence ou non d'un attribut pour en afficher un autre, en utilisant `((?%attr%` ou `((!%attr%`.
+Par exemple pour afficher une valeur ou une erreur en fonction d'un boolean (dans l'attribut `isok`): 
+`((?%isok% la valeur est %attr%))((!%isok% il y a une erreur : %error%))`
+
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+1. [Comment afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
+1. [Comment intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
 
 
 ## md/Intégrer des médias dans Ma carte
@@ -1483,6 +1514,7 @@ La mise en forme de l'étiquette sur la carte va dépendre du type d'objet auque
 ## symboliser/Comment éviter que les étiquettes se chevauchent
 - étiquettes
 - chevauchement
+- recouvrement
 - textes
 
 Il peut être gênant que les étiquettes se chevauchent sur la carte, la rendant illisible.

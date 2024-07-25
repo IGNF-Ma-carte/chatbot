@@ -1,5 +1,6 @@
 - étiquettes
 - chevauchement
+- recouvrement
 - textes
 
 Il peut être gênant que les étiquettes se chevauchent sur la carte, la rendant illisible.
