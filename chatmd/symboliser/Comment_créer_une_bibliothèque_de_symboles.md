@@ -4,7 +4,7 @@
 
 Une bibliothèque de symbole est un moyen pratique de recenser les symboles présents dans la carte pour les réutiliser pour symboliser un objet, pour les ajouter dans la légende ou pour créer une représentation paramétrique.
 La bibliothèque de symbole est disponible dans l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
-![](../../img/biblio.png)
+![](../../docs/img/biblio.png)
 
 Vous pouvez ajouter de nouveaux symboles à la bibliothèque :
 - si un objet est sélectionné, vous pouvez ajouter sa représentation à la bibliothèque en cliquant sur le bouton `<i class="fi-add"></i> Ajouter` dans l'onglet `Symboliser`.

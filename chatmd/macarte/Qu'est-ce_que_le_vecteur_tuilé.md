@@ -4,7 +4,7 @@ Le tuilage vecteur est un mode de diffusion des données analogue au WMTS (de la
 
 Les données sont prédécoupées par le serveur et diffusées sous forme de dalles vecteur (tuiles) adaptées à l'échelle de visualisation, ce qui permet à l'utilisateur de ne charger que les données sur la zone concernée, d'avoir des données suffisamment généralisées pour être affichées aux petites échelles et de conserver les dalles calculées dans un cache.
 
-![](../../img/WMTStilematrix.png)
+![](../../docs/img/WMTStilematrix.png)
 
 Les avantages apportés par les tuiles vectorielles multiples :
 - Rapidité d'accès à la donnée : les données chargées sont adaptées à l'échelle de visualisation et la navigation sur ces données est donc très fluide.

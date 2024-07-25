@@ -16,7 +16,7 @@ data: 3;1;5
 &#96
 ```
 Différentes options et types de diagrammes sont disponibles : bâtons (verticaux ou horizontaux), lignes, circulaire, radar et vous pouvez mixer des lignes et des barres.
-![](../../img/diagramme.png)
+![](../../docs/img/diagramme.png)
 
 Vous pouvez également utiliser les attributs de l'objet sélectionné pour afficher un diagramme spécifique à la sélection.
 

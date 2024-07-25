@@ -5,8 +5,8 @@
 - data
 - dessin
 
-Dans le module d'édition, il est possible de remplacer ou ajouter des données dans un calque de dessin en chargeant un nouveau lot de données dans le dialogue d'options du calque via le gestionnaire de calque <img class="icon" src = "../../img/configuration.svg" />.
-![](../../img/options.png)
+Dans le module d'édition, il est possible de remplacer ou ajouter des données dans un calque de dessin en chargeant un nouveau lot de données dans le dialogue d'options du calque via le gestionnaire de calque <img class="icon" src = "../../docs/img/configuration.svg" />.
+![](../../docs/img/options.png)
 
 Les nouvelles données vont venir se charger dans le calque. 
 💡 Vous pouvez choisir de remplacer les données existantes en cochant l'option dans le dialogue.

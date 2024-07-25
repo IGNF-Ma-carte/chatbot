@@ -21,7 +21,7 @@ Aussi, si vous avez des étiquettes ou des symboles qui s'affichent sur cette co
 Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
 Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveaux de zoom pour lesquels la couche est masquée.
 
-![](../../img//visibility-range.png)
+![](../../docs/img//visibility-range.png)
 
 L'utilisation de flux tuilés est aussi recommandée : WMTS plutôt WMS et tuiles vectorielles plutôt que WFS.
 

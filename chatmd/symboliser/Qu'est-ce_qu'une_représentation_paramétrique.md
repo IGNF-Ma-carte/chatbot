@@ -7,11 +7,11 @@ Un symbolisation paramétrique est une manière de symboliser les objets **en fo
 Dans ce cas, la symbolisation ne sera plus portée par les objets individuellement mais par une règle de symbolisation sur le calque en fonction des attributs de l'objet (si le type est *gendarmerie*, le point s'affiche en bleu).
 
 Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/edit/uEAAF-color.svg" />) pour activer le style paramétrique.
-![](../../img/style-param.png)
+![](../../docs/img/style-param.png)
 
 Vous pouvez alors ajouter des symbolisations à la couche en fonction des attributs.
 
-![](../../img/style-layer-param.png)
+![](../../docs/img/style-layer-param.png)
 
 Vous devez au préalable avoir créé une bibliothèque de symboles correspondant à ce que vous désirez représenter.
 

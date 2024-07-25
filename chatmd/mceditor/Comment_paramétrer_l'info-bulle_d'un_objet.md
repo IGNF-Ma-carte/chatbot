@@ -7,7 +7,7 @@
 Lorsqu'on clique sur un objet de la carte, une bulle d'information va s'afficher.
 Vous pouvez paramétrer cette bulle à l'aide de Markdown dans l'onglet `Bulle`.
 
-![](../../img/infobulle.png)
+![](../../docs/img/infobulle.png)
 
 Vous pouvez renseigner un titre, une description (en Markdown) et une image. Vous pouvez aussi choisir d'afficher les coordonnées de l'objet (ceci est surtout valable pour un point car sinon, c'est la position du premier point qui est utilisé).
 

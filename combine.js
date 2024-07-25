@@ -6,7 +6,7 @@ const root = './chatmd'
 // Main file
 const mainmd = 'main.md'
 // Destination file
-const destination = './chat.txt'
+const destination = './docs/chat.md'
 
 const colorStart = '\x1b[36m\x1b[1m\x1b[44m';
 const colorEnd = '\x1b[0m';
@@ -49,7 +49,7 @@ function nextFile(files, directory, options) {
       content = content.replace(match[0], ']('+st+')')
     }
     // Path for images ../img
-    content = content.replace(/(\.\.\/){1,}img\//g,'./img/');
+    content = content.replace(/(\.\.\/){1,}docs\/img\//g,'./img/');
     // Path from the root
     if (directory !== root) {
       const name = file.replace(/_/g,' ').replace(/\.md$/,'');
@@ -66,6 +66,7 @@ let delayTout
 function combine(e) {
   clearTimeout(delayTout)
   delayTout = setTimeout(() => {
+    fs.copy
     let files = fs.readdirSync(root);
     // Place main on top
     const index = files.indexOf(mainmd);
@@ -82,4 +83,5 @@ function combine(e) {
 // Start
 combine();
 
+// Watch updates
 fs.watch(root, { recursive: true }, combine);

@@ -9,7 +9,7 @@ La couche peut adopter une **symbolisation paramétrique**, dans ce cas, elle se
 Ceci a l'avantage de pouvoir plus facilement changer la symbolisation d'un groupe d'objet et de la rendre plus dynamique (si l'attribut d'un objet change, sa symbolisation va changer). Cela va également être pratique si on doit mettre à jour une couche de dessin (nouveau millésime de la donnée).
 Dans le cas de couche vecteur en flux, c'est la seule façon d'affecter une symbolisation différente aux objets affichés.
 
-On peut modifier la symbolisation d'une couche via le bouton <img class="icon" src="../../img/color.svg" /> dans la barre inférieure du gestionnaire de couche.
+On peut modifier la symbolisation d'une couche via le bouton <img class="icon" src="../../docs/img/color.svg" /> dans la barre inférieure du gestionnaire de couche.
 
 1. [Qu'est-ce qu'une représentation paramétrique ?](../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md)
 2. [Comment créer une bibliothèque de symboles ?](./Comment_créer_une_bibliothèque_de_symboles.md)

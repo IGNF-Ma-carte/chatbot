@@ -10,7 +10,7 @@ Sur les pages de création de cartes, l'icône <img class="icon" src="https://ra
 Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux internautes d'y accéder plus facilement.
 
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
-![](../../img/share.png)
+![](../../docs/img/share.png)
 
 Vous trouverez également sur cette page un lien de partage en édition pour travailler à plusieurs sur votre carte.
 
