@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>ChatMD</title>
+  <meta
+    name="description"
+    content="😼 un chat-bot pour tout savoir sur Ma carte !" />
+  <meta name="author" content="Jean-Marc Viglino" />
+  <meta name="author" content="Cédric Eyssette" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <!-- icons -->
+  <link rel="stylesheet" href="https://ignf-ma-carte.github.io/font-ign/font-ign.css" />
+  <link rel="stylesheet" href="https://viglino.github.io/font-gis/css/font-gis.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link id="favicon" rel="icon" href="./img/poibot.png" type="image/png" />
+</head>
+
+<body>
+  <h1 id="chatbot-name">&nbsp;</h1>
+  <main>
+    <div id="chat" class="chat-container" role="region" aria-label="Zone de conversation">
+      <!-- La conversation sera affichée ici -->
+    </div>
+    <div id="controls">
+      <div id="input-container">
+        <div
+          id="user-input"
+          contenteditable="true"
+          placeholder="Écrivez votre message"
+          tabindex="0"
+          role="textbox"
+          aria-label="Votre message pour le chatbot"
+          ></div>
+      </div>
+      <button id="send-button">Envoyer</button>
+    </div>
+  </main>
+  <footer id="footer">
+    Chatbot pour <a href="https://macarte.ign.fr">Ma carte</a> © IGN - 2024
+    - <a href="https://macarte.ign.fr/nous-contacter"><i class="fa fa-envelope-o"></i>&nbsp;Nous contacter</a>
+    - powered by <a href="https://forge.apps.education.fr/chatMD/chatMD.forge.apps.education.fr">ChatMD</a>
+  </footer>
+  <script src="externals/js-yaml.min.js"></script>
+  <script src="externals/typed.umd.js"></script>
+  <script src="externals/showdown.min.js"></script>
+  <script src="scripts/custom.js"></script>
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/processFixedVariables.js"></script>
+  <script src="scripts/markdown.js"></script>
+  <script src="scripts/convertLatex.js"></script>
+  <script src="scripts/nlp.js"></script>
+  <script src="scripts/typewriter.js"></script>
+  <script src="scripts/processDynamicVariables.js"></script>
+  <script src="scripts/chatbot.js" data-chat-file="./chat.txt"></script>
+  <script src="scripts/chatbotData.js"></script>
+  <script type="text/javascript">
+    // Force rechercheContenu
+    yamlSearchInContent = true;
+    // No typewriter on localhost
+    yamlTypeWriter = !/localhost/.test(location.host)
+  </script>
+</body>
+</html>
