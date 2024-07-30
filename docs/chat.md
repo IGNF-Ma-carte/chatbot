@@ -1294,6 +1294,30 @@ Vous pouvez également utiliser les attributs de l'objet sélectionné pour affi
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 
 
+## md/Comment ajouter un comparateur d'image
+- markdown
+- md
+- image
+- comparateur
+- comparer
+- slider
+
+Vous pouvez ajouter un comparateur d'images dans vos narrations ou vos info-bulles en utilisant un widget `imageSlider`.
+Il est possible de préciser la taille des images (sous la forme `largeurxhauteur`). Si la largeur ou la hauteur n'est pas précisée elle sera calculée par rapport à l'autre dimension.s
+Deux images sont nécessaire au widget. Il est préférable que les deux images aient la même taille.
+L'option `fullscreen` ajoute un bouton pour afficher le widget en plein écran.
+
+```
+&#96imageSlider
+img1: https://upload.wikimedia.org/wikipedia/commons/5/53/Shadow_2752.jpg
+img2: https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png
+fullscreen: true
+&#96
+```
+
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
+
 ## md/Comment ne pas afficher un attribut vide
 - afficher
 - formater
@@ -1375,7 +1399,7 @@ En cliquant sur `plus d'options` un dialogue s'ouvre qui offre plus d'options et
 N'hésitez pas à consulter l'aide en ligne <img class="icon" src="./img/info.svg" />
 
 1. [Qu'est-ce que le Makdown ?](md/markdown)
-1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
+1. [Comment afficher des attributs en Markdown ?](md/Afficher des attributs en Markdown)
 
 
 ## md/markdown
