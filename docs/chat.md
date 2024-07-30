@@ -1531,7 +1531,7 @@ Vous avez la possibilité d'utiliser une image, sur le net ou dans votre galerie
 Pour chaque objet, vous pouvez ajouter une étiquette, constituée d'un texte qui s'affiche sur la carte pour caractériser l'objet.
 La mise en forme de l'étiquette sur la carte va dépendre du type d'objet auquel elle se rapporte.
 
-1. [Comment ajouter des images à ma galerie ?](macarte//Ma carte peut-il héberger des images)
+1. [Comment ajouter des images à ma galerie ?](macarte/Ma carte peut-il héberger des images)
 1. [Comment mettre en forme une étiquette sur la carte ?](symboliser/Comment mettre en forme une étiquette sur la carte)
 1. [Bien utiliser la bibliothèque de symboles](symboliser/Comment créer une bibliothèque de symboles)
 
