@@ -19,3 +19,4 @@ Vous pouvez typer les attributs afin d'aider à la saisie. Un attribut peut êtr
 ![](../../docs/img/view-attributes.png)
 
 1. [Qu'est-ce qu'une couche vecteur ?](./Qu'est-ce_qu'une_couche_vecteur.md)
+1. [Modifier les attributs d'un objet](../mceditor/Comment_ajouter_des_attributs_à_un_objet.md)

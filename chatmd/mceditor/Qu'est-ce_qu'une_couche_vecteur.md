@@ -12,4 +12,5 @@ Dans certains cas, elle peut également contenir des relations avec d'autres obj
 On parlera de données vecteur pour les distinguer des données (ou fonds) image (ou raster). Contrairement à ces dernières, on peut facilement accéder à leurs attributs et à leur symbolisation.
 
 1. [Qu'est-ce qu'une couche de dessin ?](./Comment_saisir_des_objets_dans_Ma_carte.md)
+1. [Modifier les attributs d'un objet](../mceditor/Comment_ajouter_des_attributs_à_un_objet.md)
 1. [Comment personnaliser les attributs d'une couche vecteur ?](./Comment_personnaliser_les_attributs_d'une_couche_vecteur.md)

@@ -14,3 +14,4 @@ S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du ge
 
 1. [Comment paramétrer l'info-bulle d'un objet ?](./Comment_paramétrer_l'info-bulle_d'un_objet.md)
 1. [Qu'est-ce que le Makdown ?](../md/markdown.md)
+1. [Modifier les attributs d'un objet](../mceditor/Comment_ajouter_des_attributs_à_un_objet.md)

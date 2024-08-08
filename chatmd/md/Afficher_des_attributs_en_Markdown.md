@@ -12,3 +12,4 @@ Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
 1. [Montre-moi la barre de Markdown de Ma carte](./la_barre_de_Markdown_de_Ma_carte.md)
 1. [Comment ne pas afficher un attribut vide ?](./Comment_ne_pas_afficher_un_attribut_vide.md)
 1. [Qu'est-ce que le Makdown ?](./markdown.md)
+1. [Modifier les attributs d'un objet](../mceditor/Comment_ajouter_des_attributs_à_un_objet.md)

@@ -278,6 +278,9 @@ Pour l'utilisation d'images comme symbolisation sur un objet, vous pouvez demand
 
 ## macarte/Qu'est-ce que le vecteur tuilé
 - vecteur tuilé
+- tile
+- MVT
+- PBF
 
 Le tuilage vecteur est un mode de diffusion des données analogue au WMTS (de la tuile "image"), mais qui transmet des objets plutôt que des pixels. Le tuilage vecteur vient apporter de nouvelles possibilités de personnalisation de l'affichage des données.
 
@@ -589,8 +592,57 @@ L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre
 
 Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
 
+1. [Comment ajouter des données à un calque ?](mceditor/Comment ajouter des données à un calque))
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 2. [Comment créer une bibliothèque de symboles ?](mceditor/Comment créer une bibliothèque de symboles)
+
+
+## mceditor/Comment ajouter des attributs à un objet
+- attribut
+- attributs
+- objet
+- paramètre
+- propriété
+- information descriptive
+
+L'information géographique est la représentation d'un objet ou d'un phénomène dans l'espace.
+Afin de décrire les propriétés des objets, on leur adjoint des attributs. Ainsi, lorsque vous aurez [saisi un nouvel objet](#mceditor/Comment saisir des objets dans Ma carte) ou lorsque vous [sélectionnez un objet](#selection/Comment sélectionner des objets) vous pouvez consulter, modifier ou ajouter des attributs dans l'onglet `Attributs` <i class="fi-tag colored"></i>.
+
+![](./img/view-attributes.png)
+
+Les attributs d'une couche peuvent [être personnalisés](#mceditor/Comment personnaliser les attributs d'une couche vecteur) afin de faciliter leur saisie et d'assurer la cohérence sur la couche.
+Il est possible d'afficher les attributs d'un objet sous forme d'[étiquettes sur la carte](#symboliser/Comment mettre en forme une étiquette sur la carte) ou dans l'[info-bulle de l'objet sélectionné](#md/Afficher des attributs en Markdown).
+Enfin, les attributs peuvent servir à représenter les objets à l'aide d'une [symbolisation paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique).
+
+1. [Comment personnaliser les attributs d'une couche ?](mceditor/Comment personnaliser les attributs d'une couche vecteur)
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+1. [Comment afficher les attributs d'un objet en Markdown ?](md/Afficher des attributs en Markdown)
+
+
+
+## mceditor/Comment ajouter des données à un calque
+- calque
+- couche
+- layer
+- ajouter
+- upload
+- données
+- geojson
+- kml
+
+Vous pouvez ajouter des données à un calque de dessin depuis un fichier format GeoJSON ou KML.
+Pour cela, sélectionnez le calque qui contient les données dans le gestionnaire de couche (passe en surbrillance bleue) puis ouvrez la fenêtre d'options en cliquant sur le bouton <i class="fg-layer-alt-add-o"></i> en bas à droite du gestionnaire.
+Dans la fenêtre d'options de la couche, cliquez sur le bouton de chargement <i class="fi-open"></i>.
+![](./img/options.png)
+
+💡 Si vous utilisé une [définition de styles paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique) dans le calque, les objets ajoutés sont symbolisés directement.
+
+⚠️ L'import de données vectorielles doit se faire en degrés décimaux (WGS84, code EPSG:4326) ou en Web Mercator (EPSG:3857). Pour utiliser des données exprimées dans une autres projection une conversion en amont est nécessaire.
+
+1. [Comment saisir des données dans un calque ?](mceditor/Comment saisir des objets dans Ma carte)
+1. [Comment utiliser une symbolisation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+1. [Comment enregistrer les données d'un calque ?](mceditor/Comment enregistrer les données d'un calque)
+1. [Quels sont les référentiels géographiques utilisés par Ma carte ?](mceditor/Quels sont les référentiels géographiques utilisés par Ma carte)
 
 
 ## mceditor/Comment ajouter des flux OGC
@@ -730,7 +782,7 @@ La légende est accessible dans l'onglet `Affichage` <i class="fg-map-legend col
 
 ![](./img/legend.png)
 
-Vous devez au préalable avoir ajouté des symboles dans la bibliothèque de symbole de la carte. Ce sont ces symboles qui seront utilisés dans la légende. Sélectionnez un symbole dans la bibliothèque puis cliquez sur la flèche bleue pour l'ajouter à la légende.
+Vous devez au préalable avoir [ajouté des symboles dans la bibliothèque](#symboliser/Comment créer une bibliothèque de symboles) de symbole de la carte. Ce sont ces symboles qui seront utilisés dans la légende. Sélectionnez un symbole dans la bibliothèque puis cliquez sur la flèche bleue pour l'ajouter à la légende.
 Si vous avez associé une légende à une couche vous pouvez l'ajouter via le menu disponible en bas du dialogue. Dans ce cas la légende du  calque ne s'affichera que si le calque est visible.
 
 Vous pouvez ajouter des lignes de titre et ordonner les lignes de la légende à votre guise.
@@ -760,6 +812,7 @@ Pour spécifier un masque, vous devez au préalable sélectionner un objet surfa
 - calque
 - couche
 - layer
+- exporter
 - enregistrer
 - download
 - télécharger
@@ -772,7 +825,11 @@ Pour cela, sélectionnez le calque qui contient les données dans le gestionnair
 Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargement <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" />.
 ![](./img/options.png)
 
+⚠️ L'export se fait en coordonnées géographiques décimales (WGS84, code EPSG:4326)
+
 1. [Comment sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
+1. [Comment ajouter des données à un calque ?](mceditor/Comment ajouter des données à un calque)
+1. [Quels sont les référentiels géographiques utilisés par Ma carte ?](mceditor/Quels sont les référentiels géographiques utilisés par Ma carte)
 
 
 ## mceditor/Comment importer une couche d'une autre carte
@@ -854,7 +911,7 @@ Vous pouvez typer les attributs afin d'aider à la saisie. Un attribut peut êtr
 ![](./img/view-attributes.png)
 
 1. [Qu'est-ce qu'une couche vecteur ?](mceditor/Qu'est-ce qu'une couche vecteur)
-
+1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
 
 ## mceditor/Comment puis-je sauvegarder une carte
 - enregistrer
@@ -1005,6 +1062,7 @@ Dans certains cas, elle peut également contenir des relations avec d'autres obj
 On parlera de données vecteur pour les distinguer des données (ou fonds) image (ou raster). Contrairement à ces dernières, on peut facilement accéder à leurs attributs et à leur symbolisation.
 
 1. [Qu'est-ce qu'une couche de dessin ?](mceditor/Comment saisir des objets dans Ma carte)
+1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
 1. [Comment personnaliser les attributs d'une couche vecteur ?](mceditor/Comment personnaliser les attributs d'une couche vecteur)
 
 
@@ -1025,6 +1083,7 @@ S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du ge
 
 1. [Comment paramétrer l'info-bulle d'un objet ?](mceditor/Comment paramétrer l'info-bulle d'un objet)
 1. [Qu'est-ce que le Makdown ?](md/markdown)
+1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
 
 
 ## mceditor/Qu'est-ce que le mode cluster
@@ -1108,10 +1167,10 @@ En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonction
 
 ![](https://macarte.ign.fr/image/voir/gts6159.png)
 
-1. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 1. [Ajouter des fonds Géoportail simplement](mceditor/Comment ajouter des fonds Géoportail)
-2. [Ajouter des flux OGC](mceditor/Comment ajouter des flux OGC)
-3. [Ajouter des tuiles vectorielles](mceditor/Comment ajouter des tuiles vectorielles)
+1. [Ajouter des flux OGC](mceditor/Comment ajouter des flux OGC)
+1. [Ajouter des tuiles vectorielles](mceditor/Comment ajouter des tuiles vectorielles)
+1. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 
 ## mceditor/Quels sont les raccourcis claviers de dessin
 - raccourcis
@@ -1121,8 +1180,25 @@ En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonction
 Dans l'outil de dessin vous avez accès aux raccourcis suivant : 
 <kbd>Ctrl</kbd>+<kbd>C</kbd> pour copier le ou les objets sélectionnés.
 <kbd>Ctrl</kbd>+<kbd>X</kbd> pour copier le ou les objets sélectionnés en les supprimant du calque dans lequel ils se trouvent.
-<kbd>Ctrl</kbd>+<kbd>V</kbd> pour coller le ou les objets copiés sur le calque de dessin courant (le calque doit être visible <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA2F-visible.svg" /> et déverrouillée (<img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA52-unlock.svg" />))).
+<kbd>Ctrl</kbd>+<kbd>V</kbd> pour coller le ou les objets copiés sur le calque de dessin courant (le calque doit être visible <i class="fi-visible"></i> et déverrouillée (<i class="fi-unlock"></i>).
 <kbd>Suppr</kbd> pour supprimer les objets sélectionnés.
+
+## mceditor/Quels sont les référentiels géographiques utilisés par Ma carte
+- coordonnées
+- référentiels
+- WGS84
+
+### Affichage
+
+L'affichage des coordonnées peut se faire en coordonnées géographiques, latitude longitude, en degrés décimaux ou sexagésimaux ou en Web Mercator qui est la projection standard utilisée par les outils de visualisation cartographique web.
+
+### Données
+
+L'import de données vectorielles doit se faire en degrés décimaux (WGS84, code EPSG:4326) ou en Web Mercator (EPSG:3857). Pour utiliser des données exprimées dans une autres projection une conversion en amont est nécessaire.
+L'export se fait en coordonnées géographiques décimales (WGS84, code EPSG:4326)
+
+1. [Ajouter un fichier à un calque](mceditor/Comment ajouter des données à un calque)
+1. [Enregistrer les données d'un calque](mceditor/Comment enregistrer les données d'un calque)
 
 ## mcstat/Comment formater un fichier pour faire une carte statistique
 - formater
@@ -1317,6 +1393,7 @@ Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
 1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
 1. [Comment ne pas afficher un attribut vide ?](md/Comment ne pas afficher un attribut vide)
 1. [Qu'est-ce que le Makdown ?](md/markdown)
+1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
 
 
 ## md/Afficher une diagramme dans Ma carte
@@ -1475,6 +1552,30 @@ Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdo
 1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
 1. [Afficher une diagramme dans Ma carte](md/Afficher une diagramme dans Ma carte)
 
+## selection/Comment sélectionner des objets
+- sélection
+- objet
+- sélectionner
+- filtrer
+- recherche sur attribut
+
+Il existe plusieurs façon pour sélectionner des objets sur Ma carte.
+Tout d'abord, avec l'outil de sélection <i class="fg-arrow-o"></i>, au clic sur un objet d'une couche vecteur, lorsque la couche n'est pas verrouillée (<i class="fi-unlock"></i> dans le gestionnaire de calque).
+En appuyant sur la touche <kbd>shift</kbd> + clic vous pouvez sélectionner plusieurs objets.
+Vous pouvez également utiliser l'outil de sélection par emprise <i class="fg-extent"></i> pour sélectionner dans un rectangle sur le calque courant.
+
+![](./img/drawtools.png)
+
+Vous pouvez également utiliser l'outil de recherche dans l'onglet `Sélectionner` <i class="fg-search-attribtues colored"></i> qui permet de faire une recherche sur les attributs des objets avec des [critères de sélection](#selection/opérateurs).
+![](./img/selectionner.png)
+
+Une fois les objets sélectionnés, vous pouvez les supprimer (<i class="fi-trash"></i> dans la barre de dessin), leurs [appliquer un style](#symboliser/Comment symboliser un objet), leurs [ajouter des attributs](#mceditor/Comment ajouter des attributs à un objet) ou [personnaliser leur info-bulle](#mceditor/Comment paramétrer l'info-bulle d'un objet).
+
+1. [Quels sont les opérateurs de sélection ?](selection/opérateurs)
+1. [Qu'est-ce qu'une couche vecteur ?](mceditor/Qu'est-ce qu'une couche vecteur)
+1. [Comment saisir des objets ?](mceditor/Comment saisir des objets dans Ma carte)
+1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
+
 ## selection/opérateurs
 - opérateur
 - sélection
@@ -1489,6 +1590,9 @@ Les opérateurs de sélection et de filtrage par attribut sont :
 ⚠️ Attention, les opérateurs de comparaison dépendent du type de l'attribut qu'ils comparent (numérique ou alphanumérique).
 Ainsi : `2 < 10` mais `'2' > '10'`
 
+1. [Comment sélectionner des objets ?](selection/Comment sélectionner des objets)
+1. [Utiliser une représentation paramétrique](symboliser/Qu'est-ce qu'une représentation paramétrique)
+1. [Les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
 
 ## symboliser/Comment créer une bibliothèque de symboles
 - bibliothèque
@@ -1621,14 +1725,14 @@ C'est la première étiquette qui s'affiche qui va conditionner l'affichage, si 
 Un symbolisation paramétrique est une manière de symboliser les objets **en fonction de leurs paramètres**.
 Dans ce cas, la symbolisation ne sera plus portée par les objets individuellement mais par une règle de symbolisation sur le calque en fonction des attributs de l'objet (si le type est *gendarmerie*, le point s'affiche en bleu).
 
-Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/edit/uEAAF-color.svg" />) pour activer le style paramétrique.
+Sélectionnez la couche dans le gestionnaire de couches et rendez-vous sur le dialogue de style de la couche (bouton <i class="fg-color"></i>) pour activer le style paramétrique.
 ![](./img/style-param.png)
 
 Vous pouvez alors ajouter des symbolisations à la couche en fonction des attributs.
 
 ![](./img/style-layer-param.png)
 
-Vous devez au préalable avoir créé une bibliothèque de symboles correspondant à ce que vous désirez représenter.
+Vous devez au préalable avoir [créé une bibliothèque de symboles](#symboliser/Comment créer une bibliothèque de symboles) correspondant à ce que vous désirez représenter.
 
 Ensuite :
 1. Cliquez sur `Ajoutez une symbolisation` 
@@ -1641,4 +1745,5 @@ On peut ajouter plusieurs critères qui vont se cumuler si `tous les mots` est c
 2. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Quels sont les opérateurs de sélection ?](selection/opérateurs)
 1. [Comment symboliser un objet ?](symboliser/Comment symboliser un objet)
+1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
 

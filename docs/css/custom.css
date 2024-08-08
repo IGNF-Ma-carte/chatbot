@@ -56,6 +56,7 @@ kbd {
   font-size: .9em;
   display: inline-block;
   box-shadow: inset 1px 1px 3px 2px #fff, 3px 2px 2px #999, 0 0 0 1px #999;
+  line-height: 1.4em;
 }
 
 pre {

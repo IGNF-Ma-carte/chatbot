@@ -1,4 +1,7 @@
 - vecteur tuilé
+- tile
+- MVT
+- PBF
 
 Le tuilage vecteur est un mode de diffusion des données analogue au WMTS (de la tuile "image"), mais qui transmet des objets plutôt que des pixels. Le tuilage vecteur vient apporter de nouvelles possibilités de personnalisation de l'affichage des données.
 

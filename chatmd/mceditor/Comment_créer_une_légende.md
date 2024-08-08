@@ -9,7 +9,7 @@ La légende est accessible dans l'onglet `Affichage` <i class="fg-map-legend col
 
 ![](../../docs/img/legend.png)
 
-Vous devez au préalable avoir ajouté des symboles dans la bibliothèque de symbole de la carte. Ce sont ces symboles qui seront utilisés dans la légende. Sélectionnez un symbole dans la bibliothèque puis cliquez sur la flèche bleue pour l'ajouter à la légende.
+Vous devez au préalable avoir [ajouté des symboles dans la bibliothèque](#../symboliser/Comment_créer_une_bibliothèque_de_symboles.md) de symbole de la carte. Ce sont ces symboles qui seront utilisés dans la légende. Sélectionnez un symbole dans la bibliothèque puis cliquez sur la flèche bleue pour l'ajouter à la légende.
 Si vous avez associé une légende à une couche vous pouvez l'ajouter via le menu disponible en bas du dialogue. Dans ce cas la légende du  calque ne s'affichera que si le calque est visible.
 
 Vous pouvez ajouter des lignes de titre et ordonner les lignes de la légende à votre guise.
