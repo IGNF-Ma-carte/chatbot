@@ -5,7 +5,7 @@ rechercheContenu: true
 ---
 # Chat - Ma carte
 
-Je suis un chatbot programmé pour vous aider à utiliser les outils **Ma carte** développés par l'Institut national de l'information géographique et forestière (IGN).
+Je suis un chatbot programmé pour vous aider à utiliser les outils [**Ma carte**](https://macarte.ign.fr/) développés par l'Institut national de l'information géographique et forestière (IGN).
 
 Vous pouvez écrire votre question, ou bien vous laisser guider par les propositions ci-dessous.
 

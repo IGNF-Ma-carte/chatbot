@@ -48,6 +48,18 @@ function nextFile(files, directory, options) {
       // Replace
       content = content.replace(match[0], ']('+st+')')
     }
+    // Process for anchor links
+    const anchors = content.matchAll(/\]\(#\.(\.)?\/[^)]*(\.md)\)/g);
+    for (const match of anchors) {
+      // File name without '.md' and '_'
+      let st = match[0].replace(/\]\(#\.(\.)?\/(\.\.\/)?/,'').replace(/\.md\)$/,'').replace(/\)$/,'').replace(/_/g,' ')
+      // Path from the root
+      if (/\]\(#\.\//.test(match[0])) {
+        st = (directory + '/').replace(root+'/', '') + st;
+      }
+      // Replace
+      content = content.replace(match[0], '](#'+st+')')
+    }
     // Path for images ../img
     content = content.replace(/(\.\.\/){1,}docs\/img\//g,'./img/');
     // Path from the root

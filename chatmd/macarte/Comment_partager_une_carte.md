@@ -12,7 +12,7 @@ Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux in
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
 ![](../../docs/img/share.png)
 
-Vous trouverez également sur cette page un lien de partage en édition pour travailler à plusieurs sur votre carte.
+Sur cette page vous trouverez également un lien de partage en édition pour [travailler à plusieurs sur votre carte](#./Comment_travailler_à_plusieurs_sur_une_carte.md).
 
 Si vous ne souhaitez pas que votre carte puisse être vue par une autre personne que vous, en décochant la case "Carte active" vous serez le seul utilisateur à pouvoir la consulter.
 

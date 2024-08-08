@@ -6,7 +6,7 @@
 - couche
 - layer
 
-Vous pouvez ajouter une bulle d'information aux calques. Cette bulle s'affichera lorsqu'un objet du calque est sélectionné (sauf ci celui-ci surcharge la bulle).
+Vous pouvez ajouter une bulle d'information aux calques (<i class="fi-comment"></i> dans le menu bas du gestionnaire de couche). Cette bulle s'affichera lorsqu'un objet du calque est sélectionné (sauf ci celui-ci a une bulle personnalisée).
 Le contenu de la bulle est défini en Markdown et il est possible d'afficher les attributs de l'objet sélectionné avec la syntaxe `%nom_de_l_attribut%`. 
 Afin de vous aider à paramétrer la bulle, pensez à sélectionner un objet sur le calque afin d'avoir accès en direct à ces attributs lors de la saisie du Markdown.
 

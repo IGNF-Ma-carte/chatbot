@@ -2,6 +2,7 @@
 - flux
 - OGC
 - fichier
+- ajouter
 
 Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (OGC) pour les ajouter sous forme de couche sur Ma carte.
 

@@ -91,14 +91,29 @@ pre code {
   text-align: center;
 }
 
+#chat li {
+  clear: both;
+}
+
 #chat img.left {
   float: left;
+}
+#chat img.left.br {
+  clear: left;
 }
 #chat img.small {
   max-height: 5em;
   max-width: 6em;
   margin: 0 .5em 0 0;
 }
+#chat img.tiny {
+  max-height: 2.4em;
+  max-width: 4em;
+  margin: 0 .5em 0 0;
+  position: relative;
+  top: -0.25em;
+}
+
 
 #footer a {
   display: inline-block;

@@ -30,5 +30,5 @@ Tu veux que je te chante une chanson ?
 - chanson
 - chante
 
-Non Dave, pas aujourd'hui.
-Tu ne préfères pas qu'on parle de Ma carte ?
+Voici une chanson !
+<iframe width="560" height="315" style="margin: auto; display: block" src="https://www.youtube.com/embed/FzLneuWw5I0?si=lqebl5nFJfZ6gT1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

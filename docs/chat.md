@@ -5,7 +5,7 @@ rechercheContenu: true
 ---
 # Chat - Ma carte
 
-Je suis un chatbot programmé pour vous aider à utiliser les outils **Ma carte** développés par l'Institut national de l'information géographique et forestière (IGN).
+Je suis un chatbot programmé pour vous aider à utiliser les outils [**Ma carte**](https://macarte.ign.fr/) développés par l'Institut national de l'information géographique et forestière (IGN).
 
 Vous pouvez écrire votre question, ou bien vous laisser guider par les propositions ci-dessous.
 
@@ -48,9 +48,8 @@ Tu veux que je te chante une chanson ?
 - chanson
 - chante
 
-Non Dave, pas aujourd'hui.
-Tu ne préfères pas qu'on parle de Ma carte ?
-
+Voici une chanson !
+<iframe width="560" height="315" style="margin: auto; display: block" src="https://www.youtube.com/embed/FzLneuWw5I0?si=lqebl5nFJfZ6gT1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## IGN
 - IGN
@@ -104,7 +103,7 @@ Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux in
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
 ![](./img/share.png)
 
-Vous trouverez également sur cette page un lien de partage en édition pour travailler à plusieurs sur votre carte.
+Sur cette page vous trouverez également un lien de partage en édition pour [travailler à plusieurs sur votre carte](#macarte/Comment travailler à plusieurs sur une carte).
 
 Si vous ne souhaitez pas que votre carte puisse être vue par une autre personne que vous, en décochant la case "Carte active" vous serez le seul utilisateur à pouvoir la consulter.
 
@@ -599,6 +598,7 @@ Par contre vous n'aurez pas accès aux données directement pour les symboliser 
 - flux
 - OGC
 - fichier
+- ajouter
 
 Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (OGC) pour les ajouter sous forme de couche sur Ma carte.
 
@@ -618,6 +618,7 @@ Si le fichier est disponible sur internet, vous pouvez le lier via une url dans 
 - géoportail
 - géoplateforme
 - fonds
+- couche
 - flux
 - WMTS
 
@@ -666,12 +667,16 @@ Vous pouvez également fournir un fichier style local (attention cependant les d
 - layer
 
 Il est possible d'ajouter une légende aux couches dans le gestionnaire de couche de l'outil de création de cartes <i class="fg-map-legend"></i>.
-Vous pouvez créer une légende à partir d'une image existante ou de toute pièces avec les symboles disponibles dans la bibliothèque de symboles.
-Si la couche est un WMS qui a une légende (image) indiquée dans le flux, vous pouvez demander à utiliser celle-ci. Si votre couche a une symbolisation paramétrique l'outil peut déduire la légende à partir de la symbolisation.
+Vous pouvez créer une légende à partir d'une image existante ou de toute pièces (mode manuel) avec les symboles disponibles dans la bibliothèque de symboles.
+Si la couche est un WMS qui a une légende (image) indiquée dans le flux, vous pouvez demander à utiliser celle-ci. 
+
+![](./img/layer-legend.png)
+
+💡 Si vous utilisez des styles paramétrique dans le calque, en cliquant sur le bouton `Depuis le style` du calque tous les styles paramétrés sont automatiquement insérés dans la légende du calque avec leur nom.
 
 📝 la légende du calque n'est pas automatiquement intégrée dans la légende de la carte. 
 Pour cela vous devez l'ajouter à la légende de la carte via le menu <i class="fg-map-legend colored"></i> `Affichage`. 
-Dans ce cas, la légende ne s'affichera pas si la couche est masquée.
+💡 la légende ne s'affiche pas si la couche est masquée.
 
 
 1. [Comment ajouter une légende à ma carte ?](mceditor/Comment créer une légende)
@@ -908,6 +913,32 @@ L'interface vous permet d'ajouter des couches cartographiques ou de dessin, de c
 2. [Comment saisir des objets dans Ma carte ?](mceditor/Comment saisir des objets dans Ma carte)
 3. [Comment puis-je sauvegarder une carte ?](mceditor/Comment puis-je sauvegarder une carte)
 
+## mceditor/Explique moi les modes de fusion
+- mode de fusion
+- fusion
+- combiner
+
+Les modes de fusion permettent de définir la façon dont la couche va se combiné avec les couches inférieurs.
+
+Il existe différents modes de fusion :
+* <img src="./img/modes/normal.png" class="left tiny"/> **Normal :** Il s'agit du mode par défaut. Le calque va s'afficher par dessus les autre calque et venir masquer ceux-ci.
+* <img src="./img/modes/produit.png" class="left tiny"/> **Produit :** Les couleurs du calque vont venir se combiner avec celle du calque inférieur comme si on dessinait avec un marqueur. La couleur finale est toujours plus foncée. Le produit d'une couleur quelconque par le noir rend du noir. Le produit d'une couleur quelconque par le blanc n'a aucune incidence sur la couleur.
+* <img src="./img/modes/superposition.png" class="left tiny"/> **Superposition :** Ce mode est l'inverse du produit. La couleur finale est toujours plus claire. Une superposition avec le noir n'a aucune incidence sur la couleur. Une superposition avec le blanc produit du blanc.
+* <img src="./img/modes/recouvrement.png" class="left tiny"/> **Recouvrement :** Cet effet combine le mode produit et superposition. Lorsque la couche de base est claire, la couche supérieure devient plus claire ; là où la couche de base est sombre, le dessus devient plus sombre; là où la couche de base est gris moyen, le dessus n'est pas affecté.
+* <img src="./img/modes/obscurcir.png" class="left tiny"/> **Obscurcir :** Les pixels plus clairs que la couleur de fusion sont remplacés, et les pixels plus foncés demeurent intacts.
+* <img src="./img/modes/eclaircir.png" class="left tiny"/> **Eclaircir :** C'est l'inverse, les pixels plus foncés que la couleur de fusion sont remplacés, et les pixels plus clairs demeurent intacts.
+* <img src="./img/modes/densite+.png" class="left tiny"/> **Densité couleur + :** L'effet vient obscurcir la couleur du dessous par la couleur du calque par augmentation du contraste entre les deux. La fusion avec du blanc ne produit aucun effet.
+* <img src="./img/modes/densite-.png" class="left tiny"/> **Densité linéaire + :** L'effet vient éclaircir la couleur du dessous par la couleur du calque par réduction du contraste entre les deux. L'effet' avec du noir ne produit aucun effet.
+* <img src="./img/modes/lumiere-crue.png" class="left tiny"/> **Lumière crue :** Cet effet équivaut à projeter une lumière crue sur une image.
+* <img src="./img/modes/lumiere-douce.png" class="left tiny"/> **Lumière douce :** Cet effet équivaut à projeter une lumière diffuse sur l'image.
+* <img src="./img/modes/difference.png" class="left tiny"/> **Différence :** Cet effet soustrait la couleur de base de la couleur du calque, ou inversement, en fonction de la couleur la plus lumineuse. L'effet avec du blanc inverse les valeurs de la couleur de base. L'effet avec du noir ne produit aucun effet.
+* <img src="./img/modes/exclusion.png" class="left tiny"/> **Exclusion :** Cet effet est semblable au mode Différence avec un moindre contraste.
+* <img src="./img/modes/teinte.png" class="left tiny"/> **Teinte** Cet effet va appliquer la teinte du calque aux calques inférieurs.
+* <img src="./img/modes/saturation.png" class="left tiny"/> **Saturation :** Cet effet va appliquer la saturation de la couleur du calque aux calques inférieurs. Ce mode ne produit aucun effet sur une zone non saturée (avec une valeur de gris égale à 0).
+* <img src="./img/modes/couleur.png" class="left tiny"/> **Couleur** Cet effet va appliquer la couleur et la saturation du calque aux calques inférieurs. Ce mode préserve les niveaux de gris de l'image et est pratique pour colorer des images monochromes ou pour teinter des images en couleurs.
+* <img src="./img/modes/luminosite.png" class="left tiny"/> **Luminosité :** Cet effet va appliquer la luminance du calque au calques inférieurs. Ce mode crée l'effet inverse de celui du mode Couleurs.
+
+
 ## mceditor/Parle-moi du gestionnaire de couche
 - gestionnaire
 - couche
@@ -925,17 +956,38 @@ Le gestionnaire de couche permet d'organiser et paramétrer les différentes cou
 ![](https://macarte.ign.fr/api/image/img_lmi8141)
 ⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
 
-La barre de menus supérieure, permet de définir la façon dont la couche va se combiner avec les couches inférieures (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
+Elle est constituée d'une barre de menu supérieure, de la liste des couches et d'une barre inférieure.
 
-Vient ensuite la liste des couches et des informations indiquant son statut (affiché, verrouillée) ainsi qu'une double flèche pour ordonner les couches par glisser/déposer.
+### la barre de menus supérieure
 
-La barre de menus inférieure permet d'ajouter une nouvelle couche ou de modifier les propriétés de la couche courante, en particulier sa symbolisation ou son info-bulle.
+Elle permet de définir la façon dont la couche va se combiner avec les couches inférieures (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
+
+### la liste des couches 
+
+Elle donne des informations indiquant le nom et le statut de la couche. Lorsque la couche est sélectionnée, elle passe en surbrillance bleue.
+<i class="fi-visible"></i> permet d'afficher / masquer la couche
+<i class="fi-lock"></i> le verrou empêche la sélection sur une couche vecteur (la bulle ne s'affichera pas).
+<i class="fi-fullscreen-alt"></i> recentre sur l'emprise de la couche (lorsque celle-ci a une emprise limitée).
+<i class="fi-move"></i> la double flèche permet d'ordonner les couches par glisser/déposer.
+
+### la barre de menus inférieure 
+
+Elle agit sur la couche sélectionnée.
+
+<i class="fg-layer-alt-add-o fa-fw"></i> permet d'ajouter une nouvelle couche.
+<i class="fg-color fa-fw"></i> modifie la symbolisation de la couche courante.
+<i class="fi-comment fa-fw"/></i> permet de choisir ce qu'on affiche dans la bulle de la couche.
+<i class="fi-configuration fa-fw"></i> permet de modifier les propriétés de la couche courante.
+<i class="fg-map-legend fa-fw"></i> permet de personnaliser la légende de la couche courante. 
+<i class="fa fa-info-circle fa-fw"></i> contient les informations de la couche (nom, description, copyright, etc.) 
+<i class="fa fa-trash-o fa-fw"></i> supprime la couche courante de la carte.
 
 1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
 1. [Qu'est-ce que l'info-bulle d'une couche ?](mceditor/Qu'est-ce que l'info-bulle d'une couche)
 1. [Qu'est-ce que le style d'une couche ?](mceditor/Qu'est-ce que le style d'une couche)
 1. [Comment ajouter une légende à une couche ?](mceditor/Comment ajouter une légende à une couche)
 1. [Comment ajouter un fond sur Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
+1. [Explique moi les modes de fusion](mceditor/Explique moi les modes de fusion)
 
 
 ## mceditor/Qu'est-ce qu'une couche vecteur
@@ -965,7 +1017,7 @@ On parlera de données vecteur pour les distinguer des données (ou fonds) image
 - couche
 - layer
 
-Vous pouvez ajouter une bulle d'information aux calques. Cette bulle s'affichera lorsqu'un objet du calque est sélectionné (sauf ci celui-ci surcharge la bulle).
+Vous pouvez ajouter une bulle d'information aux calques (<i class="fi-comment"></i> dans le menu bas du gestionnaire de couche). Cette bulle s'affichera lorsqu'un objet du calque est sélectionné (sauf ci celui-ci a une bulle personnalisée).
 Le contenu de la bulle est défini en Markdown et il est possible d'afficher les attributs de l'objet sélectionné avec la syntaxe `%nom_de_l_attribut%`. 
 Afin de vous aider à paramétrer la bulle, pensez à sélectionner un objet sur le calque afin d'avoir accès en direct à ces attributs lors de la saisie du Markdown.
 
@@ -1044,6 +1096,9 @@ Pour les objets vecteurs, on peut aussi personnaliser les attributs du calque et
 - geoportail
 - carte
 - WMTS
+- ajouter
+- couche
+- layer
 
 Ma carte offre un grand nombre de fonds cartographiques disponibles pour agrémenter vos cartes en ligne.
 Vous pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.

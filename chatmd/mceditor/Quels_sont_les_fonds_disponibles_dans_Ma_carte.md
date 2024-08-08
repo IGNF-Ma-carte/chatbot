@@ -2,6 +2,9 @@
 - geoportail
 - carte
 - WMTS
+- ajouter
+- couche
+- layer
 
 Ma carte offre un grand nombre de fonds cartographiques disponibles pour agrémenter vos cartes en ligne.
 Vous pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.

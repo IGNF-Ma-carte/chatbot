@@ -2,6 +2,7 @@
 - géoportail
 - géoplateforme
 - fonds
+- couche
 - flux
 - WMTS
 
