@@ -114,6 +114,15 @@ pre code {
   top: -0.25em;
 }
 
+#chat button {
+  margin: 0;
+  vertical-align: middle;
+  height: 1.8em;
+  border-radius: 0;
+  border: 1px solid #666;
+  background: transparent;
+}
+
 
 #footer a {
   display: inline-block;

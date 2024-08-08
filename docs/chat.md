@@ -1500,13 +1500,13 @@ La bibliothèque de symbole est disponible dans l'onglet `Symboliser` <i class="
 ![](./img/biblio.png)
 
 Vous pouvez ajouter de nouveaux symboles à la bibliothèque :
-- si un objet est sélectionné, vous pouvez ajouter sa représentation à la bibliothèque en cliquant sur le bouton `<i class="fi-add"></i> Ajouter` dans l'onglet `Symboliser`.
+- si un objet est sélectionné, vous pouvez ajouter sa représentation à la bibliothèque en cliquant sur le bouton <button><i class="fi-add"></i> Ajouter</button> dans l'onglet `Symboliser`.
 - dans le dialogue de la bibliothèque, vous pouvez créer un nouveau symbole ou dupliquer un symbole existant dans la liste
 - vous pouvez également copier un symbole de la légende dans la bibliothèque en passant par le dialogue de la légende, en sélectionnant la ligne de la légende et en cliquant sur la flèche bleue.
 
 Vous pouvez également utiliser la bibliothèque de symbole d'une carte existante.
 
-Vous pouvez appliquer un symbole de la bibliothèque à l'objet sélectionné via le bouton `<i class="fa fa-book"></i> Utiliser` dans l'onglet `Symboliser`.
+Vous pouvez appliquer un symbole de la bibliothèque à l'objet sélectionné via le bouton <button><i class="fa fa-book"></i> Utiliser</button> dans l'onglet `Symboliser`.
 
 1. [Comment utiliser la bibliothèque de symbole d'une carte existante ?](symboliser/comment partager une bibliothèque de symboles)
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
