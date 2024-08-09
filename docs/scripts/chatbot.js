@@ -664,6 +664,7 @@ function createChatBot(chatData) {
 
 	// Réponse à une question dans l'url
 	if (initialQuestion) {
+		createChatMessage(initialQuestion.replace(/^#/, ''), true)
 		if (/^#/.test(initialQuestion)) {
 			responseToSelectedOption(initialQuestion.replace(/^#/, ''))
 		} else {

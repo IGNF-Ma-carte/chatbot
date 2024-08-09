@@ -10,4 +10,4 @@ Pour cela, rendez-vous dans le gestionnaire de couches et cliquez sur le bouton 
 Dans le dialogue qui s'ouvre cocher la couche que vous voulez importer.
 ![](../../docs/img/import-layer.png)
 
-1. [Comment créer une carte en ligne ?](./mceditor/créer_une_carte.md)
+1. [Comment créer une carte en ligne ?](../mceditor/créer_une_carte.md)

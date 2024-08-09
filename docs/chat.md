@@ -202,7 +202,7 @@ Les cartes produites peuvent être partagées, intégrées dans un blogue ou uti
 
 1. [En savoir plus sur Ma carte](macarte/historique)
 2. [Montre-moi des exemples de cartes](macarte/exemples)
-3. [Comment créer une carte](macarte/créer une carte)
+3. [Comment créer une carte](mceditor/créer une carte)
 4. [Comment partager une carte](macarte/Comment partager une carte)
 
 ## macarte/Ma carte peut-il héberger des images
@@ -848,7 +848,7 @@ Pour cela, rendez-vous dans le gestionnaire de couches et cliquez sur le bouton 
 Dans le dialogue qui s'ouvre cocher la couche que vous voulez importer.
 ![](./img/import-layer.png)
 
-1. [Comment créer une carte en ligne ?](mceditor/mceditor/créer une carte)
+1. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
 
 ## mceditor/Comment mettre à jour les données d'un calque de dessin
