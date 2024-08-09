@@ -11,7 +11,7 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
-3. [Localiser une couche d'adresse](mcadresse/1 géocodage localiser des adresses)
+3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
 4. [Créer une couche statistique](mcstat/créer une statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 6. [Qui est l'IGN ?](IGN)
@@ -72,7 +72,7 @@ Il développe et diffuse des données à caractère géographique ainsi que des 
 
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
-3. [Localiser une couche d'adresse](mcadresse/1 géocodage localiser des adresses)
+3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
 4. [Créer une couche statistique](mcstat/créer une statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
@@ -177,7 +177,7 @@ Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-M
 
 1. [Montre-moi des exemples](macarte/exemples)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
-3. [Localiser une couche d'adresse](mcadresse/1 géocodage localiser des adresses)
+3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
 4. [Créer une couche statistique](mcstat/créer une statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
@@ -328,26 +328,6 @@ Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les
 
 1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
 2. [Les cartes de l'Atlas](macarte/exemples)
-
-
-## mcadresse/1 géocodage localiser des adresses
-- géolocaliser
-- adresse
-- géocodage
-- géocoder
-- geocoder
-- geocode
-- qu'est-ce
-
-Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
-Le géocodage est un procédé qui permet de retrouver à partir d'une adresse littérale sa position sur la terre et ainsi l'afficher sur une carte.
-Par exemple, '*73 avenue de Paris, 94160 SAINT-MANDÉ*' est situé à 48,845726 de latitude Nord et 2,424573 de longitude Est.
-Le géocodage peut se faire à partir d'une adresse, de lieu-dit, une unité administrative ont un point d'intérêt ou d'une parcelle cadastrale.
-
-1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
-2. [Que renvoie le géocodage ?](mcadresse/Que renvoie le géocodage)
-3. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
-4. [Comment améliorer le géocodage ?](mcadresse/Comment améliorer le résultat du géocodage)
 
 
 ## mcadresse/Comment améliorer le résultat du géocodage
@@ -503,6 +483,26 @@ Enfin, l'application a des limites techniques, il est déconseillé de traiter u
 1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
 2. [Comment améliorer le résultat du géocodage ?](mcadresse/Comment améliorer le résultat du géocodage)
 
+## mcadresse/Localiser une couche d'adresse
+- géolocaliser
+- adresse
+- géocodage
+- géocoder
+- geocoder
+- geocode
+- qu'est-ce
+
+Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
+Le géocodage est un procédé qui permet de retrouver à partir d'une adresse littérale sa position sur la terre et ainsi l'afficher sur une carte.
+Par exemple, '*73 avenue de Paris, 94160 SAINT-MANDÉ*' est situé à 48,845726 de latitude Nord et 2,424573 de longitude Est.
+Le géocodage peut se faire à partir d'une adresse, de lieu-dit, une unité administrative ont un point d'intérêt ou d'une parcelle cadastrale.
+
+1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
+2. [Que renvoie le géocodage ?](mcadresse/Que renvoie le géocodage)
+3. [Quels sont les limites du géocodage ?](mcadresse/les limites du géocodage)
+4. [Comment améliorer le géocodage ?](mcadresse/Comment améliorer le résultat du géocodage)
+
+
 ## mcadresse/Qu'est-ce que l'indice de qualité du géocodage
 - geocodage
 - qualité
@@ -595,7 +595,7 @@ L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre
 
 Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
 
-1. [Comment ajouter des données à un calque ?](mceditor/Comment ajouter des données à un calque))
+1. [Comment ajouter des données à un calque ?](mceditor/Comment ajouter des données à un calque)
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 2. [Comment créer une bibliothèque de symboles ?](mceditor/Comment créer une bibliothèque de symboles)
 
@@ -1314,7 +1314,7 @@ Certains maillages sont fournis avec une version allégée pour optimiser l'affi
 
 Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de géocodage pour en déduire des coordonnées.
 
-1. [Comment géocoder un fichier d'adresse ?](mcstat/mcadresse/1 géocodage localiser des adresses)
+1. [Comment géocoder un fichier d'adresse ?](mcadresse/Localiser une couche d'adresse)
 1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
 
 

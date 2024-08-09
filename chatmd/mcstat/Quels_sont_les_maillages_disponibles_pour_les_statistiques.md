@@ -17,5 +17,5 @@ Certains maillages sont fournis avec une version allégée pour optimiser l'affi
 
 Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de géocodage pour en déduire des coordonnées.
 
-1. [Comment géocoder un fichier d'adresse ?](./mcadresse/1_géocodage_localiser_des_adresses.md)
+1. [Comment géocoder un fichier d'adresse ?](../mcadresse/Localiser_une_couche_d'adresse.md)
 1. [Comment optimiser une carte statistique ?](./Comment_optimiser_une_carte_statistique.md)

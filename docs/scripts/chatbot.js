@@ -8,7 +8,7 @@ function createChatBot(chatData) {
 	);
 	const params = { ...params1, ...params2 };
 	// Récupère la question initiale dans les paramètres
-	let initialQuestion = params.q
+	const initialQuestion = params.q
 	delete params.q;
 	// On récupère les paramètres dans l'URL et on les place dans dynamicVariables
 	// Si on utilise du contenu dynamique : on pourra utiliser ces variables

@@ -1,3 +1,9 @@
+body > a,
+body > a:visited {
+  color: #333!important;
+  text-decoration: none;
+}
+
 .bot-message>:first-child:before {
   background-image: url(../img/poibot.svg);
   background-repeat: no-repeat;

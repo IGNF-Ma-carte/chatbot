@@ -19,6 +19,6 @@ L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre
 
 Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
 
-1. [Comment ajouter des données à un calque ?](./Comment_ajouter_des_données_à_un_calque.md))
+1. [Comment ajouter des données à un calque ?](./Comment_ajouter_des_données_à_un_calque.md)
 1. [Qu'est-ce qu'une représentation paramétrique ?](../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md)
 2. [Comment créer une bibliothèque de symboles ?](./Comment_créer_une_bibliothèque_de_symboles.md)
