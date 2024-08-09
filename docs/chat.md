@@ -731,6 +731,7 @@ Pour cela vous devez l'ajouter à la légende de la carte via le menu <i class="
 💡 la légende ne s'affiche pas si la couche est masquée.
 
 
+1. [Montre-moi une vidéo](mceditor/video layer legend)
 1. [Comment ajouter une légende à ma carte ?](mceditor/Comment créer une légende)
 1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
@@ -788,6 +789,7 @@ Si vous avez associé une légende à une couche vous pouvez l'ajouter via le me
 Vous pouvez ajouter des lignes de titre et ordonner les lignes de la légende à votre guise.
 La légende va affiche (si l'option est cochée) en bas à droite de votre carte.
 
+1. [Montre-moi une vidéo](mceditor/video legende)
 1. [Comment ajouter des symboles à une bibliothèque ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Comment ajouter une légende à une couche ?](mceditor/Comment ajouter une légende à une couche)
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
@@ -805,6 +807,7 @@ Vous pouvez également ajouter un léger ombrage au masque.
 
 Pour spécifier un masque, vous devez au préalable sélectionner un objet surfacique dans une couche vecteur qui servira de découpe (cliquez sur le bouton `Utiliser la sélection` dans le dialogue d'options du calque).
 
+1. [Montre moi une vidéo](mceditor/video masque de découpage)
 1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
 
 
@@ -1200,6 +1203,36 @@ L'export se fait en coordonnées géographiques décimales (WGS84, code EPSG:432
 1. [Ajouter un fichier à un calque](mceditor/Comment ajouter des données à un calque)
 1. [Enregistrer les données d'un calque](mceditor/Comment enregistrer les données d'un calque)
 
+## mceditor/video layer legend
+- légende
+- layer
+- vidéo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jUpyyGZF3vg?si=3fHPsLpQe5E17ewl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+1. [Comment ajouter une légende à une couche ?](mceditor/Comment ajouter une légende à une couche)
+1. [Comment créer une légende ?](mceditor/Comment créer une légende)
+
+
+## mceditor/video legende
+- legende
+- vidéo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F4P0JSpOu5U?si=D9jAS34DhQWXCdJT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+1. [Comment créer une légende ?](mceditor/Comment créer une légende)
+
+
+## mceditor/video masque de découpage
+- masque
+- découpage
+- video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QdcOrxRe36Y?si=lOjUl6c2cJjCkIUT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+1. [Comment créer un masque de découpage ?](mceditor/Comment créer un masque de découpage)
+1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
+
 ## mcstat/Comment formater un fichier pour faire une carte statistique
 - formater
 - csv
@@ -1475,6 +1508,7 @@ On peut aussi tester explicitement l'existence ou non d'un attribut pour en affi
 Par exemple pour afficher une valeur ou une erreur en fonction d'un boolean (dans l'attribut `isok`): 
 `((?%isok% la valeur est %attr%))((!%isok% il y a une erreur : %error%))`
 
+1. [Montre-moi une vidéo](md/video attribut conditionnel)
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 1. [Comment afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
 1. [Comment intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
@@ -1551,6 +1585,18 @@ Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdo
 1. [Intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
 1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
 1. [Afficher une diagramme dans Ma carte](md/Afficher une diagramme dans Ma carte)
+
+## md/video attribut conditionnel
+- affichage conditionnel
+- attribut
+- conditionnel
+- vidéo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mdCuSZpXLOI?si=tyWqtfvnWIboxbPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+1. [Comment utiliser les attributs conditionnels ?](md/Comment ne pas afficher un attribut vide)
+1. [Qu'est-ce que le Makdown ?](md/markdown)
+
 
 ## selection/Comment sélectionner des objets
 - sélection

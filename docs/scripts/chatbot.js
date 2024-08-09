@@ -7,6 +7,9 @@ function createChatBot(chatData) {
 		new URLSearchParams(document.location.hash.replace(/#.*\?/, ""))
 	);
 	const params = { ...params1, ...params2 };
+	// Récupère la question initiale dans les paramètres
+	let initialQuestion = params.q
+	delete params.q;
 	// On récupère les paramètres dans l'URL et on les place dans dynamicVariables
 	// Si on utilise du contenu dynamique : on pourra utiliser ces variables
 	for (const [key, value] of Object.entries(params)) {
@@ -174,6 +177,12 @@ function createChatBot(chatData) {
 	const BESTMATCH_THRESHOLD = 0.55; // Seuil pour que le bestMatch soit pertinent
 
 	function responseToSelectedOption(optionLink) {
+		//
+		try{
+			const url = new URL(location)
+			url.search = 'q=' + encodeURIComponent('#'+optionLink);
+			history.replaceState(null, null, url);
+		} catch(e) {}
 		// Gestion de la réponse à envoyer si on sélectionne une des options proposées
 		if (optionLink != "") {
 			for (let i = 0; i < chatData.length; i++) {
@@ -236,6 +245,12 @@ function createChatBot(chatData) {
 	}
 
 	function chatbotResponse(inputText) {
+		// Ajouter à l'url
+		try{
+			const url = new URL(location)
+			url.search = 'q=' + encodeURIComponent(inputText);
+			history.replaceState(null, null, url);
+		} catch(e) {}
 		// Cas où on va directement à un prochain message (sans même avoir à tester la présence de keywords)
 		if (nextMessage != "" && !nextMessageOnlyIfKeywords) {
 			inputText = nextMessage;
@@ -647,7 +662,17 @@ function createChatBot(chatData) {
 		initialMessage = processDynamicVariables(initialMessage,dynamicVariables,false);
 	}
 
-	createChatMessage(initialMessage, false);
+	// Réponse à une question dans l'url
+	if (initialQuestion) {
+		if (/^#/.test(initialQuestion)) {
+			responseToSelectedOption(initialQuestion.replace(/^#/, ''))
+		} else {
+			chatbotResponse(initialQuestion)
+		}
+	} else {
+		// Message par défaut
+		createChatMessage(initialMessage, false);
+	}
 	initialMessage = initialMessage.replace(
 		/<span class=\"unique\">.*?<\/span>/,
 		""
