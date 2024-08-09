@@ -9,4 +9,5 @@ Vous pouvez également ajouter un léger ombrage au masque.
 
 Pour spécifier un masque, vous devez au préalable sélectionner un objet surfacique dans une couche vecteur qui servira de découpe (cliquez sur le bouton `Utiliser la sélection` dans le dialogue d'options du calque).
 
+1. [Montre moi une vidéo](./video_masque_de_découpage.md)
 1. [Quelles sont les propriétés d'une couche ?](./Quelles_sont_les_propriétés_d'une_couche.md)

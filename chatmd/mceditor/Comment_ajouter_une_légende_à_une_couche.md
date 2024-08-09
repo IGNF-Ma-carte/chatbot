@@ -17,6 +17,7 @@ Pour cela vous devez l'ajouter à la légende de la carte via le menu <i class="
 💡 la légende ne s'affiche pas si la couche est masquée.
 
 
+1. [Montre-moi une vidéo](./video_layer_legend.md)
 1. [Comment ajouter une légende à ma carte ?](./Comment_créer_une_légende.md)
 1. [Comment créer une bibliothèque de symboles ?](../symboliser/Comment_créer_une_bibliothèque_de_symboles.md)
 1. [Qu'est-ce qu'une représentation paramétrique ?](../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md)

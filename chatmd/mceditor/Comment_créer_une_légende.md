@@ -15,6 +15,7 @@ Si vous avez associé une légende à une couche vous pouvez l'ajouter via le me
 Vous pouvez ajouter des lignes de titre et ordonner les lignes de la légende à votre guise.
 La légende va affiche (si l'option est cochée) en bas à droite de votre carte.
 
+1. [Montre-moi une vidéo](./video_legende.md)
 1. [Comment ajouter des symboles à une bibliothèque ?](../symboliser/Comment_créer_une_bibliothèque_de_symboles.md)
 1. [Comment ajouter une légende à une couche ?](./Comment_ajouter_une_légende_à_une_couche.md)
 1. [Qu'est-ce qu'une représentation paramétrique ?](../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md)
