@@ -49,3 +49,4 @@ Le modèle différentiel permet de comparer deux objets en affichant conjointeme
 
 
 1. [Montre-moi des exemples de cartes narratives](./exemples_de_cartes_narratives.md)
+1. [Comment modifier une carte narrative ?](./Comment_modifier_une_carte_narrative.md)

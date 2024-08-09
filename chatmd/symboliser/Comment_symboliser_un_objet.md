@@ -1,6 +1,8 @@
 - symboliser
 - symbole
 - objet
+- couleur
+- couleurs
 
 Vous pouvez symboliser l'objet sélectionné dans une couche de dessin via l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
 

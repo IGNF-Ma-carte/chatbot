@@ -1,6 +1,8 @@
 - limite
 - restriction
 - adresses
+- étranger
+- géocodage
 
 Les adresses ne peuvent être localisées que sur le **territoire français** à l'exclusion de tout territoire étranger.
 Certains territoires ne sont pas couverts par les données de référence :
@@ -12,5 +14,6 @@ Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, un
 
 Enfin, l'application a des limites techniques, il est déconseillé de traiter un fichier de plus de 25000 adresses. Cette limite dépend aussi de votre ordinateur. Dans ce cas, il est conseillé de découper votre fichier en plusieurs lots plus petits.
 
+1. [Qu'est-ce que le géocodage ?](./Localiser_une_couche_d'adresse.md)
 1. [Comment géocoder un fichier d'adresses avec Ma carte ?](./Comment_géocoder_un_fichier_d'adresses.md)
 2. [Comment améliorer le résultat du géocodage ?](./Comment_améliorer_le_résultat_du_géocodage.md)

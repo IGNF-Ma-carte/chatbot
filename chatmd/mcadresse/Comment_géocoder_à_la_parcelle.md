@@ -1,7 +1,7 @@
 - géocoder
 - parcelle
 
-Pour procéder à ce mode de géocodage vous devez fournir au système des codes parcelles.
+Pour procéder à à un géocodage à la parcelle vous devez fournir au système des codes parcelles.
 Le code parcelle est formé de 14 caractères comme suit :
 - le code INSEE de la commune sur 5 caractères. Pour les communes à arrondissements (Paris, Lyon et Marseille), il faut préciser le code de l'arrondissement et pas le code INSEE de la commune agrégée.
 - le préfixe de la parcelle. la plupart du temps il correspond à 000. Dans le cas d'une commune associée (Lomme et Hellemmes à Lille par exemple) ou dans les cas des communes à arrondissement, il s'agit de trois chiffres.

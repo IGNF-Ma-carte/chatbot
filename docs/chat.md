@@ -12,7 +12,7 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
-4. [Créer une couche statistique](mcstat/créer une statistique)
+4. [Créer une couche statistique](mcstat/Comment créer une carte statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 6. [Qui est l'IGN ?](IGN)
 
@@ -73,7 +73,7 @@ Il développe et diffuse des données à caractère géographique ainsi que des 
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
-4. [Créer une couche statistique](mcstat/créer une statistique)
+4. [Créer une couche statistique](mcstat/Comment créer une carte statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
 ## macarte/A qui appartiennent les cartes produites sur Ma carte
@@ -178,7 +178,7 @@ Il est diffusé en Opensource depuis 2023 sur [Github](https://github.com/IGNF-M
 1. [Montre-moi des exemples](macarte/exemples)
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
-4. [Créer une couche statistique](mcstat/créer une statistique)
+4. [Créer une couche statistique](mcstat/Comment créer une carte statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
 
@@ -433,7 +433,7 @@ Le fichier doit contenir une adresse dans une colonne ou dans 3 colonnes (rue, c
 - géocoder
 - parcelle
 
-Pour procéder à ce mode de géocodage vous devez fournir au système des codes parcelles.
+Pour procéder à à un géocodage à la parcelle vous devez fournir au système des codes parcelles.
 Le code parcelle est formé de 14 caractères comme suit :
 - le code INSEE de la commune sur 5 caractères. Pour les communes à arrondissements (Paris, Lyon et Marseille), il faut préciser le code de l'arrondissement et pas le code INSEE de la commune agrégée.
 - le préfixe de la parcelle. la plupart du temps il correspond à 000. Dans le cas d'une commune associée (Lomme et Hellemmes à Lille par exemple) ou dans les cas des communes à arrondissement, il s'agit de trois chiffres.
@@ -469,6 +469,8 @@ Pour les fichiers **csv**, il est possible d'avoir une tabulation personnalisée
 - limite
 - restriction
 - adresses
+- étranger
+- géocodage
 
 Les adresses ne peuvent être localisées que sur le **territoire français** à l'exclusion de tout territoire étranger.
 Certains territoires ne sont pas couverts par les données de référence :
@@ -480,6 +482,7 @@ Le géocodage dépend fortement de **la façon dont est décrite l'adresse**, un
 
 Enfin, l'application a des limites techniques, il est déconseillé de traiter un fichier de plus de 25000 adresses. Cette limite dépend aussi de votre ordinateur. Dans ce cas, il est conseillé de découper votre fichier en plusieurs lots plus petits.
 
+1. [Qu'est-ce que le géocodage ?](mcadresse/Localiser une couche d'adresse)
 1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
 2. [Comment améliorer le résultat du géocodage ?](mcadresse/Comment améliorer le résultat du géocodage)
 
@@ -495,7 +498,7 @@ Enfin, l'application a des limites techniques, il est déconseillé de traiter u
 Le processus qui permet de localiser une adresse s'appelle le **géocodage**.   
 Le géocodage est un procédé qui permet de retrouver à partir d'une adresse littérale sa position sur la terre et ainsi l'afficher sur une carte.
 Par exemple, '*73 avenue de Paris, 94160 SAINT-MANDÉ*' est situé à 48,845726 de latitude Nord et 2,424573 de longitude Est.
-Le géocodage peut se faire à partir d'une adresse, de lieu-dit, une unité administrative ont un point d'intérêt ou d'une parcelle cadastrale.
+Le géocodage peut se faire à partir d'une adresse, de lieu-dit, une unité administrative, un point d'intérêt ou d'une parcelle cadastrale.
 
 1. [Comment géocoder un fichier d'adresses avec Ma carte ?](mcadresse/Comment géocoder un fichier d'adresses)
 2. [Que renvoie le géocodage ?](mcadresse/Que renvoie le géocodage)
@@ -1236,6 +1239,39 @@ L'export se fait en coordonnées géographiques décimales (WGS84, code EPSG:432
 1. [Comment créer un masque de découpage ?](mceditor/Comment créer un masque de découpage)
 1. [Quelles sont les propriétés d'une couche ?](mceditor/Quelles sont les propriétés d'une couche)
 
+## mcstat/Comment créer une carte statistique
+- carte
+- statistique
+- stat
+- carte statistique
+- couche
+- layer
+- calque
+- éditeur
+- création
+- créer
+- faire
+
+Ma carte propose un outil de création de [couches statistiques](https://macarte.ign.fr/edition/statistique/).
+
+La cartographie thématique visualise les données sur la base de concepts spatiaux tels que la densité, les proportions, les pourcentages, les indices ou les tendances, des moyennes... Il est donc nécessaire d'avoir accès à de l'information et à des données chiffrées concernant la thématique abordée (généralement un fichier tableur).
+Pour cela, elle s'appuiera sur des analyses statistiques qui lui fourniront, par exemple pour décrire les forêts: les densités des boisements, la répartition des espèces, les types ou les volumes de productions, etc...
+
+Afin de représenter un phénomène sur une carte, il est nécessaire d'avoir sa position dans l'espace, pour cela, [plusieurs maillages sont proposées](#mcstat/Quels sont les maillages disponibles pour les statistiques) (pays, département, commune, etc.).
+
+Le module propose différents [types de cartes statistiques](#mcstat/Quels sont les types de cartes statistiques proposés) afin carte statistique
+de mettre en forme des données provenant d'un fichier tableur ou géographique sous forme de cartes de dégradés (ou choroplèthe), de cartes de catégories, de symboles, avec une représentation par symbole ou carte de chaleur.
+Vous pouvez choisir la [méthode de classification](#mcstat/Les méthodes de classification) ainsi que [les couleurs ou les symboles](#mcstat/les couleurs et les symboles statistiques) qui seront utilisés sur la carte statistique.
+
+Une fois la carte enregistrée, vous pouvez la reprendre sous forme de carte pour changer les fonds de cartes ou ajouter de l'information par-dessus. 
+Vous pouvez également charger une nouvelle couche statistique depuis une carte existante afin de les croiser avec la statistique courante.
+
+1. [Quels sont les types de carte statistique proposés ?](mcstat/Quels sont les types de cartes statistiques proposés)
+1. [Comment formater un fichier pour faire une carte statistique ?](mcstat/Comment formater un fichier pour faire une carte statistique)
+1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
+1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
+1. [Comment importer une couche d'une autre carte ?](mceditor/Comment importer une couche d'une autre carte)
+
 ## mcstat/Comment formater un fichier pour faire une carte statistique
 - formater
 - csv
@@ -1250,6 +1286,7 @@ Dans votre fichier, vos données doivent être organisées de façon à rendre l
 3. Les données doivent contenir une colonne permettant d'indiquer à quel objet géographique il se réfère (maillage) ou une colonne indiquant la longitude et latitude de l'information
 4. Enfin il est nécessaire d'avoir une colonne codant une statistique à représenter...
 
+1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
 1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
 1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
 
@@ -1274,25 +1311,97 @@ Si vous voulez faire une symbolisation ponctuelle (par symboles ou sectorielle),
 1. [Comment formater un fichier pour faire une carte statistique ?](mcstat/Comment formater un fichier pour faire une carte statistique)
 
 
-## mcstat/créer une statistique
-
-- éditeur
-- création
+## mcstat/les couleurs et les symboles statistiques
 - statistique
-- carte
+- couleur
+- couleurs
+- palette
 
-Ma carte propose un outil de création de [couches statistiques](https://macarte.ign.fr/edition/statistique/).
-Il permet de mettre en forme des données provenant d'un fichier tableur ou géographique sous forme de cartes de dégradés (ou choroplèthe), de cartes de catégories, de symboles, avec une représentation par symbole ou carte de chaleur.
-Vous pouvez choisir la méthode de classification ainsi que les couleurs ou les symboles qui seront utilisés sur la carte.
+Les palettes proposées sont des combinaisons de couleurs sélectionnées pour leurs propriétés perceptives dans l'optique de la visualisation de données.
 
-Une fois la carte enregistrée, vous pouvez la reprendre sous forme de carte pour changer les fonds de cartes ou ajouter de l'information par-dessus. 
+Ces palettes ont été créés par [Cynthia Brewer](http://www.colorbrewer2.org/) à des fins de cartographie, mais ont également trouvé une utilisation dans bien d'autres domaines.
 
-Vous pouvez également charger une nouvelle couche statistique depuis une carte existante afin de les croiser avec la statistique courante.
+### Le défi
+<img class="small left" src="https://macarte.ign.fr/edition/statistique/img/help/france.jpg"/>
+Un choix de couleurs efficaces pour l'affichage de données statistiques (graphique de barres, camemberts, carte statistique, thématique ou de chaleur) est d'autant plus difficile que la façon dont nous choisissons la couleur ne reflète pas la façon dont la nous percevons.
 
+Il existe de nombreux exemples de mauvaises combinaisons de couleurs publiés sur le web. Ainsi, des catégories encodées avec une combinaison de couleurs claires et sombres, donneront une préférence aux couleurs vives qui vont dominer l'attention du lecteur.
+D'autre part, si deux couleurs semblent similaires, le lecteur va instinctivement les percevoir comme appartenant à un groupe et en déduire que les variables sous-jacentes sont liées.
+
+Les couleurs avec un faible contraste (dont la luminosité est perçue similaire) ou avec un contraste simultané (couleurs pures) interfèrent également avec les mécanismes d'interprétation.
+
+### Les différents types de Palettes
+Il existe quatre types de palettes :
+* **coloré** : ce sont des palettes séquentielles à une seule valeur, elles utilisent un dégradé à partir d'une couleur de base
+* **séquentiel** : les couleurs ont un ordre perçu avec une différence entre couleurs successives uniformes. Elles sont adaptées pour des données ordonnées avec une variation de valeur continue (gradient).
+* **divergent** : elles utilisent deux palettes séquentielles dos à dos à partir d'une couleur commune. Elles accordent la même importance aux différentes valeurs des données.
+* **qualitatif** - les couleurs n'ont pas d'ordre perçu. Elles sont adaptées pour représenter des données catégorielles ou nominales.
+
+### Personnalisation des couleurs
+Afin de maximiser la différenciation des couleurs entre elles, les palettes proposées dépassent	rarement 10 classes.
+Or,
+* pour certains types de configuration spatiale, il peut être utile d’avoir plus de 10 classes
+* pour des données catégorielles, il peut être intéressant de pouvoir choisir la couleur d'une catégorie
+* pour valoriser la mise en exergue d'un phénomème on peut avoir recours à une couleur tranchée pour la classe concernée
+
+
+1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
+1. [Quels sont les types de cartes statistiques ?](mcstat/Quels sont les types de cartes statistiques proposés)
+1. [Quels sont les méthodes de classification proposées ?](mcstat/Les méthodes de classification)
+
+
+## mcstat/Les méthodes de classification
+- statistique
+- méthode
+- classification
+- classe
+- quantile
+
+Cinq méthodes de classification vous sont proposées. Une information contextuelle les détaille. Les méthodes s'appliquent aux types de carte choroplèthes et symboles.
+
+Afin de représenter les données sur la carte, nous devons les répartir dans des **classes** sur lesquelles on pourra définir un style de représentation donné.
+
+### Quantiles
+Les quantiles sont les valeurs qui partagent un jeu de données en n parts égales.
+Ainsi, si on découpe un jeu de 20 données en 4 classes, elles contiendront 5 données chacune.
+
+### Equidistance
+Une répartition par équidistance partage un jeu de données en *n* parts de même largeur.
+Ainsi si notre jeu de données a une valeur minimale de 2 et une valeur maximale de 14 (donc une amplitude de 12) et qu'on le découpe en 4 classes, elles auront chacune une largeur de 3.
+
+### Logarithmique
+Ce mode utilise une répartition équidistante mais sur une échelle logarithmique.
+
+### Cluster ou k-moyenne
+Une répartition par cluster (ou k-moyenne) consiste à découper un jeu de données en parts, appelées clusters, de façon à minimiser une fonction de distance entre les individus. 
+📝 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
+
+### Manuelle
+Vous définissez vous-même les bornes des classes.
+
+1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
+1. [Quels sont les types de cartes statistiques ?](mcstat/Quels sont les types de cartes statistiques proposés)
+1. [Comment choir les couleurs des statistiques ?](mcstat/les couleurs et les symboles statistiques)
+
+
+## mcstat/Puis-traiter plusieurs fichiers en même temps
+- plusieurs fichiers
+- statistique
+- couche
+- layer
+
+Vous ne pouvez traiter qu'une **seule couche statistique à la fois**. 
+Si vous avez plusieurs fichiers, ils doivent être traités individuellement.
+
+Pour chaque fichiers vous créez une nouvelle couche statistique avec sa légende, vous pourrez ensuite combiner ses différentes statistiques en utilisant le [module de création de carte](#mceditor/Comment importer une couche d'une autre carte).
+
+Pour charger une couche statistique dans le module de création de carte, cliquez sur le bouton pour ajouter un fond cartographique dans le gestionnaire de couche (<i class="fg-layer-alt-add-o"></i>), puis choisissez `"Depuis une autre carte..."`
+
+1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
+1. [Comment charger une couche depuis une carte statistique dans Ma carte ?](mceditor/Comment importer une couche d'une autre carte)
+1. [Quels sont les types de carte statistique proposés ?](mcstat/Quels sont les types de cartes statistiques proposés)
 1. [Comment formater un fichier pour faire une carte statistique ?](mcstat/Comment formater un fichier pour faire une carte statistique)
-1. [Quels sont les maillages disponibles pour les statistiques ?](mcstat/Quels sont les maillages disponibles pour les statistiques)
-1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
-1. [Comment importer une couche d'une autre carte ?](mceditor/Comment importer une couche d'une autre carte)
+
 
 ## mcstat/Quels sont les maillages disponibles pour les statistiques
 - maillage
@@ -1312,11 +1421,82 @@ Il faudra préciser lors de l'import des données le type de découpage (maillag
 
 Certains maillages sont fournis avec une version allégée pour optimiser l'affichage des statistiques.
 
-Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de géocodage pour en déduire des coordonnées.
+Lorsqu'on n'a pas de coordonnées associées à une série de données, mais qu'on a des informations de localisation à l'adresse, à la commune ou au lieu-dit, on peut utiliser des outils de [géocodage](#mcadresse/Localiser une couche d'adresse) pour en déduire des coordonnées.
 
+1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
 1. [Comment géocoder un fichier d'adresse ?](mcadresse/Localiser une couche d'adresse)
 1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
 
+
+## mcstat/Quels sont les types de cartes statistiques proposés
+- statistique
+- type
+- choroplèthe
+- catégorie
+- symbole
+- sectorielle
+- chaleur
+- heatmap
+
+Plusieurs type de carte sont proposés.
+
+### Carte dégradée ou choroplèthe
+<img class="small left" src="https://macarte.ign.fr/edition/statistique/img/type/choroplethe.png" />
+Une carte choroplèthe, du grec chôros (χώρος), zone/région et plethos (πληθαίν), multiple, est une carte statistique en aplat de couleur suivant un attribut de type numérique qui servira à définir une classification.
+Elle est particulièrement adaptée à représenter une mesure statistique, comme la densité d'un phénomène. Ce type de carte facilite la comparaison d'une mesure d'une région à l'autre, ou montre la variabilité du phénomène.
+Les données à représenter sont plutôt de type surfacique (dans le cas de données ponctuelles, on lui préférera généralement une carte de symbole).
+
+### Carte par catégories
+<img class="small left" src="https://macarte.ign.fr/edition/statistique/img/type/categorie.png" />
+C'est une carte en aplat de couleur en fonction d'un attribut de tous types. Dans ce cas, ce sont les valeurs d'un attribut qui serviront à coder la couleur.
+Elle ne peut pas représenter un phénomène statistique ordonné mais peut indiquer la répartition spatiale d'un phénomène.
+
+### Carte de symboles proportionnels
+<img class="small left" src="https://macarte.ign.fr/edition/statistique/img/type/symbol.png" />
+Ce type de carte permet l'affichage d'un symbole suivant un attribut numérique qui code la classe et la grosseur du point affiché.
+Il est particulièrement indiqué pour représenter un phénomène impliquant une quantité. La taille du cercle peut être répartie entre deux valeurs ou proportionnelle à la quantité.
+La proportionnalité peut s'appliquer sur des points (taille du symbole) ou sur des lignes (largeurs). Dans ce cas, la largeur de la ligne va indiquer la valeur représentée (fréquentation d'une route par exemple).
+
+### Carte sectorielle
+<img class="small left" src="https://macarte.ign.fr/edition/statistique/img/type/sectoriel.png" />
+Ce type de carte représente sous forme de diagramme statistique (camembert, barres) un phénomène localisé sur un point. Lorsqu'il s'applique à une surface, il est localisé sur un point à l'intérieur de celle-ci (centroïde).
+La superposition intégrale en un seul point étant impossible (sauf à passer en 3D), il permet de représenter plusieurs variables (attributs) en même temps et est recommandé pour visualiser un phénomène impliquant plusieurs candidats (résultat d'élection par exemple).
+La taille du graphique correspond à la valeur totale des variables représentées. On peut le conditionner entre deux valeurs ou l'afficher de manière proportionnelle.
+
+### Carte d'activité ou carte de chaleur
+<img class="small left" src="https://macarte.ign.fr/edition/statistique/img/type/heatmap.png" />
+Une carte de chaleur est une représentation cartographique qui, à la grandeur d'une variable, fait correspondre une teinte donnée dans une palette de couleurs.
+C'est une carte d'accumulation et deux phénomènes proches spatialement vont s'additionner (se cumuler) sur la carte. Elle nécessite d'avoir des données ponctuelles pour fonctionner. Par défaut, seule la position du point est utilisée mais en choisissant un attribut numérique, on va pouvoir donner un poids au point représentant le phénomène.
+
+1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
+1. [Quels sont les méthodes de classification proposées ?](mcstat/Les méthodes de classification)
+1. [Comment choir les couleurs des statistiques ?](mcstat/les couleurs et les symboles statistiques)
+
+
+## mcstory/Comment modifier une carte narrative
+- narration
+- storymap
+- carte narrative
+- modifier
+
+Une carte narrative est un conteneur qui contient une ou plusieurs cartes préalablement réalisée avec Ma carte (suivant le modèle de narration choisi).
+
+L'information géographique est contenue dans la ou les cartes qui composent la carte narrative.
+Si vous souhaitez modifier le contenu d'une carte narrative, il faut intervenir dans la carte (ou les cartes) qui la compose(nt) en utilisant l'[éditeur Ma carte](mceditor/créer une carte).
+
+Seuls les paramètres de mise en forme sont modifiables dans l'interface de Ma carte narrative :
+* un titre et un sous-titre
+* des couleurs de fond et de texte personnalisées pour valoriser vos réalisations, respecter une charte graphique
+* l'adjonction d'un logo pour signer votre identité
+* des widgets pour faciliter l'utilisation de la carte : recherche d'adresse, gestionnaire de calques, outils de mesure, outils de croquis, coordonnées du pointeur, légende, ...
+* la configuration des info-bulles et volets
+* l'affichage d'une description pour apporter à l'internaute des informations complémentaires sur la narration.
+
+Les narrations plus complexes peuvent contenir d'autres éléments (les étapes par exemple).
+
+Si vous modifiez une carte (dans le module d'édition) pour voir apparaître les modification dans la carte narrative vous devez cliquer sur le bouton rafraîchir (<i class="fi-repeat"></i>) dans l'onglet carte.
+
+![](./img/refresh-map.png)
 
 ## mcstory/exemples de cartes narratives
 - exemple
@@ -1390,6 +1570,7 @@ Le modèle différentiel permet de comparer deux objets en affichant conjointeme
 
 
 1. [Montre-moi des exemples de cartes narratives](mcstory/exemples de cartes narratives)
+1. [Comment modifier une carte narrative ?](mcstory/Comment modifier une carte narrative)
 
 ## mcstory/raconter une histoire
 - carte narrative
@@ -1723,6 +1904,8 @@ Le fichier `.carte` ainsi généré pourra être récupérée simplement par gli
 - symboliser
 - symbole
 - objet
+- couleur
+- couleurs
 
 Vous pouvez symboliser l'objet sélectionné dans une couche de dessin via l'onglet `Symboliser` <i class="fi-pencil colored"></i>.
 
