@@ -22,6 +22,7 @@ On peut aussi tester explicitement l'existence ou non d'un attribut pour en affi
 Par exemple pour afficher une valeur ou une erreur en fonction d'un boolean (dans l'attribut `isok`): 
 `((?%isok% la valeur est %attr%))((!%isok% il y a une erreur : %error%))`
 
+1. [Montre-moi une vidéo](./video_attribut_conditionnel.md)
 1. [Qu'est-ce que le Makdown ?](./markdown.md)
 1. [Comment afficher des attributs en Markdown](./Afficher_des_attributs_en_Markdown.md)
 1. [Comment intégrer des médias dans Ma carte](./Intégrer_des_médias_dans_Ma_carte.md)
