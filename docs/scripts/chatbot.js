@@ -177,7 +177,7 @@ function createChatBot(chatData) {
 	const BESTMATCH_THRESHOLD = 0.55; // Seuil pour que le bestMatch soit pertinent
 
 	function responseToSelectedOption(optionLink) {
-		//
+		// initialQuestion
 		try{
 			const url = new URL(location)
 			url.search = 'q=' + encodeURIComponent('#'+optionLink);
@@ -245,7 +245,7 @@ function createChatBot(chatData) {
 	}
 
 	function chatbotResponse(inputText) {
-		// Ajouter à l'url
+		// initialQuestion
 		try{
 			const url = new URL(location)
 			url.search = 'q=' + encodeURIComponent(inputText);

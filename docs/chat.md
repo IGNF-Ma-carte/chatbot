@@ -51,6 +51,9 @@ Tu veux que je te chante une chanson ?
 Voici une chanson !
 <iframe width="560" height="315" style="margin: auto; display: block" src="https://www.youtube.com/embed/FzLneuWw5I0?si=lqebl5nFJfZ6gT1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+1. [Qu'est-ce que Ma carte ?](macarte/macarte)
+1. [Montre moi des exemples de cartes](macarte/exemples)
+
 ## IGN
 - IGN
 - qui est
