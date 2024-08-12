@@ -195,7 +195,8 @@ function createChatBot(chatData) {
 					optionsLastResponse = options;
 					response = options ? gestionOptions(response, options) : response;
 					createChatMessage(response, false);
-					break;
+					// break;
+					return response;
 				}
 			}
 		} else {
@@ -671,8 +672,12 @@ function createChatBot(chatData) {
 		yamlTypeWriter = saveWriter;
 		// Initial questio
 		createChatMessage(initialQuestion.replace(/^#/, ''), true)
+		console.log('ok')
 		if (/^#/.test(initialQuestion)) {
-			responseToSelectedOption(initialQuestion.replace(/^#/, ''))
+			if (!responseToSelectedOption(initialQuestion.replace(/^#/, ''))) {
+				// Lien casse > chercher une réponse quand même
+				chatbotResponse(initialQuestion.replace(/^#/, ''))
+			}
 		} else {
 			chatbotResponse(initialQuestion)
 		}
