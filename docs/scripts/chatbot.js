@@ -249,7 +249,7 @@ function createChatBot(chatData) {
 		// initialQuestion
 		try{
 			const url = new URL(location)
-			url.search = 'q=' + encodeURIComponent(inputText);
+			url.search = 'q=' + encodeURIComponent(inputText).replace(/%20/g, '+');
 			history.replaceState(null, null, url);
 		} catch(e) {}
 		// Cas où on va directement à un prochain message (sans même avoir à tester la présence de keywords)
