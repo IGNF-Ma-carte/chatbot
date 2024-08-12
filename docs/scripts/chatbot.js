@@ -664,6 +664,12 @@ function createChatBot(chatData) {
 
 	// Réponse à une question dans l'url
 	if (initialQuestion) {
+		// Initial message
+		const saveWriter = yamlTypeWriter;
+		yamlTypeWriter = false;
+		createChatMessage(initialMessage, false);
+		yamlTypeWriter = saveWriter;
+		// Initial questio
 		createChatMessage(initialQuestion.replace(/^#/, ''), true)
 		if (/^#/.test(initialQuestion)) {
 			responseToSelectedOption(initialQuestion.replace(/^#/, ''))
