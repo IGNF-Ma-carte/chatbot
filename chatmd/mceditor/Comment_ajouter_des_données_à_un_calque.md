@@ -12,7 +12,7 @@ Pour cela, sélectionnez le calque qui contient les données dans le gestionnair
 Dans la fenêtre d'options de la couche, cliquez sur le bouton de chargement <i class="fi-open"></i>.
 ![](../../docs/img/options.png)
 
-💡 Si vous utilisé une [définition de styles paramétrique](#../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md) dans le calque, les objets ajoutés sont symbolisés directement.
+💡 Si vous utilisez une [définition de styles paramétrique](#../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md) dans le calque, les objets ajoutés sont symbolisés directement.
 
 ⚠️ L'import de données vectorielles doit se faire en degrés décimaux (WGS84, code EPSG:4326) ou en Web Mercator (EPSG:3857). Pour utiliser des données exprimées dans une autres projection une conversion en amont est nécessaire.
 
