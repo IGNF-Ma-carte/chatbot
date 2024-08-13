@@ -1018,7 +1018,7 @@ Il existe différents modes de fusion :
 
 Les données géographiques sont regroupées dans des couches pour en faciliter la gestion. Pour des raisons de commodité, celles-ci forment un regroupement thématique ou organisationnel qui permet de manipuler d'un bloc l'ensemble les données qu'elles contiennent (afficher, changer l'ordre d'affichage, appliquer une symbolisation, etc.).
 
-Le gestionnaire de couche permet d'organiser et paramétrer les différentes couches constituant votre carte.
+<i class="fg-layer-stack-o fa-2x"></i> Le gestionnaire de couche permet d'organiser et paramétrer les différentes couches constituant votre carte.
 
 ![](https://macarte.ign.fr/api/image/img_lmi8141)
 ⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
@@ -1908,7 +1908,7 @@ Dans le dialogue qui s'ouvre cocher `importer la bibliothèque de symboles` :
 ![](./img/loadlib.png)
 
 Vous pouvez également enregistrer une carte modèle sur votre ordinateur contenant la bibliothèque de symbole via le bouton <i class="fi-download"></i> de la barre de menus de l'éditeur de cartes. 
-Le fichier `.carte` ainsi généré pourra être récupérée simplement par glissé/déposé sur la carte en cours de saisie. Vous pouvez également partager ce fichier avec d'autres utilisateurs en leur envoyant par mail, par exemple.
+Le fichier `.carte` ainsi généré pourra être récupérée simplement par glissé/déposé sur la carte en cours de saisie. Ce fichier pourra aussi être partagé avec d'autres utilisateurs en l'envoyant par mail, par exemple.
 
 1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Où est le gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
