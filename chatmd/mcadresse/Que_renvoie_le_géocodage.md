@@ -12,4 +12,4 @@ En plus de la localisation géographique **latitude** et **longitude**, l'applic
 Le résultat du géocodage peut être enregistré dans un fichier tableur (csv, xlsx) ou géographique (kml, geojson).
 Il peut également être enregistré dans une carte pour être repris dans les autres outils de Ma carte.
 
-1. [Quels sont les outils de Ma carte ?](../macarte//macarte.md)
+1. [Quels sont les outils de Ma carte ?](../macarte/macarte.md)

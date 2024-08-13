@@ -14,7 +14,7 @@ Pour les objets ponctuels, Ma carte propose une liste symboles personnalisable, 
 ![](https://viglino.github.io/Macarte-MI/assets/img/ch2.2-form.png)
 
 Vous avez la possibilité d'utiliser une image, sur le net ou dans votre galerie d'images. Le point peut aussi être une annotation, dans ce cas, seule l'étiquette associée va s'afficher.
-![](../../docs/img//symboliser.png)
+![](../../docs/img/symboliser.png)
 
 Pour chaque objet, vous pouvez ajouter une étiquette, constituée d'un texte qui s'affiche sur la carte pour caractériser l'objet.
 La mise en forme de l'étiquette sur la carte va dépendre du type d'objet auquel elle se rapporte.

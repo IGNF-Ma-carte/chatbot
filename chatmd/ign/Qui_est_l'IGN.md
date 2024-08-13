@@ -1,4 +1,3 @@
-## IGN
 - IGN
 - qui est
 - qui est l'IGN
@@ -14,8 +13,8 @@ Il développe et diffuse des données à caractère géographique ainsi que des 
 
 [En savoir plus...](https://www.ign.fr/)
 
-1. [Qu'est ce que Ma carte ?](./macarte/macarte.md)
-2. [Comment créer une carte en ligne ?](./mceditor/créer_une_carte.md)
-3. [Localiser une couche d'adresse](./mcadresse/Localiser_une_couche_d'adresse.md)
-4. [Créer une couche statistique](./mcstat/Comment_créer_une_carte_statistique.md)
-5. [Raconter une histoire sur une carte](./mcstory/raconter_une_histoire.md)
+1. [Qu'est ce que Ma carte ?](../macarte/macarte.md)
+2. [Comment créer une carte en ligne ?](../mceditor/créer_une_carte.md)
+3. [Localiser une couche d'adresse](../mcadresse/Localiser_une_couche_d'adresse.md)
+4. [Créer une couche statistique](../mcstat/Comment_créer_une_carte_statistique.md)
+5. [Raconter une histoire sur une carte](../mcstory/raconter_une_histoire.md)

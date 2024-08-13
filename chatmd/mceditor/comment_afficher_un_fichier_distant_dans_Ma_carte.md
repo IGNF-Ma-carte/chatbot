@@ -17,7 +17,7 @@ Entrez l'url du fichier pour vous connecter dessus.
 
 L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre à jour ce fichier. A chaque nouvel affichage de la carte le fichier va être rechargé et les nouvelles données affichées. Ce peut être pratique pour certains usages (données en temps réel, mise à jour automatique, etc.).
 
-Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
+Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez [utiliser une symbolisation paramétrique](#../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md) pour les représenter sur la carte.
 
 1. [Comment ajouter des données à un calque ?](./Comment_ajouter_des_données_à_un_calque.md)
 1. [Qu'est-ce qu'une représentation paramétrique ?](../symboliser/Qu'est-ce_qu'une_représentation_paramétrique.md)

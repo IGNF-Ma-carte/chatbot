@@ -19,4 +19,4 @@ Vous pouvez alors choisir un des flux proposés par le Géoportail ou vous branc
 Vous pouvez également fournir un fichier style local (attention cependant les données du flux devront être disponibles en ligne), ceci peut être intéressant pour personnaliser un flux existant (par exemple un flux IGN en utilisant [l'outil proposé](https://viglino.github.io/ol-ext/examples/layer/map.layer.gppvtile.html?embed=1))
 
 1. [Qu'est-ce que le vecteur tuilé ?](../macarte/Qu'est-ce_que_le_vecteur_tuilé.md)
-1. [Comment ajouter des flux OGC ?](./mceditor/Comment ajouter des flux OGC)
+1. [Comment ajouter des flux OGC ?](./Comment_ajouter_des_flux_OGC.md)

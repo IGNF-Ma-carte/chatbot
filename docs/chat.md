@@ -14,7 +14,7 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 3. [Localiser une couche d'adresse](mcadresse/Localiser une couche d'adresse)
 4. [Créer une couche statistique](mcstat/Comment créer une carte statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
-6. [Qui est l'IGN ?](IGN)
+6. [Qui est l'IGN ?](ign/Qui est l'IGN)
 
 ## Bonjour
 - hello
@@ -54,7 +54,7 @@ Voici une chanson !
 1. [Qu'est-ce que Ma carte ?](macarte/macarte)
 1. [Montre moi des exemples de cartes](macarte/exemples)
 
-## IGN
+## ign/Qui est l'IGN
 - IGN
 - qui est
 - qui est l'IGN
@@ -232,7 +232,7 @@ Une page est dédiée à vos images dans [votre espace personnel](https://macart
 - partage
 
 Un QR Code (Quick Response Code) est disponible sur la page de visualisation de la carte en cliquant sur le bouton [i] en bas à droite de la carte.
-![](./img//qrcode.png)
+![](./img/qrcode.png)
 
 Ce QR Code peut être placé sur une affiche ou un document pour faciliter l'accès à la carte avec un smartphone ou une tablette.
 
@@ -558,7 +558,7 @@ En plus de la localisation géographique **latitude** et **longitude**, l'applic
 Le résultat du géocodage peut être enregistré dans un fichier tableur (csv, xlsx) ou géographique (kml, geojson).
 Il peut également être enregistré dans une carte pour être repris dans les autres outils de Ma carte.
 
-1. [Quels sont les outils de Ma carte ?](macarte//macarte)
+1. [Quels sont les outils de Ma carte ?](macarte/macarte)
 
 ## mceditor/A quoi sert la thématique d'une couche
 - thématique
@@ -596,7 +596,7 @@ Entrez l'url du fichier pour vous connecter dessus.
 
 L'avantage de lier un fichier externe et qu'il est parfois plus facile de mettre à jour ce fichier. A chaque nouvel affichage de la carte le fichier va être rechargé et les nouvelles données affichées. Ce peut être pratique pour certains usages (données en temps réel, mise à jour automatique, etc.).
 
-Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez utiliser une symbolisation paramétrique pour les représenter sur la carte.
+Par contre vous n'aurez pas accès aux données directement pour les symboliser et vous devrez [utiliser une symbolisation paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique) pour les représenter sur la carte.
 
 1. [Comment ajouter des données à un calque ?](mceditor/Comment ajouter des données à un calque)
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
@@ -641,7 +641,7 @@ Pour cela, sélectionnez le calque qui contient les données dans le gestionnair
 Dans la fenêtre d'options de la couche, cliquez sur le bouton de chargement <i class="fi-open"></i>.
 ![](./img/options.png)
 
-💡 Si vous utilisé une [définition de styles paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique) dans le calque, les objets ajoutés sont symbolisés directement.
+💡 Si vous utilisez une [définition de styles paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique) dans le calque, les objets ajoutés sont symbolisés directement.
 
 ⚠️ L'import de données vectorielles doit se faire en degrés décimaux (WGS84, code EPSG:4326) ou en Web Mercator (EPSG:3857). Pour utiliser des données exprimées dans une autres projection une conversion en amont est nécessaire.
 
@@ -714,7 +714,7 @@ Vous pouvez alors choisir un des flux proposés par le Géoportail ou vous branc
 Vous pouvez également fournir un fichier style local (attention cependant les données du flux devront être disponibles en ligne), ceci peut être intéressant pour personnaliser un flux existant (par exemple un flux IGN en utilisant [l'outil proposé](https://viglino.github.io/ol-ext/examples/layer/map.layer.gppvtile.html?embed=1))
 
 1. [Qu'est-ce que le vecteur tuilé ?](macarte/Qu'est-ce que le vecteur tuilé)
-1. [Comment ajouter des flux OGC ?](./mceditor/Comment ajouter des flux OGC)
+1. [Comment ajouter des flux OGC ?](mceditor/Comment ajouter des flux OGC)
 
 
 ## mceditor/Comment ajouter une légende à une couche
@@ -767,14 +767,14 @@ Aussi, si vous avez des étiquettes ou des symboles qui s'affichent sur cette co
 Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
 Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveaux de zoom pour lesquels la couche est masquée.
 
-![](./img//visibility-range.png)
+![](./img/visibility-range.png)
 
 L'utilisation de flux tuilés est aussi recommandée : WMTS plutôt WMS et tuiles vectorielles plutôt que WFS.
 
 Pour les statistiques impliquant de nombreux îlots IRIS, communes ou EPCI, il faut choisir la version du maillage "allégé" à la création de la statistique.
 
 1. [Qu'est-ce que le mode cluster ?](mceditor/Qu'est-ce que le mode cluster)
-1. [Comment optimiser une carte statistique ?](mcstat//Comment optimiser une carte statistique)
+1. [Comment optimiser une carte statistique ?](mcstat/Comment optimiser une carte statistique)
 
 
 ## mceditor/Comment créer une légende
@@ -895,6 +895,7 @@ Vous pouvez renseigner un titre, une description (en Markdown) et une image. Vou
 ⚙️ Si la bulle n'est pas renseignée sur l'objet, c'est la bulle du calque qui sera utilisée.
 
 1. [Qu'est-ce que l'info-bulle d'une couche ?](mceditor/Qu'est-ce que l'info-bulle d'une couche)
+1. [Comment afficher une image dans une info-bulle ?](md/Intégrer des médias dans Ma carte)
 1. [Qu'est-ce que le Markdown ?](md/markdown)
 
 
@@ -1482,7 +1483,7 @@ C'est une carte d'accumulation et deux phénomènes proches spatialement vont s'
 Une carte narrative est un conteneur qui contient une ou plusieurs cartes préalablement réalisée avec Ma carte (suivant le modèle de narration choisi).
 
 L'information géographique est contenue dans la ou les cartes qui composent la carte narrative.
-Si vous souhaitez modifier le contenu d'une carte narrative, il faut intervenir dans la carte (ou les cartes) qui la compose(nt) en utilisant l'[éditeur Ma carte](mceditor/créer une carte).
+Si vous souhaitez modifier le contenu d'une carte narrative, il faut intervenir dans la carte (ou les cartes) qui la compose(nt) en utilisant l'[éditeur Ma carte](#mceditor/créer une carte).
 
 Seuls les paramètres de mise en forme sont modifiables dans l'interface de Ma carte narrative :
 * un titre et un sous-titre
@@ -1498,6 +1499,10 @@ Si vous modifiez une carte (dans le module d'édition) pour voir apparaître les
 
 ![](./img/refresh-map.png)
 
+1. [Quels sont les modèles de carte narrative proposés ?](mcstory/Quels sont les modèles de carte narrative proposés)
+1. [Montre-moi des exemples de cartes narratives](mcstory/exemples de cartes narratives)
+
+
 ## mcstory/exemples de cartes narratives
 - exemple
 - carte
@@ -1507,7 +1512,7 @@ Si vous modifiez une carte (dans le module d'édition) pour voir apparaître les
 
 Voici quelques exemples de cartes narratives : 
 - Modèle standard : [Patrimoine de la biodiversité](https://macarte.ign.fr/carte-narrative/voir/12ca4efdf0956c7c9945b3cd2feab687/Patrimoine-naturel-de-la-biodiversite) -  J-M. Viglino
-- Modèle volet : [Lieux de tournage à Paris](https://macarte.ign.fr/carte-narrative/voir/aad127aedc4c7d10e372ad6d617c8c95/Lieux_de_tournage_a_Paris)] -  J-M. Viglino
+- Modèle volet : [Lieux de tournage à Paris](https://macarte.ign.fr/carte-narrative/voir/aad127aedc4c7d10e372ad6d617c8c95/Lieux_de_tournage_a_Paris) -  J-M. Viglino
 - Modèle photo : [La Route des Alpes - BnF](https://macarte.ign.fr/carte-narrative/voir/1e99baa82a09055d0aecd8a7cdd5c1d4/BnF-Route-des-Alpes) -  J-M. Viglino
 - Modèle diaporama : [Les lieux du stade](https://macarte.ign.fr/carte/5SkrR6/Les-lieux-du-stade) -  A. Sandrin
 - Modèle étapes : [L'attractivité urbaine en France](https://macarte.ign.fr/carte-narrative/voir/95b97c69c0d2713614845761857ea034/Attractivite_urbaine_France) -  M. Chartier
@@ -1708,19 +1713,29 @@ Par exemple pour afficher une valeur ou une erreur en fonction d'un boolean (dan
 - twitter
 
 La syntaxe pour intégrer un média dans Ma carte est la suivante : 
-```MD
+```md
 ![info sur le média](url_du_media)
 ```
+Des paramètres optionnels permettent de redimensionner l'image `largeur`x`hauteur`. S'ils ne sont pas présents la taille de l'image sera automatiquement calculée.
+```md
+Une image 500 par 200 pixels :
+![info sur le média](url_du_media 500x200)
+Une image de 200 pixels de haut :
+![info sur le média](url_du_media x200)
+```
 
-Il peut s'agir d'une image, d'une vidéo ou d'un fichier de son.
-On peut aussi intégrer un tweet avec l'url du tweet.
+Il peut s'agir d'une image, d'une vidéo ou d'un fichier de son. Dans ce cas, le paramètre `autoplay` permet de lancer la lecture automatiquement.
+```md
+![sample video](http://www.w3schools.com/html/mov_bbb.mp4 x200 autoplay) 
+```
 
 Utilisez la barre de Markdown pour vous aider à intégrer les images. En particulier pour ajouter un lien d'affichage en plein écran sur une image.
 ![](./img/insert-medai.png)
 
+📝 On peut aussi intégrer un tweet avec l'url du tweet. Dans ce cas, le paramètre optionnel indique si on veut afficher les images du tweet et sa largeur.
 
-Il est également possible d'intégrer un comparateur d'images
-```
+🖼️ Il est également possible d'intégrer un comparateur d'images. Dans ce cas, deux images seront affichées l'une sur l'autre, avec une réglette pour les comparer.
+```md
 &#96imageSlider
 img1: url_image_1
 img2: url_image_2
@@ -1728,7 +1743,7 @@ fullscreen: true
 &#96
 ```
 
-💡 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
+💡 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil : <i class="fi-info"></i>.
 
 1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
 1. [Qu'est-ce que le Makdown ?](md/markdown)
@@ -1896,7 +1911,7 @@ Vous pouvez également enregistrer une carte modèle sur votre ordinateur conten
 Le fichier `.carte` ainsi généré pourra être récupérée simplement par glissé/déposé sur la carte en cours de saisie. Vous pouvez également partager ce fichier avec d'autres utilisateurs en leur envoyant par mail, par exemple.
 
 1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
-1. [Où est le gestionnaire de couche](mceditor//Parle-moi du gestionnaire de couche)
+1. [Où est le gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 
 
@@ -1917,7 +1932,7 @@ Pour les objets ponctuels, Ma carte propose une liste symboles personnalisable, 
 ![](https://viglino.github.io/Macarte-MI/assets/img/ch2.2-form.png)
 
 Vous avez la possibilité d'utiliser une image, sur le net ou dans votre galerie d'images. Le point peut aussi être une annotation, dans ce cas, seule l'étiquette associée va s'afficher.
-![](./img//symboliser.png)
+![](./img/symboliser.png)
 
 Pour chaque objet, vous pouvez ajouter une étiquette, constituée d'un texte qui s'affiche sur la carte pour caractériser l'objet.
 La mise en forme de l'étiquette sur la carte va dépendre du type d'objet auquel elle se rapporte.

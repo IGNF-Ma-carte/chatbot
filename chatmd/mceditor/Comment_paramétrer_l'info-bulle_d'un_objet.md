@@ -16,4 +16,5 @@ Vous pouvez renseigner un titre, une description (en Markdown) et une image. Vou
 ⚙️ Si la bulle n'est pas renseignée sur l'objet, c'est la bulle du calque qui sera utilisée.
 
 1. [Qu'est-ce que l'info-bulle d'une couche ?](./Qu'est-ce_que_l'info-bulle_d'une_couche.md)
+1. [Comment afficher une image dans une info-bulle ?](../md/Intégrer_des_médias_dans_Ma_carte.md)
 1. [Qu'est-ce que le Markdown ?](../md/markdown.md)

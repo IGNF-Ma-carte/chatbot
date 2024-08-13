@@ -21,11 +21,11 @@ Aussi, si vous avez des étiquettes ou des symboles qui s'affichent sur cette co
 Vous pouvez également limiter les plages de zooms dans lesquels le calque va s'afficher.
 Généralement, lorsque vous avez beaucoup de données, à petit zoom elles viennent se superposer et rendent la carte illisible. Il est alors conseillé de ne pas les afficher à partir d'un certain zoom. Il est possible par contre d'afficher une couche allégée, plus synthétique, qui représentera le phénomène observé à cette échelle qui s'affichera aux niveaux de zoom pour lesquels la couche est masquée.
 
-![](../../docs/img//visibility-range.png)
+![](../../docs/img/visibility-range.png)
 
 L'utilisation de flux tuilés est aussi recommandée : WMTS plutôt WMS et tuiles vectorielles plutôt que WFS.
 
 Pour les statistiques impliquant de nombreux îlots IRIS, communes ou EPCI, il faut choisir la version du maillage "allégé" à la création de la statistique.
 
 1. [Qu'est-ce que le mode cluster ?](./Qu'est-ce_que_le_mode_cluster.md)
-1. [Comment optimiser une carte statistique ?](../mcstat//Comment_optimiser_une_carte_statistique.md)
+1. [Comment optimiser une carte statistique ?](../mcstat/Comment_optimiser_une_carte_statistique.md)
