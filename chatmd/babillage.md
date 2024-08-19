@@ -4,7 +4,9 @@
 - salut
 
 Bonjour.
-Comment puis-je vous aider ?
+
+1. [Comment puis-je vous aider ?](./macarte/macarte.md)
+1. [Montre moi des exemples de cartes](./macarte/exemples.md)
 
 ## Comment vas-tu ?
 - vas-tu
@@ -12,7 +14,9 @@ Comment puis-je vous aider ?
 - vas tu
 
 Très bien, merci.
-Que puis-je faire pour vous ?
+
+1. [Que puis-je faire pour vous ?](./macarte/macarte.md)
+1. [Montre moi des exemples de cartes](./macarte/exemples.md)
 
 ## Qui es-tu ?
 - es-tu
@@ -20,11 +24,17 @@ Que puis-je faire pour vous ?
 
 Je suis un robot conversationnel programmé pour vous aider dans vos démarches.
 
+1. [Qu'est-ce que Ma carte ?](./macarte/macarte.md)
+1. [Montre moi des exemples de cartes](./macarte/exemples.md)
+
 ## Quel est ton nom ?
 - appelles
 
 Je suis un robot conversationnel et je n'ai pas de nom, mais tu peux m'appeler HAL-9000 !
 Tu veux que je te chante une chanson ?
+
+1. [Chante-moi une chanson](Chante-moi une chanson)
+1. [Qu'est-ce que Ma carte ?](./macarte/macarte.md)
 
 ## Chante-moi une chanson
 - chanson

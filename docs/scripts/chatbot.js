@@ -670,8 +670,9 @@ function createChatBot(chatData) {
 		yamlTypeWriter = false;
 		createChatMessage(initialMessage, false);
 		yamlTypeWriter = saveWriter;
-		// Initial questio
-		createChatMessage(initialQuestion.replace(/^#/, ''), true)
+		// Initial question
+		const q = initialQuestion.replace(/^#/, '').split('/')
+		createChatMessage(q[1] || q[0], true)
 		if (/^#/.test(initialQuestion)) {
 			if (!responseToSelectedOption(initialQuestion.replace(/^#/, ''))) {
 				// Lien cassé > chercher une réponse quand même
