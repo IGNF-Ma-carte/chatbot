@@ -11,6 +11,6 @@ En cliquant sur `plus d'options` un dialogue s'ouvre qui offre plus d'options et
 
 N'hésitez pas à consulter l'aide en ligne <i class="fi-info"></i>.
 
-1. [Qu'est-ce que le Makdown ?](../md/markdown.md)
+1. [Qu'est-ce que le Markdown ?](../md/markdown.md)
 1. [Comment afficher des attributs en Markdown ?](./Afficher_des_attributs_en_Markdown.md)
 1. [Intégrer des médias en Markdown](./Intégrer_des_médias_dans_Ma_carte.md)
