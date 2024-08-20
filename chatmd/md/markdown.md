@@ -7,7 +7,7 @@ Le Markdown est un format de balisage très léger qui permet d'écrire rapideme
 
 Par exemple on écrit &#042;&#042;texte en gras&#042;&#042; pour écrire du **texte en gras**, ou alors &#042;texte en italique&#042; pour écrire du *texte en italique*.
 
-Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdowntutorial.com/fr/).
+Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdowntutorial.com/fr/) (même si le MD utilisé par Ma carte diffère un peut du MD standard).
 
 📝 Ma carte utilise une syntaxe étendue pour afficher des attributs, des médias ou des widgets (diagrammes, calendriers, images).
 
