@@ -7,6 +7,8 @@ rechercheContenu: true
 
 Je suis un chatbot programmé pour vous aider à utiliser les outils [**Ma carte**](https://macarte.ign.fr/) développés par l'Institut national de l'information géographique et forestière (IGN).
 
+![](https://macarte.ign.fr/image/voir/eqb6228.jpeg)
+
 Vous pouvez écrire votre question, ou bien vous laisser guider par les propositions ci-dessous.
 
 1. [Qu'est ce que Ma carte ?](macarte/macarte)
@@ -76,6 +78,8 @@ Voici une chanson !
 
 L'Institut national de l'information géographique et forestière (IGN) est un établissement public à caractère administratif ayant pour mission d'assurer la production, l'entretien et la diffusion de l'information géographique de référence en France.
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/IGN_logo_2012.svg/100px-IGN_logo_2012.svg.png)
+
 Il développe et diffuse des données à caractère géographique ainsi que des outils tels que Ma carte pour réaliser et publier des cartes en ligne.
 
 [En savoir plus...](https://www.ign.fr/)
@@ -110,7 +114,7 @@ Si une carte inclut des données, fonds de plan provenant de services non fourni
 
 Les cartes sont accessibles directement sur le web au travers d'une adresse (URL), qu'il vous suffit de transmettre (par mail par exemple).
 Vous pouvez aussi partager votre carte avec un QR Code lisible sur un Smartphone que vous pourrez intégrer sur une affiche ou un document.
-Sur les pages de création de cartes, l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA28-share-alt.svg" /> dans la barre de menus permet de partager la carte par URL, au travers d'un widget (iFrame) à intégrer sur un site internet ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
+Sur les pages de création de cartes, l'icône <i class="fi-share-alt"></i> dans la barre de menus permet de partager la carte par URL, au travers d'un widget (iFrame) à intégrer sur un site internet ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
 Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux internautes d'y accéder plus facilement.
 
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
@@ -840,8 +844,8 @@ Pour spécifier un masque, vous devez au préalable sélectionner un objet surfa
 - kml
 
 Vous avez la possibilité de récupérer les données saisies dans l'outil d'édition de cartes au format GeoJSON ou KML
-Pour cela, sélectionnez le calque qui contient les données dans le gestionnaire de couche (passe en surbrillance bleue) puis ouvrez la fenêtre d'options en cliquant sur le bouton <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA0A-configuration.svg" /> en bas à droite du gestionnaire.
-Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargement <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" />.
+Pour cela, sélectionnez le calque qui contient les données dans le gestionnaire de couche (passe en surbrillance bleue) puis ouvrez la fenêtre d'options en cliquant sur le bouton <i class="fi-configuration"></i> en bas à droite du gestionnaire.
+Dans la fenêtre d'options de la couche, cliquez sur le bouton de téléchargement <i class="fi-download"></i>.
 ![](./img/options.png)
 
 ⚠️ L'export se fait en coordonnées géographiques décimales (WGS84, code EPSG:4326)
@@ -875,7 +879,8 @@ Dans le dialogue qui s'ouvre cocher la couche que vous voulez importer.
 - data
 - dessin
 
-Dans le module d'édition, il est possible de remplacer ou ajouter des données dans un calque de dessin en chargeant un nouveau lot de données dans le dialogue d'options du calque via le gestionnaire de calque <img class="icon" src = "./img/configuration.svg" />.
+Dans le module d'édition, il est possible de remplacer ou ajouter des données dans un calque de dessin en chargeant un nouveau lot de données dans le dialogue d'options du calque via le gestionnaire de calque <i class="fi-configuration"></i>.
+
 ![](./img/options.png)
 
 Les nouvelles données vont venir se charger dans le calque. 
@@ -939,12 +944,12 @@ Vous pouvez typer les attributs afin d'aider à la saisie. Un attribut peut êtr
 - carte
 - modèle
 
-Chaque utilisateur disposant d'un compte peut enregistrer ses cartes dans son espace personnel via l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA27-save.svg" /> située dans le bandeau en haut à droite.
+Chaque utilisateur disposant d'un compte peut enregistrer ses cartes dans son espace personnel via l'icône <i class="fi-save"></i> située dans le bandeau en haut à droite.
  C'est la façon la plus simple et recommandée d'enregistrer une carte.
 
 Il est également possible d'enregistrer une copie de la carte sur son ordinateur (format `.carte`). Ce format est interne à l'application Ma carte et vous pourrez l'ouvrir par glisser/déposer dans une fenêtre de l'[éditeur](https://macarte.ign.fr/edition/carte/).
 
-Pour enregistrer un fichier `.carte`, cliquez sur l'icône <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/ign/uE90A-download.svg" /> située dans le bandeau en haut à droite.
+Pour enregistrer un fichier `.carte`, cliquez sur l'icône <i class="fi-download"></i> située dans le bandeau en haut à droite.
 
 Il est intéressant d'utiliser cette possibilité pour transmettre votre carte en tant que modèle. Le destinataire pourra alors la charger dans l'application Ma carte et la modifier à sa guise.
 Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser les données de votre carte sur internet.
@@ -959,12 +964,12 @@ Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser le
 - saisir
 
 Une couche de dessin est une couche sur laquelle on va pouvoir accéder, modifier et ajouter de nouveaux objets à travers l'[outil de création de cartes](https://macarte.ign.fr/edition/carte).
-Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />)
+Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnaire de couches <i class="fg-layer-alt-add-o"></i>)
 
 La saisie de nouvelles données se fait à l'aide des outils de dessin en haut de l'écran.
 ![](./img/drawtools.png)
 
-Cliquez sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
+Cliquez sur le <i class="fi-help"></i> pour accéder à une aide complète.
 
 La saisie se fait dans la couche active (surlignée en bleu dans le gestionnaire de couche).
 
@@ -982,7 +987,7 @@ Des options vous permettent également de vous accrocher aux objets existants ou
 - créer
 
 Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche.
-Vous n'avez pas besoin d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site. Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur.
+Vous n'avez pas besoin d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site (menu <i class="fi-save"></i>). Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur (via le menu <i class="fi-download"></i>).
 
 L'interface vous permet d'ajouter des couches cartographiques ou de dessin, de charger des fichiers géographiques ou dessiner à l'aide des outils fournis.
 
@@ -1139,7 +1144,7 @@ La couche peut adopter une **symbolisation paramétrique**, dans ce cas, elle se
 Ceci a l'avantage de pouvoir plus facilement changer la symbolisation d'un groupe d'objet et de la rendre plus dynamique (si l'attribut d'un objet change, sa symbolisation va changer). Cela va également être pratique si on doit mettre à jour une couche de dessin (nouveau millésime de la donnée).
 Dans le cas de couche vecteur en flux, c'est la seule façon d'affecter une symbolisation différente aux objets affichés.
 
-On peut modifier la symbolisation d'une couche via le bouton <img class="icon" src="./img/color.svg" /> dans la barre inférieure du gestionnaire de couche.
+On peut modifier la symbolisation d'une couche via le bouton <i class="fg-color"></i> dans la barre inférieure du gestionnaire de couche.
 
 1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 2. [Comment créer une bibliothèque de symboles ?](mceditor/Comment créer une bibliothèque de symboles)
@@ -1155,11 +1160,11 @@ On peut modifier la symbolisation d'une couche via le bouton <img class="icon" s
 
 Les propriétés d'une couche sont de deux types : 
 
-<img class="icon" src="./img/info-circle.svg" /> Les **informations** qui servent à la décrire et qui seront visibles par l'utilisateur dans le gestionnaire de couche. En particulier le nom et la description de la couche ainsi qu'un copyright qui s'affichera sur la carte. 
+<i class="fa fa-info-circle"></i> Les **informations** qui servent à la décrire et qui seront visibles par l'utilisateur dans le gestionnaire de couche. En particulier le nom et la description de la couche ainsi qu'un copyright qui s'affichera sur la carte. 
 Une couche contenant des données vecteur peut être exportable (case à cocher), ce qui se traduira par un bouton pour télécharger les données dans le dialogue d'information de la couche.
 Enfin, une couche peut avoir une thématique et un logo.
 
-<img class="icon" src="./img/configuration.svg" /> les options de la couche qui conditionnent son affichage.
+<i class="fi-configuration"></i> les options de la couche qui conditionnent son affichage.
 On trouve ici la plage de visibilité qui définit les échelles auxquelles la couche va s'afficher ainsi que le masque de découpage.
 Pour les couches vecteurs, on peut définir le mode d'affichage et les attributs de la couche.
 Le mode d'affichage peut être vecteur (normal), image qui permet d'optimiser l'affichage lors des déplacements (utile pour les couches ayant beaucoup d'objets à afficher) et le mode cluster qui permet de regrouper les objets à petite échelle.
@@ -1180,7 +1185,7 @@ Pour les objets vecteurs, on peut aussi personnaliser les attributs du calque et
 - layer
 
 Ma carte offre un grand nombre de fonds cartographiques disponibles pour agrémenter vos cartes en ligne.
-Vous pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />.
+Vous pouvez choisir les fonds lors de la création de la carte (via l'assistant) ou par le menu d'ajout de couche dans le gestionnaire de couches <i class="fg-layer-alt-add-o"></i>.
 
 Parmi ceux-ci, on trouve un accès simplifié aux fonds cartographiques du Géoportail par thématique.
 En cliquant sur le bouton `Plus d'options`, vous avez un large choix de fonctionnalités pour ajouter des flux provenant de services tiers dans des formats standardisés (OGC).
@@ -1530,6 +1535,7 @@ Voici quelques exemples de cartes narratives :
 - Modèle comparaison : [Lyon Métropole face à une crue majeure](https://macarte.ign.fr/carte-narrative/voir/722968cde123b481d4eb39c6e8c8efa2/Risque_inondation_a_Lyon) -  M. Chartier
 - Modèle différentiel : [Occupation du sol Bourgogne-Franche-Comté](https://macarte.ign.fr/carte/UP9ae8/OCS-BFC-indicateurs) -  J-M. Viglino
 
+1. [Montre-moi des exemples de cartes](macarte/exemples)
 1. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
 
@@ -1584,7 +1590,7 @@ Le modèle différentiel permet de comparer deux objets en affichant conjointeme
 💡 Idéal pour comparer des données statistiques.
 
 
-1. [Montre-moi des exemples de cartes narratives](mcstory/exemples de cartes narratives)
+1. [Montre-moi des exemples utilisant ces modèles](mcstory/exemples de cartes narratives)
 1. [Comment modifier une carte narrative ?](mcstory/Comment modifier une carte narrative)
 
 ## mcstory/raconter une histoire
@@ -1771,7 +1777,7 @@ La barre d'outil de Ma carte vous permet d'ajouter plus facilement les balises M
 En cliquant sur `plus d'options` un dialogue s'ouvre qui offre plus d'options et un espace pour visualiser le rendu du Markdown.
 ![](./img/mdbarre.svg)
 
-N'hésitez pas à consulter l'aide en ligne <img class="icon" src="./img/info.svg" />
+N'hésitez pas à consulter l'aide en ligne <i class="fi-info"></i>.
 
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 1. [Comment afficher des attributs en Markdown ?](md/Afficher des attributs en Markdown)

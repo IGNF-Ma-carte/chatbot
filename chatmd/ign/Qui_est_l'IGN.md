@@ -9,6 +9,8 @@
 
 L'Institut national de l'information géographique et forestière (IGN) est un établissement public à caractère administratif ayant pour mission d'assurer la production, l'entretien et la diffusion de l'information géographique de référence en France.
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/IGN_logo_2012.svg/100px-IGN_logo_2012.svg.png)
+
 Il développe et diffuse des données à caractère géographique ainsi que des outils tels que Ma carte pour réaliser et publier des cartes en ligne.
 
 [En savoir plus...](https://www.ign.fr/)

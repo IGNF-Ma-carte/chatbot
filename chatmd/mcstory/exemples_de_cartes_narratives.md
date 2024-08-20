@@ -14,4 +14,5 @@ Voici quelques exemples de cartes narratives :
 - Modèle comparaison : [Lyon Métropole face à une crue majeure](https://macarte.ign.fr/carte-narrative/voir/722968cde123b481d4eb39c6e8c8efa2/Risque_inondation_a_Lyon) -  M. Chartier
 - Modèle différentiel : [Occupation du sol Bourgogne-Franche-Comté](https://macarte.ign.fr/carte/UP9ae8/OCS-BFC-indicateurs) -  J-M. Viglino
 
+1. [Montre-moi des exemples de cartes](../macarte/exemples.md)
 1. [Raconter une histoire sur une carte](./raconter_une_histoire.md)

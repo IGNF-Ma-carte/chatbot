@@ -7,6 +7,8 @@ rechercheContenu: true
 
 Je suis un chatbot programmé pour vous aider à utiliser les outils [**Ma carte**](https://macarte.ign.fr/) développés par l'Institut national de l'information géographique et forestière (IGN).
 
+![](https://macarte.ign.fr/image/voir/eqb6228.jpeg)
+
 Vous pouvez écrire votre question, ou bien vous laisser guider par les propositions ci-dessous.
 
 1. [Qu'est ce que Ma carte ?](./macarte/macarte.md)

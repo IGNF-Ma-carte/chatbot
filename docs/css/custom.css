@@ -80,9 +80,11 @@ pre code {
 }
 
 /* icons */
+#chat .fa,
 [class^="fg-"], 
 [class^="fi-"] {
-  margin: 0 .2em;
+  font-size: 1.2em;
+  margin: -.1em .2em;
 }
 
 [class^="fg-"].colored:before, 
@@ -130,6 +132,9 @@ pre code {
   background: transparent;
 }
 
+#chat img {
+  margin: 1em 0;
+}
 
 #footer a {
   display: inline-block;

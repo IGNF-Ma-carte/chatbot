@@ -4,12 +4,12 @@
 - saisir
 
 Une couche de dessin est une couche sur laquelle on va pouvoir accéder, modifier et ajouter de nouveaux objets à travers l'[outil de création de cartes](https://macarte.ign.fr/edition/carte).
-Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnaire de couches <img class="icon" src="https://raw.githubusercontent.com/Viglino/font-gis/main/svg/layer/uEB48-layer-alt-add-o.svg" />)
+Vous pouvez avoir autant de couche de dessin que vous voulez (via le gestionnaire de couches <i class="fg-layer-alt-add-o"></i>)
 
 La saisie de nouvelles données se fait à l'aide des outils de dessin en haut de l'écran.
 ![](../../docs/img/drawtools.png)
 
-Cliquez sur le <img class="icon" src="https://raw.githubusercontent.com/IGNF-Ma-carte/font-ign/main/svg/mc/uEA11-help.svg" /> pour accéder à une aide complète.
+Cliquez sur le <i class="fi-help"></i> pour accéder à une aide complète.
 
 La saisie se fait dans la couche active (surlignée en bleu dans le gestionnaire de couche).
 
