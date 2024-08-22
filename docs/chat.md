@@ -90,6 +90,39 @@ Il développe et diffuse des données à caractère géographique ainsi que des 
 4. [Créer une couche statistique](mcstat/Comment créer une carte statistique)
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 
+## macarte/Aller plus loins avec le widget carto
+- iframe
+- widget carto
+- programmation
+- iframeAPI
+- api
+- javascript
+
+Si vous avez des besoins particuliers, vous aurez peut-être besoins de vous mettre à la programmation.
+Pour cela, Macarte propose une iFrame-API qui permet d'intégrer une carte produite dans Ma carte sur votre site Web et de la contrôler à l'aide de JavaScript.
+L'intégration des cartes se fait via une balise `<iframe>`, la configuration de la carte se fait simplement, de manière interactive sur le site Ma carte et vous pouvez vous concentrer sur le corps de votre métier.
+
+### Les avantages de l'API
+* la configuration de la carte se fait en mode interactif dans l'éditeur de Ma carte (no code)
+* la carte peut être reprise à tout moment, mise à jour et une nouvelle version publiée
+* pas besoins de connaissance particulière pour afficher la cartographie, c'est pris en charge par Ma carte
+* vous pouvez vous concentrer sur la partie métier de votre application
+
+Les fonctions de l'API JavaScript permettent d'afficher une carte, de contrôler sa position et son contenu et de récupérer des informations sur cette carte. Vous pouvez également ajouter des écouteurs d'événements qui s'exécutent en réponse à certaines actions déclenchées sur la carte tels qu'un déplacement ou une sélection d'objet entre autres.
+
+> 💡 Par exemple, si vous êtes propriétaire d'une chaîne de magasins, vous pouvez créer une carte de manière interactive dans l'interface dédiée, choisir les fonds à afficher, ajouter vos données, les symboliser, ajouter une légende, des bulles, etc.
+> Vous l'intégrez ensuite sur une page de votre site web et la centrez sur le magasin concerné, de la même manière que vous intégrez une image ou une vidéo.
+> Avec l'iFrame-API vous pouvez de plus récupérer l'objet que le visiteur aura cliqué sur la carte (un magasin, un dépôt) et lui présenter des informations supplémentaires en interrogeant votre système d'information (horaires d'ouverture, disponibilité des stocks, etc.).
+
+L'iFrame-API permet également d'ajouter [des outils d'édition](https://ignf-ma-carte.github.io/mcviewer/doc/api.html#addEditBar__anchor) pour créer des objets sur la carte. Vous pouvez ainsi intégrer facilement une carte sur un formulaire et, via l'API, récupérer les saisies faites par vos utilisateurs (attributs, géométrie) et les ajouter à la réponse de votre questionnaire !
+
+[📔 Voir la documentation technique de l'iFrameAPI](https://ignf-ma-carte.github.io/mcviewer/doc/)
+
+1. [Comment marche l'iFrameAPI ?](macarte/Comment marche l'iFrameAPI)
+1. [Comment intégrer une carte sur mon site ?](macarte/Comment intégrer une carte sur un site)
+1. [Comment partager une carte ?](macarte/Comment partager une carte)
+
+
 ## macarte/A qui appartiennent les cartes produites sur Ma carte
 - propriété
 - cartes
@@ -105,6 +138,68 @@ Si une carte inclut des données, fonds de plan provenant de services non fourni
 2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
 
 
+## macarte/Comment intégrer une carte sur un site
+- iframe
+- intégrer
+- macarte
+- partage
+- widget carte
+
+Vous pouvez intégrer facilement votre carte sur votre site sous forme d'une iFrame.
+Les outils d'édition propose une interface pour formater l'affichage du widget dans le menu de partage <i class="fi-share-alt"></i> puis en choisissant l'option `intégrer`.
+![](./img/share-dialog.png)
+
+Il est possible de dimensionner la fenêtre d'affichage, de masquer le titre ou de positionner la carte à un endroit précis. Vous pouvez également interdire le zoom la molette pour éviter l'interaction avec le défilement sur votre site. Dans ce cas, le zoom se fera en tenant appuyé la touche contrôle du clavier.
+
+![](./img/share-iframe.png)
+
+Une fois le réglages réalisé copier le code HTML à intégrer sur votre page web (<i class="fa fa-clipboard"></i>).
+
+1. [Aller plus loins avec le widget carto](macarte/Aller plus loins avec le widget carto)
+1. [Comment partager une carte ?](macarte/Comment partager une carte)
+1. [Parle-moi de l'Atlas](macarte/Parle-moi de l'atlas)
+
+
+## macarte/Comment marche l'iFrameAPI
+- iframe
+- api
+
+L'iFrame-API implémente la fonctionnalité *postMessage* de HTML5 (les navigateurs récents sont compatibles avec *postMessage*) pour faire communiquer la carte et la page appelante.
+
+Concrètement vous avez juste à ajouter le script de l'API sur votre page :
+
+```javascript
+<!-- 1. Charger le code de l'API -->
+<script type="text/javascript" src="https://macarte.ign.fr/carte/MapIFrameAPI.js"></script>
+```
+
+ainsi que l'iFrame correspondant à votre carte :
+
+```javascript
+<!-- 2. <iframe> qui va contenir la carte a afficher -->
+<iframe id="map" src="https://macarte.ign.fr/carte/MAP_ID/MAP_TITLE" width="100%" height="400"></iframe>
+```
+
+Ensuite, dans votre code javascript, il vous suffit d'attendre que l'API soit chargée pour vous en servir :
+
+```javascript
+<script>
+  // 3. Récupération de l'API lorsque la carte est chargée
+  MapIFrameAPI.ready('map', function(api) {
+    // Center la carte sur Paris
+    api.setCenter([2.33, 48.85]);
+    // ou faire autre chose...
+  }
+</script>
+```
+
+[📔 Voir la documentation technique de l'iFrameAPI](https://ignf-ma-carte.github.io/mcviewer/doc/)
+
+1. [Les avantages de l'iFrameAPI](macarte/Aller plus loins avec le widget carto)
+1. [Comment intégrer une carte sur mon site ?](macarte/Comment intégrer une carte sur un site)
+1. [Comment partager une carte ?](macarte/Comment partager une carte)
+
+
 ## macarte/Comment partager une carte
 - macarte
 - partage
@@ -114,7 +209,7 @@ Si une carte inclut des données, fonds de plan provenant de services non fourni
 
 Les cartes sont accessibles directement sur le web au travers d'une adresse (URL), qu'il vous suffit de transmettre (par mail par exemple).
 Vous pouvez aussi partager votre carte avec un QR Code lisible sur un Smartphone que vous pourrez intégrer sur une affiche ou un document.
-Sur les pages de création de cartes, l'icône <i class="fi-share-alt"></i> dans la barre de menus permet de partager la carte par URL, au travers d'un widget (iFrame) à intégrer sur un site internet ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
+Sur les pages de création de cartes, l'icône <i class="fi-share-alt"></i> dans la barre de menus permet de partager la carte par URL, au travers d'un widget (iFrame) à [intégrer sur un site internet](#macarte/Comment intégrer une carte sur un site) ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
 Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux internautes d'y accéder plus facilement.
 
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
@@ -125,6 +220,7 @@ Sur cette page vous trouverez également un lien de partage en édition pour [tr
 Si vous ne souhaitez pas que votre carte puisse être vue par une autre personne que vous, en décochant la case "Carte active" vous serez le seul utilisateur à pouvoir la consulter.
 
 1. [Où trouver le QR Code de partage](macarte/Où trouver le QR Code de partage)
+1. [Comment intégrer une carte sur mon site ?](macarte/Comment intégrer une carte sur un site)
 2. [Comment travailler à plusieurs sur une carte ?](macarte/Comment travailler à plusieurs sur une carte)
 3. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
 4. [Parle-moi de l'Atlas](macarte/Parle-moi de l'atlas)

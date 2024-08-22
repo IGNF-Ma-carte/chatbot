@@ -4,6 +4,12 @@ body > a:visited {
   text-decoration: none;
 }
 
+blockquote {
+  background-color: rgba(0, 0, 128, .1);
+  margin: 0;
+  padding: 1px 1.5em;
+}
+
 .bot-message>:first-child:before {
   background-image: url(../img/poibot.svg);
   background-repeat: no-repeat;
@@ -76,7 +82,8 @@ pre {
   width: 100%;
   border-radius: 0;
   background: #efefef;
-  padding: 1em
+  padding: 1em;
+  margin: 0;
 }
 pre code {
   color: #444;
