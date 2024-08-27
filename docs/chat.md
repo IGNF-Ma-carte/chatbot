@@ -256,7 +256,8 @@ Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant 
 Le site Ma carte propose un [Atlas](https://macarte.ign.fr/atlas/?mode=gallery) qui répertorie les cartes faites par les utilisateurs du service.
 
 La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules Verne, sous forme de carte narrative.
-<iframe src="https://macarte.ign.fr/carte/5aea2d2515d03442521ddc91347e8427/Nautilus" width="100%" height="480px" allow="geolocation clipboard-read; clipboard-write"></iframe>
+
+<iframe src="https://macarte.ign.fr/carte/5aea2d2515d03442521ddc91347e8427/Nautilus?noZoom" width="100%" height="480px" allow="geolocation clipboard-read; clipboard-write"></iframe>
 
 [Voir l'atlas de Ma carte](https://macarte.ign.fr/atlas/?mode=gallery)
 
@@ -359,10 +360,10 @@ Ce QR Code peut être placé sur une affiche ou un document pour faciliter l'acc
 L'Atlas est un espace de publication de cartes et narrations réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et disponibles en recherche aux visiteurs du site et via les API.
 Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. 
 
-C'est vous qui choisissez, à l'enregistrement d'une carte ou dans l'espace dédié aux cartes, si vous voulez publier une carte dans l'atlas ou non.
+C'est vous qui choisissez si vous voulez publier une carte dans l'atlas ou non (à l'enregistrement d'une carte ou dans l'espace dédié aux cartes).
 
 Un page (profil) de l'auteur accompagne la description des cartes. Il vous est conseillé de le paramétrer de façon à communiquer les informations qui semblent les plus pertinentes. Restez conscient que ce profil sera visible par tous et évitez de divulguer des informations personnelles.
-Le paramétrage de votre profil est accessible dans la page "[Mes données personnelles](https://macarte.ign.fr/mon-compte/)".
+Le paramétrage de votre profil est accessible dans la page [Mes données personnelles](https://macarte.ign.fr/mon-compte/).
 
 
 1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
@@ -1082,7 +1083,7 @@ Des options vous permettent également de vous accrocher aux objets existants ou
 - création
 - créer
 
-Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche.
+Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche <i class="fi-burger"></i>.
 Vous n'avez pas besoin d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site (menu <i class="fi-save"></i>). Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur (via le menu <i class="fi-download"></i>).
 
 L'interface vous permet d'ajouter des couches cartographiques ou de dessin, de charger des fichiers géographiques ou dessiner à l'aide des outils fournis.
@@ -1131,7 +1132,7 @@ Les données géographiques sont regroupées dans des couches pour en faciliter 
 
 <i class="fg-layer-stack-o fa-2x"></i> Le gestionnaire de couche permet d'organiser et paramétrer les différentes couches constituant votre carte.
 
-![](https://macarte.ign.fr/api/image/img_lmi8141)
+![](./img/tollbar.svg)
 ⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
 
 Elle est constituée d'une barre de menu supérieure, de la liste des couches et d'une barre inférieure.
@@ -1739,7 +1740,6 @@ Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil.
 - pie chart
 - info-bulle
 - infobulle
-- widget
 
 Il est possible d'afficher des diagrammes dans les info-bulles ou dans les textes de vos narrations.
 Pour cela, vous devez utiliser un widget Markdown `chart`
@@ -1773,16 +1773,20 @@ Il est possible de préciser la taille des images (sous la forme `largeurxhauteu
 Deux images sont nécessaire au widget. Il est préférable que les deux images aient la même taille.
 L'option `fullscreen` ajoute un bouton pour afficher le widget en plein écran.
 
-```
+```md
 &#96imageSlider
-img1: https://upload.wikimedia.org/wikipedia/commons/5/53/Shadow_2752.jpg
-img2: https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png
+img1: url_image_1
+img2: url_image_2
 fullscreen: true
 &#96
 ```
 
+![](./img/compimg.gif)
+
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 1. [Montre-moi la barre de Markdown de Ma carte](md/la barre de Markdown de Ma carte)
+1. [Intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
+1. [En savoir plus sur les widgets Markdown](md/En savoir plus sur les widget Markdown)
 
 ## md/Comment ne pas afficher un attribut vide
 - afficher
@@ -1815,6 +1819,25 @@ Par exemple pour afficher une valeur ou une erreur en fonction d'un boolean (dan
 1. [Comment intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
 
 
+## md/En savoir plus sur les widget Markdown
+- widget
+- markdown
+- MD
+- images
+- vidéo
+- twitter
+- diagramme
+
+Les widgets Markdown vous permettent d'afficher des contenus évolués en Markdown.
+
+Vous pouvez ainsi afficher du code, un [comparateur d'images](#md/Comment ajouter un comparateur d'image), un calendrier ou [des diagrammes](#md/Afficher une diagramme dans Ma carte).
+
+Une aide en ligne est disponible dans le <i class="fi-info"></i> de la [barre de Markdown](#md/la barre de Markdown de Ma carte).
+
+1. [Intégrer des médias en Markdown](md/Intégrer des médias dans Ma carte)
+1. [Afficher une diagramme en Markdown](md/Afficher une diagramme dans Ma carte)
+1. [Comment ajouter un comparateur d'images](md/Comment ajouter un comparateur d'image)
+
 ## md/Intégrer des médias dans Ma carte
 - media
 - média
@@ -1824,10 +1847,11 @@ Par exemple pour afficher une valeur ou une erreur en fonction d'un boolean (dan
 - vidéo
 - twitter
 
-La syntaxe pour intégrer un média dans Ma carte est la suivante : 
+La syntaxe pour intégrer un média en Markdown est la suivante : 
 ```md
 ![info sur le média](url_du_media)
 ```
+
 Des paramètres optionnels permettent de redimensionner l'image `largeur`x`hauteur`. S'ils ne sont pas présents la taille de l'image sera automatiquement calculée.
 ```md
 Une image 500 par 200 pixels :
@@ -1846,14 +1870,7 @@ Utilisez la barre de Markdown pour vous aider à intégrer les images. En partic
 
 📝 On peut aussi intégrer un tweet avec l'url du tweet. Dans ce cas, le paramètre optionnel indique si on veut afficher les images du tweet et sa largeur.
 
-🖼️ Il est également possible d'intégrer un comparateur d'images. Dans ce cas, deux images seront affichées l'une sur l'autre, avec une réglette pour les comparer.
-```md
-&#96imageSlider
-img1: url_image_1
-img2: url_image_2
-fullscreen: true
-&#96
-```
+🖼️ Il est également possible d'intégrer un [comparateur d'images](#md/Comment ajouter un comparateur d'image). Dans ce cas, deux images seront affichées l'une sur l'autre, avec une réglette pour les comparer.
 
 💡 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil : <i class="fi-info"></i>.
 
@@ -1890,13 +1907,14 @@ Le Markdown est un format de balisage très léger qui permet d'écrire rapideme
 
 Par exemple on écrit &#042;&#042;texte en gras&#042;&#042; pour écrire du **texte en gras**, ou alors &#042;texte en italique&#042; pour écrire du *texte en italique*.
 
-Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdowntutorial.com/fr/) (même si le MD utilisé par Ma carte diffère un peut du MD standard).
+Pour découvrir le Markdown, vous pouvez suivre ce [tutoriel](https://www.markdowntutorial.com/fr/) (même si le MD utilisé par Ma carte diffère légèrement du MD standard et a été étendu pour gérer d'autres type d'affichage).
 
-📝 Ma carte utilise une syntaxe étendue pour afficher des attributs, des médias ou des widgets (diagrammes, calendriers, images).
+📝 Ma carte utilise une syntaxe étendue pour afficher des attributs, des médias ou des [widgets](#md/En savoir plus sur les widget Markdown) (diagrammes, calendriers, images).
 
 1. [Intégrer des médias dans Ma carte](md/Intégrer des médias dans Ma carte)
 1. [Afficher des attributs en Markdown](md/Afficher des attributs en Markdown)
 1. [Afficher une diagramme dans Ma carte](md/Afficher une diagramme dans Ma carte)
+1. [En savoir plus sur les widget Markdown](md/En savoir plus sur les widget Markdown)
 
 ## md/video attribut conditionnel
 - affichage conditionnel

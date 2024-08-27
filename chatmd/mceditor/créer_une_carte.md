@@ -2,7 +2,7 @@
 - création
 - créer
 
-Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche.
+Pour créer une carte, vous devez vous rendre sur le site de [Ma carte](https://macarte.ign.fr/edition/carte), l'option est accessible dans le menu en haut à gauche <i class="fi-burger"></i>.
 Vous n'avez pas besoin d'être authentifié pour créer une carte mais vous devrez le faire pour pouvoir l'enregistrer sur le site (menu <i class="fi-save"></i>). Vous pourrez néanmoins récupérer une copie de la carte sur votre ordinateur (via le menu <i class="fi-download"></i>).
 
 L'interface vous permet d'ajouter des couches cartographiques ou de dessin, de charger des fichiers géographiques ou dessiner à l'aide des outils fournis.

@@ -11,7 +11,7 @@ Les données géographiques sont regroupées dans des couches pour en faciliter 
 
 <i class="fg-layer-stack-o fa-2x"></i> Le gestionnaire de couche permet d'organiser et paramétrer les différentes couches constituant votre carte.
 
-![](https://macarte.ign.fr/api/image/img_lmi8141)
+![](../../docs/img/tollbar.svg)
 ⚠️ Les actions s'appliquent à la couche sélectionnée (en surbrillance bleue).
 
 Elle est constituée d'une barre de menu supérieure, de la liste des couches et d'une barre inférieure.

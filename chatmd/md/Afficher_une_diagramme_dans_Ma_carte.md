@@ -6,7 +6,6 @@
 - pie chart
 - info-bulle
 - infobulle
-- widget
 
 Il est possible d'afficher des diagrammes dans les info-bulles ou dans les textes de vos narrations.
 Pour cela, vous devez utiliser un widget Markdown `chart`

@@ -10,13 +10,17 @@ Il est possible de préciser la taille des images (sous la forme `largeurxhauteu
 Deux images sont nécessaire au widget. Il est préférable que les deux images aient la même taille.
 L'option `fullscreen` ajoute un bouton pour afficher le widget en plein écran.
 
-```
+```md
 &#96imageSlider
-img1: https://upload.wikimedia.org/wikipedia/commons/5/53/Shadow_2752.jpg
-img2: https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png
+img1: url_image_1
+img2: url_image_2
 fullscreen: true
 &#96
 ```
 
+![](../../docs/img/compimg.gif)
+
 1. [Qu'est-ce que le Makdown ?](../md/markdown.md)
 1. [Montre-moi la barre de Markdown de Ma carte](../md/la_barre_de_Markdown_de_Ma_carte.md)
+1. [Intégrer des médias dans Ma carte](./Intégrer_des_médias_dans_Ma_carte.md)
+1. [En savoir plus sur les widgets Markdown](./En_savoir_plus_sur_les_widget_Markdown.md)

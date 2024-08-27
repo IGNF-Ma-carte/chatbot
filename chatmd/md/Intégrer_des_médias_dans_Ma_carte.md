@@ -6,10 +6,11 @@
 - vidéo
 - twitter
 
-La syntaxe pour intégrer un média dans Ma carte est la suivante : 
+La syntaxe pour intégrer un média en Markdown est la suivante : 
 ```md
 ![info sur le média](url_du_media)
 ```
+
 Des paramètres optionnels permettent de redimensionner l'image `largeur`x`hauteur`. S'ils ne sont pas présents la taille de l'image sera automatiquement calculée.
 ```md
 Une image 500 par 200 pixels :
@@ -28,14 +29,7 @@ Utilisez la barre de Markdown pour vous aider à intégrer les images. En partic
 
 📝 On peut aussi intégrer un tweet avec l'url du tweet. Dans ce cas, le paramètre optionnel indique si on veut afficher les images du tweet et sa largeur.
 
-🖼️ Il est également possible d'intégrer un comparateur d'images. Dans ce cas, deux images seront affichées l'une sur l'autre, avec une réglette pour les comparer.
-```md
-&#96imageSlider
-img1: url_image_1
-img2: url_image_2
-fullscreen: true
-&#96
-```
+🖼️ Il est également possible d'intégrer un [comparateur d'images](#./Comment_ajouter_un_comparateur_d'image.md). Dans ce cas, deux images seront affichées l'une sur l'autre, avec une réglette pour les comparer.
 
 💡 Pour plus d'informations, consultez l'aide en ligne disponible dans l'outil : <i class="fi-info"></i>.
 
