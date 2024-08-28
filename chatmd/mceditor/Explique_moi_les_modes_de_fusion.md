@@ -21,3 +21,6 @@ Il existe différents modes de fusion :
 * <img src="../../docs/img/modes/saturation.png" class="left tiny"/> **Saturation :** Cet effet va appliquer la saturation de la couleur du calque aux calques inférieurs. Ce mode ne produit aucun effet sur une zone non saturée (avec une valeur de gris égale à 0).
 * <img src="../../docs/img/modes/couleur.png" class="left tiny"/> **Couleur** Cet effet va appliquer la couleur et la saturation du calque aux calques inférieurs. Ce mode préserve les niveaux de gris de l'image et est pratique pour colorer des images monochromes ou pour teinter des images en couleurs.
 * <img src="../../docs/img/modes/luminosite.png" class="left tiny"/> **Luminosité :** Cet effet va appliquer la luminance du calque au calques inférieurs. Ce mode crée l'effet inverse de celui du mode Couleurs.
+
+1. [Le gestionnaire de couche](./Parle-moi_du_gestionnaire_de_couche.md)
+1. [Ajouter un filtre à une couche](./Ajouter_un_filtre_à_une_couche.md)

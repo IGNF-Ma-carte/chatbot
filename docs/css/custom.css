@@ -35,10 +35,10 @@ table tr:nth-child(even){
   background-color: #f2f2f2;
 }
 a[target]:after {
-  content: "\f08e";
+  content: "\202f\202f\f08e";
   font-family: Fontawesome;
   position: relative;
-  font-size: .9em;
+  font-size: .85em;
   top: -.2em;
 }
 
@@ -147,7 +147,7 @@ pre code {
 }
 
 #chat img {
-  margin: 1em 0;
+  margin: 1em auto;
 }
 
 #footer a {

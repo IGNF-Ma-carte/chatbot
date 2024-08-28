@@ -18,7 +18,7 @@ Elle est constituée d'une barre de menu supérieure, de la liste des couches et
 
 ### la barre de menus supérieure
 
-Elle permet de définir la façon dont la couche va se combiner avec les couches inférieures (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
+Elle permet de définir la façon dont la couche va se combiner avec les couches inférieures ([mode de fusion](#./Explique_moi_les_modes_de_fusion.md), [filtre](#./Ajouter_un_filtre_à_une_couche.md), opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
 
 ### la liste des couches 
 

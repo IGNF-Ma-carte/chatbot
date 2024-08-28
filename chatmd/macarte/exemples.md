@@ -10,7 +10,7 @@ La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules 
 
 [Voir l'atlas de Ma carte](https://macarte.ign.fr/atlas/?mode=gallery)
 
-Des outils de recherche vous sont proposés pour filtrer les cartes disponibles dans l'Atlas, comme :
+Des outils de recherche permettent de filtrer les cartes disponibles dans l'Atlas, en particulier :
 - la recherche textuelle : un texte libre permet de rechercher une carte par son nom, sa description ou son thème.
 - le filtre par thème : pour n'afficher que les cartes d'un thème
 - le filtre par auteur : pour afficher les cartes d'un auteur spécifique.

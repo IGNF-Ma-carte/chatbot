@@ -23,12 +23,14 @@ Il existe quatre types de palettes :
 * **divergent** : elles utilisent deux palettes séquentielles dos à dos à partir d'une couleur commune. Elles accordent la même importance aux différentes valeurs des données.
 * **qualitatif** - les couleurs n'ont pas d'ordre perçu. Elles sont adaptées pour représenter des données catégorielles ou nominales.
 
+![](../../docs/img/colorstat.png)
+
 ### Personnalisation des couleurs
 Afin de maximiser la différenciation des couleurs entre elles, les palettes proposées dépassent	rarement 10 classes.
 Or,
-* pour certains types de configuration spatiale, il peut être utile d’avoir plus de 10 classes
+* pour certains types de configuration spatiale, il peut être utile d'avoir plus de 10 classes
 * pour des données catégorielles, il peut être intéressant de pouvoir choisir la couleur d'une catégorie
-* pour valoriser la mise en exergue d'un phénomème on peut avoir recours à une couleur tranchée pour la classe concernée
+* pour valoriser la mise en exergue d'un phénomène on peut avoir recours à une couleur tranchée pour la classe concernée
 
 
 1. [Faire une carte statistique](./Comment_créer_une_carte_statistique.md)

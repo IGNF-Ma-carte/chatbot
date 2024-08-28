@@ -261,7 +261,7 @@ La carte ci-dessous présente le voyage du Nautilus, d'après le roman de Jules 
 
 [Voir l'atlas de Ma carte](https://macarte.ign.fr/atlas/?mode=gallery)
 
-Des outils de recherche vous sont proposés pour filtrer les cartes disponibles dans l'Atlas, comme :
+Des outils de recherche permettent de filtrer les cartes disponibles dans l'Atlas, en particulier :
 - la recherche textuelle : un texte libre permet de rechercher une carte par son nom, sa description ou son thème.
 - le filtre par thème : pour n'afficher que les cartes d'un thème
 - le filtre par auteur : pour afficher les cartes d'un auteur spécifique.
@@ -309,7 +309,7 @@ Ma carte est référencée sur le [Socle Interministériel des Logiciels Libres]
 - IGN
 
 Ma carte est un ensemble d'outils en ligne développés par l'Institut national de l'information géographique et forestière (IGN).
-Ils permettent de créer et publier des cartes en lignes simplement, directement **depuis un navigateur internet**.
+Ils permettent de créer et publier des cartes en lignes simplement **depuis un navigateur internet**.
 
 Ma carte est directement accessible dans un navigateur à l'adresse [macarte.ign.fr](https://macarte.ign.fr).
 Les cartes produites peuvent être partagées, intégrées dans un blogue ou utilisées dans une communication sur les réseaux sociaux.
@@ -358,11 +358,12 @@ Ce QR Code peut être placé sur une affiche ou un document pour faciliter l'acc
 - profil auteur
 
 L'Atlas est un espace de publication de cartes et narrations réalisées avec Ma carte. Les cartes qui y sont exposées sont accessibles à tous les internautes et disponibles en recherche aux visiteurs du site et via les API.
-Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. 
 
-C'est vous qui choisissez si vous voulez publier une carte dans l'atlas ou non (à l'enregistrement d'une carte ou dans l'espace dédié aux cartes).
+Afin de faciliter la visibilité de vos cartes, il est conseillé de leur donner un titre et une description explicites et de les classer dans le thème adapté. Vous pouvez également lui ajouter une image pour la rendre plus attractive.
 
-Un page (profil) de l'auteur accompagne la description des cartes. Il vous est conseillé de le paramétrer de façon à communiquer les informations qui semblent les plus pertinentes. Restez conscient que ce profil sera visible par tous et évitez de divulguer des informations personnelles.
+C'est vous qui choisissez si vous voulez ou non publier une carte dans l'atlas (à l'enregistrement d'une carte ou dans l'[espace dédié aux cartes](https://macarte.ign.fr/mon-compte/#cartes)).
+
+Un page de l'auteur (profil) accompagne la description des cartes. Il vous est conseillé de le paramétrer de façon à communiquer les informations qui semblent les plus pertinentes. Restez conscient que ce profil sera visible par tous et évitez de divulguer des informations personnelles.
 Le paramétrage de votre profil est accessible dans la page [Mes données personnelles](https://macarte.ign.fr/mon-compte/).
 
 
@@ -670,6 +671,21 @@ Le résultat du géocodage peut être enregistré dans un fichier tableur (csv, 
 Il peut également être enregistré dans une carte pour être repris dans les autres outils de Ma carte.
 
 1. [Quels sont les outils de Ma carte ?](macarte/macarte)
+
+## mceditor/Ajouter un filtre à une couche
+- couche
+- layer
+- calque
+- filtre
+- gris
+
+Vous pouvez ajouter un filtre à une carte pour le passer en niveau de gris.
+
+💡 Les fonds peuvent aider à localiser le phénomène à cartographier, mais ils peuvent aussi venir brouiller le message qu'on veut passer. S'il est trop coloré, le fond interfère avec l'information qu'on va ajouter par-dessus et, dans certains cas, il sera nécessaire de l'atténuer ou de le passer en niveau de gris pour éviter la confusion.
+
+
+1. [Le gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
+1. [Explique-moi les modes de fusion](mceditor/Explique moi les modes de fusion)
 
 ## mceditor/A quoi sert la thématique d'une couche
 - thématique
@@ -1117,6 +1133,8 @@ Il existe différents modes de fusion :
 * <img src="./img/modes/couleur.png" class="left tiny"/> **Couleur** Cet effet va appliquer la couleur et la saturation du calque aux calques inférieurs. Ce mode préserve les niveaux de gris de l'image et est pratique pour colorer des images monochromes ou pour teinter des images en couleurs.
 * <img src="./img/modes/luminosite.png" class="left tiny"/> **Luminosité :** Cet effet va appliquer la luminance du calque au calques inférieurs. Ce mode crée l'effet inverse de celui du mode Couleurs.
 
+1. [Le gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
+1. [Ajouter un filtre à une couche](mceditor/Ajouter un filtre à une couche)
 
 ## mceditor/Parle-moi du gestionnaire de couche
 - gestionnaire
@@ -1139,7 +1157,7 @@ Elle est constituée d'une barre de menu supérieure, de la liste des couches et
 
 ### la barre de menus supérieure
 
-Elle permet de définir la façon dont la couche va se combiner avec les couches inférieures (mode de fusion, filtre, opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
+Elle permet de définir la façon dont la couche va se combiner avec les couches inférieures ([mode de fusion](#mceditor/Explique moi les modes de fusion), [filtre](#mceditor/Ajouter un filtre à une couche), opacité de la couche). Le menu action vous permet d'accéder plus rapidement à certaines fonctions de manipulation des calques.
 
 ### la liste des couches 
 
@@ -1450,12 +1468,14 @@ Il existe quatre types de palettes :
 * **divergent** : elles utilisent deux palettes séquentielles dos à dos à partir d'une couleur commune. Elles accordent la même importance aux différentes valeurs des données.
 * **qualitatif** - les couleurs n'ont pas d'ordre perçu. Elles sont adaptées pour représenter des données catégorielles ou nominales.
 
+![](./img/colorstat.png)
+
 ### Personnalisation des couleurs
 Afin de maximiser la différenciation des couleurs entre elles, les palettes proposées dépassent	rarement 10 classes.
 Or,
-* pour certains types de configuration spatiale, il peut être utile d’avoir plus de 10 classes
+* pour certains types de configuration spatiale, il peut être utile d'avoir plus de 10 classes
 * pour des données catégorielles, il peut être intéressant de pouvoir choisir la couleur d'une catégorie
-* pour valoriser la mise en exergue d'un phénomème on peut avoir recours à une couleur tranchée pour la classe concernée
+* pour valoriser la mise en exergue d'un phénomène on peut avoir recours à une couleur tranchée pour la classe concernée
 
 
 1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
