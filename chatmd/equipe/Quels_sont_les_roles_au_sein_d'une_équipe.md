@@ -1,6 +1,7 @@
 - roles
 - role
 - rôle
+- droit
 - membre
 - editeur
 - éditeur

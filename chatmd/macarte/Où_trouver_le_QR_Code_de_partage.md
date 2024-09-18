@@ -7,4 +7,5 @@ Un QR Code (Quick Response Code) est disponible sur la page de visualisation de 
 
 Ce QR Code peut être placé sur une affiche ou un document pour faciliter l'accès à la carte avec un smartphone ou une tablette.
 
-1. [Comment partager une carte](./Comment_partager_une_carte.md)
+1. [Comment partager une carte ?](./Comment_partager_une_carte.md)
+1. [Comment imprimer une carte ?](./Comment_imprimer_une_carte.md)

@@ -165,6 +165,7 @@ Dans ce cas, les cartes carte publiques ne sont visibles que par [les membres de
 - roles
 - role
 - rôle
+- droit
 - membre
 - editeur
 - éditeur
@@ -356,6 +357,29 @@ Lorsqu'une carte est publiée au sein d'[une équipe](#equipe/Comment travailler
 1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
 
 
+## macarte/Comment imprimer une carte
+- imprimer
+- impression
+- image
+- exporter
+- carte
+- document
+- JPG
+- PNG
+- PDF
+
+Vous pouvez à tout moment imprimer une carte via l'outil d'impression <i class="fi-print"></i> dans l'outil d'édition.
+Vous pouvez également ajouter cet outil dans votre narration pour permettre à vos lecteurs d'imprimer la carte.
+
+![](./img/impression.png)
+
+Vous pouvez imprimer la carte sur une imprimante, dans ce cas, vérifiez que les paramètres de l'imprimante correspondent bien à ceux spécifiés lors de la configuration de l'impression (taille du papier, orientation).
+Vous pouvez également enregistrer une image de la carte au format PDF ou dans un fichier image (format JPG ou PNG) pour l'inclure dans un document.
+
+1. [Pourquoi ma carte ne s'imprime pas ?](macarte/Problème pourquoi ma carte ne s'imprime pas)
+1. [Comment partager une carte ?](macarte/Comment partager une carte)
+
+
 ## macarte/Comment intégrer une carte sur un site
 - iframe
 - intégrer
@@ -545,7 +569,8 @@ Un QR Code (Quick Response Code) est disponible sur la page de visualisation de 
 
 Ce QR Code peut être placé sur une affiche ou un document pour faciliter l'accès à la carte avec un smartphone ou une tablette.
 
-1. [Comment partager une carte](macarte/Comment partager une carte)
+1. [Comment partager une carte ?](macarte/Comment partager une carte)
+1. [Comment imprimer une carte ?](macarte/Comment imprimer une carte)
 
 ## macarte/Parle-moi de l'atlas
 - ma carte
@@ -574,8 +599,6 @@ Le paramétrage de votre profil est accessible dans la page [Mes données person
 - problème
 - erreur
 - impression
-- ne s'imprime pas
-- imprime pas
 
 Si vous n'arrivez pas à enregistrer une image de votre carte (une alerte `Impossible d'enregistrer la carte` apparaît), cela vient du fait qu'une image incluse dans la carte interdit ce type d'opération. En effet, dans un navigateur, l'accès aux ressources est restreint si les entêtes de ces ressources ne sont pas correctement remplis (voir CORS).
 
@@ -587,6 +610,7 @@ Il peut s'agir d'une image utilisée comme symbolisation sur un point ou d'un se
 Pour débloquer la situation, recherchez le calque qui pose problème (lorsqu'il est masqué, la sauvegarde va fonctionner) et si vous en avez la possibilité de demande au fournisseur d'activer les entêtes CORS.
 Pour l'utilisation d'images comme symbolisation sur un objet, vous pouvez demander à Ma carte de l'héberger pour l'utiliser ensuite sans restriction sur vos cartes.
 
+1. [Comment imprimer une carte ?](macarte/Comment imprimer une carte)
 1. [Ma carte peut-il héberger des images ?](macarte/Ma carte peut-il héberger des images)
 
 ## macarte/Qu'est-ce que le vecteur tuilé
@@ -1255,7 +1279,7 @@ Il est intéressant d'utiliser cette possibilité pour transmettre votre carte e
 Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser les données de votre carte sur internet.
 
 1. [Comment enregistrer les données d'un calque ?](mceditor/Comment enregistrer les données d'un calque)
-
+1. [Peut-on enregistrer une image de la carte ?](macarte/Comment imprimer une carte)
 
 ## mceditor/Comment saisir des objets dans Ma carte
 - dessin

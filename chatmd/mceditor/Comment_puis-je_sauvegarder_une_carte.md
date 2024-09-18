@@ -14,3 +14,4 @@ Il est intéressant d'utiliser cette possibilité pour transmettre votre carte e
 Cette option vous permet d'utiliser Ma carte sans créer de compte ou laisser les données de votre carte sur internet.
 
 1. [Comment enregistrer les données d'un calque ?](./Comment_enregistrer_les_données_d'un_calque.md)
+1. [Peut-on enregistrer une image de la carte ?](../macarte/Comment_imprimer_une_carte.md)
