@@ -1,13 +1,3 @@
-## Bonjour
-- hello
-- hy
-- salut
-
-Bonjour.
-
-1. [Comment puis-je vous aider ?](./macarte/macarte.md)
-1. [Montre moi des exemples de cartes](./macarte/exemples.md)
-
 ## Comment vas-tu ?
 - vas-tu
 - va-tu

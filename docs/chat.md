@@ -18,16 +18,6 @@ Vous pouvez écrire votre question, ou bien vous laisser guider par les proposit
 5. [Raconter une histoire sur une carte](mcstory/raconter une histoire)
 6. [Qui est l'IGN ?](ign/Qui est l'IGN)
 
-## Bonjour
-- hello
-- hy
-- salut
-
-Bonjour.
-
-1. [Comment puis-je vous aider ?](macarte/macarte)
-1. [Montre moi des exemples de cartes](macarte/exemples)
-
 ## Comment vas-tu ?
 - vas-tu
 - va-tu
@@ -65,6 +55,230 @@ Voici une chanson !
 
 1. [Qu'est-ce que Ma carte ?](macarte/macarte)
 1. [Montre moi des exemples de cartes](macarte/exemples)
+
+## equipe/Comment inviter des membres dans une équipe
+- equipe
+- inviter
+- ajouter
+- membre
+
+Une équipe est constituée de membres qui peuvent voir ou modifier (lorsqu'ils sont rédacteurs) les cartes au sein de l'équipe.
+
+Vous pouvez facilement ajouter des membres sur la [page de profil de votre équipe](https://macarte.ign.fr/mes-equipes/#profil)
+
+![](./img/members.svg)
+
+Pour ajouter un nouveau membre, vous pouvez soit leur envoyer un lien d'invitation, soit utiliser le bouton <button>Ajouter des membres</button> sous la liste des membres.
+
+### Ajouter un membre
+
+Dans le second cas, un dialogue vous propose de **rechercher un membre** dans la liste des utilisateurs de Ma carte pour l'inviter à participer à votre équipe. Vous devez connaître son nom public.
+
+> 📧 Un mail est envoyé aux personnes lorsque vous les invitez dans une équipe ou lorsque vous changez leur rôle pour les avertir.
+
+Tant que la personne n'aura pas validé l'invitation, le membre restera inactif dans la liste et il ne pourra pas participer.
+
+Vous retrouverez sur la [page de gestion](https://macarte.ign.fr/mes-equipes/) de votre équipe la liste des invitations que vous avez reçues, en attente de validation.
+
+### Envoyer un lien d'invitation
+
+Vous pouvez également envoyer un **lien d'invitation** à la personne que vous voulez intégrer dans votre équipe. Si cette personne n'a pas de compte sur Ma carte, il devra en créer un avant de cliquer sur le lien.
+
+Il existe deux liens d'invitation suivant que vous voulez inviter un simple membre ou un éditeur qui pourra modifier les cartes de l'équipe.
+Il n'est pas possible d'ajouter directement un propriétaire à l'équipe via une invitation. Pour cela vous devrez modifier son rôle a posteriori.
+
+Vous pouvez également ajouter un **motif de mail** afin de restreindre la portée du lien. Ainsi, en ajoutant un motif qui finit par `@organisme.fr`, vous vous assurez que quelqu'un qui recevrait le lien d'invitation et qui n'aurait pas un mail de votre organisme ne pourrait pas l'utiliser.
+
+Vous pouvez à tout moment supprimer le lien d'invitation ou en générer un nouveau, lorsque votre campagne d'inscription se termine.
+
+> 💡 Pensez à remplir le profil de votre équipe avant d'inviter de nouveaux membres afin de bien expliquer le but de l'équipe et ce que vous en attendez. 
+
+1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
+1. [Quels sont les rôles au sein d'une équipe ?](equipe/Quels sont les roles au sein d'une équipe)
+1. [Qui peut voir les cartes d'une équipe ?](equipe/Qui peut voir les cartes d'une équipe)
+1. [Comment travailler à plusieurs sur une carte ?](equipe/Comment travailler à plusieurs sur une carte)
+
+
+## equipe/Comment travailler en équipe
+- equipe
+- équipe
+- partager
+- plusieurs
+- collaborer
+
+Les équipes sont des espaces partagés dans lesquels vous pouvez collaborer et partager des cartes avec d'autres utilisateurs de Ma carte (les membres de l'équipe).
+Vous pouvez créer autant d'équipes que vous voulez, pour cela, [rendez-vous sur l'espace dédié](https://macarte.ign.fr/mes-equipes/) dans le menu utilisateur.
+
+Les cartes publiées dans une équipe ne sont visibles que par les autres membres de l'équipe et seuls [les éditeurs](#equipe/Quels sont les roles au sein d'une équipe) peuvent rédiger des cartes dans l'équipe.
+Vous pouvez également choisir de publier une carte dans l'atlas et, dans ce cas, elle sera visible par tous.
+
+Vous pouvez [ajouter des membres](#equipe/Comment inviter des membres dans une équipe) à vos équipes et leur donner [des rôles spécifiques](#equipe/Quels sont les roles au sein d'une équipe).
+
+Les équipes ont des pages dédiées visibles sur le site de Ma carte et sur lesquelles sont listées les cartes publiées dans l'atlas (atlas de l'équipe).
+Vous pouvez également retrouver la liste des équipes auxquelles vous participez sur [la page dédiée de votre espace personnel](https://macarte.ign.fr/mes-equipes/).
+Pour chaque équipe vous pouvez consulter les cartes publiques de l'équipe et, si vous êtes éditeur de l'équipe, la liste de cartes auxquelles vous avez accès. En tant que propriétaire d'une équipe, vous avez également aux fonctionnalités d'administration.
+
+Vous pouvez changer d'équipe à tout moment dans le menu de votre compte. Cependant, ce faisant, vous perdrez les données en cours d'édition dans une autre équipe.
+
+![](./img/menu-equipe.png)
+
+Lorsque vous êtes connecté sur une équipe le nom et le logo de l'équipe viennent s'afficher dans la ligne de titre.
+![](./img/logo-equipe.png)
+
+1. [Comment inviter des membres dans une équipe](equipe/Comment inviter des membres dans une équipe)
+1. [Quels sont les rôles au sein d'une équipe ?](equipe/Quels sont les roles au sein d'une équipe)
+1. [Qui peut voir les cartes d'une équipe ?](equipe/Qui peut voir les cartes d'une équipe)
+1. [Comment travailler à plusieurs sur une carte ?](equipe/Comment travailler à plusieurs sur une carte)
+1. [Comment partager une carte](macarte/Comment partager une carte)
+
+## equipe/Comment travailler à plusieurs sur une carte
+- travail
+- travailler
+- plusieurs
+- collaboratif
+- collaborer
+- éditer
+- carte
+
+Lorsque vous avez créé une carte, vous pouvez partager un **lien en édition** avec d'autres utilisateurs de Ma carte.
+Vous retrouverez ce lien sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de la carte.
+![](./img/share.png)
+
+Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut être utile si vous voulez travailler à plusieurs sur la carte.
+![](./img/partage.png)
+
+⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modifications de la dernière qui enregistre qui seront prises en compte.
+⚠️ Faites attention à qui vous communiquez l'adresse de modification.
+Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
+
+### Travailler en équipe
+
+Vous pouvez aussi [créer des équipes](#equipe/Comment travailler en équipe) pour segmenter le partage de vos cartes et avoir un meilleur contrôle sur la manière d'éditer une carte.
+Dans ce cas, les cartes carte publiques ne sont visibles que par [les membres de l'équipe](#equipe/Quels sont les roles au sein d'une équipe) et seuls les éditeurs peuvent modifier une carte.
+
+1. [Comment partager une carte](macarte/Comment partager une carte)
+1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
+1. [Qui peut voir mes cartes ?](equipe/Qui peut voir mes cartes)
+
+## equipe/Quels sont les roles au sein d'une équipe
+- roles
+- role
+- rôle
+- membre
+- editeur
+- éditeur
+- propriétaire
+
+Les membres d'une équipe ont des rôles différents qui leur donnent plus ou moins de droits sur les cartes publiées dans l'équipe.
+
+### <i class="fi-pro"></i> Le propriétaire de l'équipe 
+
+C'est la personne qui a créé l'équipe.
+Il peut administrer l'équipe, ajouter des membres pour voir les cartes et des éditeurs pour créer/modifier des cartes.
+Il peut aussi nommer d'autres administrateurs pour l'aider à administrer l'équipe.
+
+Il peut créer des cartes et les publier pour les rendre visibles ou envoyer un lien d'édition à un éditeur. <br/> Il peut aussi affecter un auteur à une carte (qui pourra plus facilement y accéder et la modifier).
+Enfin, c'est lui qui gère les images de l'équipe.
+
+### <i class="fi-author"></i> Les rédacteurs de l'équipe 
+
+Les rédacteurs sont des membres qui peuvent [créer et modifier des cartes au sein de l'équipe](#equipe/Qui peut voir les cartes d'une équipe).
+Ils ont accès aux cartes dont ils sont l'auteur et aux cartes privées de l'équipe si un administrateur leur envoie un lien de modification.
+
+### <i class="fi-simple-user"></i> Les membres de l'équipe 
+
+Les membres de l'équipe peuvent voir les cartes publiques de l'équipe.
+Ils n'ont pas accès aux cartes privées et ne peuvent pas modifier de cartes dans l'équipe.
+
+> 💡 En fonction des rôles de chacun et du statut des cartes les membres peuvent voir ou modifier les cartes au sein de l'équipe.
+> [Voir les différentes possibilités...](#equipe/Qui peut voir les cartes d'une équipe)
+
+
+1. [Qui peut voir les cartes d'une équipe ?](equipe/Qui peut voir les cartes d'une équipe)
+1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
+
+## equipe/Qui peut voir les cartes d'une équipe
+- équipe
+- carte
+- visibilité
+- public
+- privée
+- atlas
+
+Il existe deux façons d'accéder à une carte : soit via l'interface, soit via un lien (de visualisation ou d'édition).
+Dans une équipe, on a [trois rôles différents](#equipe/Quels sont les roles au sein d'une équipe) (membres, éditeurs, propriétaires) et des utilisateurs qui n'appartiennent pas à l'équipe (hors équipe). On distingue aussi les éditeurs qui sont auteurs d'une carte (et qui ont des droits spécifiques).
+Enfin, on a trois types de cartes : les cartes privées (en cours de rédaction), les cartes publiques (visibles dans l'organisation) et les cartes dans l'atlas (visibles en dehors de l'organisation).
+
+### Qui peut voir une carte dans une équipe ?
+
+via l'interface
+| Rôle        | atlas   | publique   | privée   |
+| ----------- |: ----- :|: -------- :|: ------ :|
+| hors équipe      | ✔️ | ❌ | ❌ |
+| membre           | ✔️ | ✔️ | ❌ |
+| éditeur          | ✔️ | ✔️ | ❌ |
+| éditeur (auteur) | ✔️ | ✔️ | ✔️ |
+| propriétaire     | ✔️ | ✔️ | ✔️ |
+
+via un lien (fourni par le propriétaire)
+| Rôle        | atlas   | publique   | privée   |
+| ----------- |: ----- :|: -------- :|: ------ :|
+| hors équipe      | ✔️ | ❌ | ❌ |
+| membre           | ✔️ | ✔️ | ❌ |
+| éditeur          | ✔️ | ✔️ | ✔️ |
+| éditeur (auteur) | ✔️ | ✔️ | ✔️ |
+| propriétaire     | ✔️ | ✔️ | ✔️ |
+
+> 💡 Les cartes privées ne sont visibles que par les propriétaires de l'équipe et l'auteur de la carte ou via un lien fournis par un propriétaire à un éditeur.
+> Ce sont généralement des cartes en cours de rédaction.
+
+### Qui peut modifier une carte dans une équipe ?
+
+via les outils d'édition
+| Rôle        | atlas   | publique   | privée   |
+| ----------- |: ----- :|: -------- :|: ------ :|
+| hors équipe      | ❌ | ❌ | ❌ |
+| membre           | ❌ | ❌ | ❌ |
+| éditeur          | ❌ | ❌ | ❌ |
+| éditeur (auteur) | ❌ | ✔️ | ✔️ |
+| propriétaire     | ✔️ | ✔️ | ✔️ |
+
+
+via un lien d'édition (fourni par le propriétaire)
+| Rôle        | atlas   | publique   | privée   |
+| ----------- |: ----- :|: -------- :|: ------ :|
+| hors équipe      | ❌ | ❌ | ❌ |
+| membre           | ❌ | ❌ | ❌ |
+| éditeur          | ✔️ | ✔️ | ✔️ |
+| éditeur (auteur) | ✔️ | ✔️ | ✔️ |
+| propriétaire     | ✔️ | ✔️ | ✔️ |
+
+
+> 💡 Les cartes dans l'atlas sont figées et ne peuvent être modifiées que par les propriétaires de l'équipe ou via un lien fournis par un propriétaire. 
+
+1. [Quels sont les rôles au sein d'une équipe ?](equipe/Quels sont les roles au sein d'une équipe)
+1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
+
+
+## equipe/Qui peut voir mes cartes
+- carte
+- visibilité
+- accessible
+- atlas
+
+Lorsqu'une carte est publiée (hors équipe, voir plus loin), elle est visible par tout internaute qui a accès au lien de publication fourni.
+Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elles seront référencées sur le site Ma carte et accessibles en recherche aux visiteurs du site et via les API.
+
+Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les voir.
+
+Afin de gérer plus finement les personnes qui peuvent voir- ou travailler sur des cartes, vous pouvez [créer des équipes](#equipe/Comment travailler en équipe) 
+
+Dans une équipe, les cartes publiques ne sont visibles que par les [membres de l'équipe](#equipe/Quels sont les roles au sein d'une équipe). Pour qu'une carte soit visible par tous, elle doit être publiée dans l'Atlas. Les cartes privées ne sont accessibles qu'aux [éditeurs](#equipe/Quels sont les roles au sein d'une équipe) de l'équipe.
+
+1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
+1. [Les cartes de l'Atlas](macarte/exemples)
+1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
+
 
 ## ign/Qui est l'IGN
 - IGN
@@ -134,8 +348,11 @@ Ceci concerne toutes les informations que vous avez ajoutées, en particulier le
 
 Si une carte inclut des données, fonds de plan provenant de services non fournis par l'IGN et Ma carte, vous devez vous assurer d'en avoir les droits et de bien spécifier le copyright des couches dans les informations de la carte publiée.
 
-1. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
-2. [Comment créer une carte en ligne ?](mceditor/créer une carte)
+Lorsqu'une carte est publiée au sein d'[une équipe](#equipe/Comment travailler en équipe), le propriétaire est également responsable de sa publication et du contenu qu'il diffuse.
+
+1. [Qui peut voir mes cartes ?](equipe/Qui peut voir mes cartes)
+1. [Comment créer une carte en ligne ?](mceditor/créer une carte)
+1. [Comment travailler en équipe ?](equipe/Comment travailler en équipe)
 
 
 ## macarte/Comment intégrer une carte sur un site
@@ -209,44 +426,24 @@ Ensuite, dans votre code javascript, il vous suffit d'attendre que l'API soit ch
 
 Les cartes sont accessibles directement sur le web au travers d'une adresse (URL), qu'il vous suffit de transmettre (par mail par exemple).
 Vous pouvez aussi partager votre carte avec un QR Code lisible sur un Smartphone que vous pourrez intégrer sur une affiche ou un document.
-Sur les pages de création de cartes, l'icône <i class="fi-share-alt"></i> dans la barre de menus permet de partager la carte par URL, au travers d'un widget (iFrame) à [intégrer sur un site internet](#macarte/Comment intégrer une carte sur un site) ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
+Sur les pages de création de cartes, l'icône <i class="fi-share-alt"></i> dans la barre de menu permet de partager la carte par URL, au travers d'un widget (iFrame) à [intégrer sur un site internet](#macarte/Comment intégrer une carte sur un site) ou sur les réseaux sociaux (X/Twitter, Facebook, LinkedIn).
 Vous pouvez ajouter vos cartes dans l'Atlas de Ma carte afin de permettre aux internautes d'y accéder plus facilement.
 
 Vous retrouverez également ces options sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de votre carte.
 ![](./img/share.png)
 
-Sur cette page vous trouverez également un lien de partage en édition pour [travailler à plusieurs sur votre carte](#macarte/Comment travailler à plusieurs sur une carte).
+Sur cette page vous trouverez également un lien de partage en édition pour [travailler à plusieurs sur votre carte](#equipe/Comment travailler à plusieurs sur une carte).
 
 Si vous ne souhaitez pas que votre carte puisse être vue par une autre personne que vous, en décochant la case "Carte active" vous serez le seul utilisateur à pouvoir la consulter.
 
+Vous pouvez aussi [créer des équipes](#equipe/Comment travailler en équipe) afin d'avoir un meilleur contrôle sur la manière de partager une carte.
+
 1. [Où trouver le QR Code de partage](macarte/Où trouver le QR Code de partage)
 1. [Comment intégrer une carte sur mon site ?](macarte/Comment intégrer une carte sur un site)
-2. [Comment travailler à plusieurs sur une carte ?](macarte/Comment travailler à plusieurs sur une carte)
-3. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
+2. [Comment travailler à plusieurs sur une carte ?](equipe/Comment travailler à plusieurs sur une carte)
+3. [Qui peut voir mes cartes ?](equipe/Qui peut voir mes cartes)
 4. [Parle-moi de l'Atlas](macarte/Parle-moi de l'atlas)
 
-
-## macarte/Comment travailler à plusieurs sur une carte
-- travail
-- travailler
-- plusieurs
-- collaboratif
-- collaborer
-- éditer
-- carte
-
-Lorsque vous avez créé une carte, vous pouvez partager un **lien en édition** avec d'autres utilisateurs de Ma carte.
-Vous retrouverez ce lien sur la page de la [carte sur votre compte](https://macarte.ign.fr/mon-compte/#cartes) en cliquant sur le bouton `Détail` de la carte.
-![](./img/share.png)
-
-Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut être utile si vous voulez travailler à plusieurs sur la carte.
-![](./img/partage.png)
-
-⚠️ Il n'y a pas de contrôle sur qui modifie la carte. Si deux personnes modifient la carte en même temps, ce sont les modifications de la dernière qui enregistre qui seront prises en compte.
-⚠️ Faites attention à qui vous communiquez l'adresse de modification.
-Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
-
-1. [Comment partager une carte](macarte/Comment partager une carte)
 
 ## macarte/exemples
 - exemple
@@ -368,7 +565,7 @@ Le paramétrage de votre profil est accessible dans la page [Mes données person
 
 
 1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
-2. [Qui peut voir mes cartes ?](macarte/Qui peut voir mes cartes)
+2. [Qui peut voir mes cartes ?](equipe/Qui peut voir mes cartes)
 2. [Montre-moi des exemples de cartes](macarte/exemples)
 
 
@@ -425,21 +622,6 @@ L'affichage d'images et de contenu multimédia (photos, vidéos, sons) lorsqu'on
 
 1. [Montre-moi des exemples](macarte/exemples)
 2. [Comment créer une histoire autour d'une carte](mcstory/raconter une histoire)
-
-
-## macarte/Qui peut voir mes cartes
-- carte
-- visibilité
-- accessible
-- atlas
-
-Lorsqu'une carte est publiée, elle est visible par tout internaute qui a accès au lien de publication fourni.
-Vous pouvez choisir de publier vos cartes dans l'[Atlas](https://macarte.ign.fr/atlas/?mode=gallery), dans ce cas, elles seront référencées sur le site Ma carte et accessibles en recherche aux visiteurs du site et via les API.
-
-Vous pouvez aussi choisir d'avoir des cartes privées mais vous seul pourrez les voir.
-
-1. [A qui appartiennent les cartes produites sur Ma carte ?](macarte/A qui appartiennent les cartes produites sur Ma carte)
-2. [Les cartes de l'Atlas](macarte/exemples)
 
 
 ## mcadresse/Comment améliorer le résultat du géocodage
@@ -770,13 +952,13 @@ Dans la fenêtre d'options de la couche, cliquez sur le bouton de chargement <i 
 
 💡 Si vous utilisez une [définition de styles paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique) dans le calque, les objets ajoutés sont symbolisés directement.
 
-⚠️ L'import de données vectorielles doit se faire en degrés décimaux (WGS84, code EPSG:4326) ou en Web Mercator (EPSG:3857). Pour utiliser des données exprimées dans une autres projection une conversion en amont est nécessaire.
+> ⚠️ L'import de données vectorielles doit se faire en degrés décimaux (WGS84, code EPSG:4326) ou en Web Mercator (EPSG:3857). Pour utiliser des données exprimées dans une autres projection une conversion en amont est nécessaire.
 
 1. [Comment saisir des données dans un calque ?](mceditor/Comment saisir des objets dans Ma carte)
 1. [Comment utiliser une symbolisation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
 1. [Comment enregistrer les données d'un calque ?](mceditor/Comment enregistrer les données d'un calque)
 1. [Quels sont les référentiels géographiques utilisés par Ma carte ?](mceditor/Quels sont les référentiels géographiques utilisés par Ma carte)
-
+1. [Comment ajouter un calque sur une carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
 
 ## mceditor/Comment ajouter des flux OGC
 - fonds
@@ -784,17 +966,21 @@ Dans la fenêtre d'options de la couche, cliquez sur le bouton de chargement <i 
 - OGC
 - fichier
 - ajouter
+- shape
+- shp
+- gpkg
 
-Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (OGC) pour les ajouter sous forme de couche sur Ma carte.
+Ma carte permet de brancher des flux définis par l'Open Geospatial Consortium (**OGC**) pour les ajouter sous forme de couche sur Ma carte.
 
 ![](https://macarte.ign.fr/image/voir/afb6160.png)
 
-Vous pouvez ainsi ajouter vos propres couches via des flux WMTS, WMS, XYZ, WFS ou geoRSS.
+Vous pouvez ainsi ajouter vos propres couches via des flux **WMTS, WMS, XYZ, WFS ou geoRSS**.
 
-Si vous avez des fichiers de données géographiques (aux formats KML, GeoJSON, GPX ou GeoCSV) vous pouvez les importer dans une couche, via le dialogue ou par glisser/déposer. 
+Si vous avez des fichiers de données géographiques (aux formats **KML, GeoJSON, GPX ou GeoCSV**) vous pouvez les importer dans une couche, via le dialogue ou par glisser/déposer. 
 Si le fichier est disponible sur internet, vous pouvez le lier via une url dans une couche.
 
 1. [Montre-moi comment afficher un fichier distant dans Ma carte](mceditor/comment afficher un fichier distant dans Ma carte)
+1. [Comment ajouter des données à un calque](mceditor/Comment ajouter des données à un calque)
 2. [Quels sont les fonds disponibles dans Ma carte ?](mceditor/Quels sont les fonds disponibles dans Ma carte)
 
 

@@ -17,4 +17,11 @@ Toute personne ayant ce lien peut accéder à la carte et la modifier. Ce peut �
 ⚠️ Faites attention à qui vous communiquez l'adresse de modification.
 Vous pouvez à tout moment `Créer un nouveau lien de modification` en cliquant sur le bouton sur la page de la carte. Dans ce cas, l'ancien ne sera plus actif.
 
-1. [Comment partager une carte](./Comment_partager_une_carte.md)
+### Travailler en équipe
+
+Vous pouvez aussi [créer des équipes](#../equipe/Comment_travailler_en_équipe.md) pour segmenter le partage de vos cartes et avoir un meilleur contrôle sur la manière d'éditer une carte.
+Dans ce cas, les cartes carte publiques ne sont visibles que par [les membres de l'équipe](#./Quels_sont_les_roles_au_sein_d'une_équipe.md) et seuls les éditeurs peuvent modifier une carte.
+
+1. [Comment partager une carte](../macarte/Comment_partager_une_carte.md)
+1. [Comment travailler en équipe ?](../equipe/Comment_travailler_en_équipe.md)
+1. [Qui peut voir mes cartes ?](../equipe/Qui_peut_voir_mes_cartes.md)

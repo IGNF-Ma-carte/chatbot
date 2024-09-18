@@ -16,5 +16,5 @@ Le paramétrage de votre profil est accessible dans la page [Mes données person
 
 
 1. [A qui appartiennent les cartes produites sur Ma carte ?](./A_qui_appartiennent_les_cartes_produites_sur_Ma_carte.md)
-2. [Qui peut voir mes cartes ?](./Qui_peut_voir_mes_cartes.md)
+2. [Qui peut voir mes cartes ?](../equipe/Qui_peut_voir_mes_cartes.md)
 2. [Montre-moi des exemples de cartes](./exemples.md)
