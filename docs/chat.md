@@ -119,7 +119,7 @@ Les équipes ont des pages dédiées visibles sur le site de Ma carte et sur les
 Vous pouvez également retrouver la liste des équipes auxquelles vous participez sur [la page dédiée de votre espace personnel](https://macarte.ign.fr/mes-equipes/).
 Pour chaque équipe vous pouvez consulter les cartes publiques de l'équipe et, si vous êtes éditeur de l'équipe, la liste de cartes auxquelles vous avez accès. En tant que propriétaire d'une équipe, vous avez également aux fonctionnalités d'administration.
 
-Vous pouvez changer d'équipe à tout moment dans le menu de votre compte. Cependant, ce faisant, vous perdrez les données en cours d'édition dans une autre équipe.
+Vous pouvez changer d'équipe à tout moment dans le menu utilisateur. Cependant, ce faisant, vous perdrez les données en cours d'édition dans une autre équipe.
 
 ![](./img/menu-equipe.png)
 
