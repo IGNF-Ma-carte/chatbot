@@ -3,6 +3,7 @@
 - partager
 - plusieurs
 - collaborer
+- travailler
 
 Les équipes sont des espaces partagés dans lesquels vous pouvez collaborer et partager des cartes avec d'autres utilisateurs de Ma carte (les membres de l'équipe).
 Vous pouvez créer autant d'équipes que vous voulez, pour cela, [rendez-vous sur l'espace dédié](https://macarte.ign.fr/mes-equipes/) dans le menu utilisateur.
@@ -27,4 +28,4 @@ Lorsque vous êtes connecté sur une équipe le nom et le logo de l'équipe vien
 1. [Quels sont les rôles au sein d'une équipe ?](./Quels_sont_les_roles_au_sein_d'une_équipe.md)
 1. [Qui peut voir les cartes d'une équipe ?](./Qui_peut_voir_les_cartes_d'une_équipe.md)
 1. [Comment travailler à plusieurs sur une carte ?](./Comment_travailler_à_plusieurs_sur_une_carte.md)
-1. [Comment partager une carte](../macarte/Comment_partager_une_carte.md)
+1. [Travailler à plusieurs sur une carte](./Comment_travailler_à_plusieurs_sur_une_carte.md)
