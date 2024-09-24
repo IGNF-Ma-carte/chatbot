@@ -12,6 +12,7 @@ Enfin, on a trois types de cartes : les cartes privées (en cours de rédaction)
 ### Qui peut voir une carte dans une équipe ?
 
 via l'interface
+
 | Rôle        | atlas   | publique   | privée   |
 | ----------- |: ----- :|: -------- :|: ------ :|
 | hors équipe      | ✔️ | ❌ | ❌ |
@@ -21,6 +22,7 @@ via l'interface
 | propriétaire     | ✔️ | ✔️ | ✔️ |
 
 via un lien (fourni par le propriétaire)
+
 | Rôle        | atlas   | publique   | privée   |
 | ----------- |: ----- :|: -------- :|: ------ :|
 | hors équipe      | ✔️ | ❌ | ❌ |
@@ -35,6 +37,7 @@ via un lien (fourni par le propriétaire)
 ### Qui peut modifier une carte dans une équipe ?
 
 via les outils d'édition
+
 | Rôle        | atlas   | publique   | privée   |
 | ----------- |: ----- :|: -------- :|: ------ :|
 | hors équipe      | ❌ | ❌ | ❌ |
@@ -45,6 +48,7 @@ via les outils d'édition
 
 
 via un lien d'édition (fourni par le propriétaire)
+
 | Rôle        | atlas   | publique   | privée   |
 | ----------- |: ----- :|: -------- :|: ------ :|
 | hors équipe      | ❌ | ❌ | ❌ |
