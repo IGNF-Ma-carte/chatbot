@@ -11,51 +11,14 @@ Enfin, on a trois types de cartes : les cartes privées (en cours de rédaction)
 
 ### Qui peut voir une carte dans une équipe ?
 
-via l'interface
-
-| Rôle        | atlas   | publique   | privée   |
-| ----------- |: ----- :|: -------- :|: ------ :|
-| hors équipe      | ✔️ | ❌ | ❌ |
-| membre           | ✔️ | ✔️ | ❌ |
-| éditeur          | ✔️ | ✔️ | ❌ |
-| éditeur (auteur) | ✔️ | ✔️ | ✔️ |
-| propriétaire     | ✔️ | ✔️ | ✔️ |
-
-via un lien (fourni par le propriétaire)
-
-| Rôle        | atlas   | publique   | privée   |
-| ----------- |: ----- :|: -------- :|: ------ :|
-| hors équipe      | ✔️ | ❌ | ❌ |
-| membre           | ✔️ | ✔️ | ❌ |
-| éditeur          | ✔️ | ✔️ | ✔️ |
-| éditeur (auteur) | ✔️ | ✔️ | ✔️ |
-| propriétaire     | ✔️ | ✔️ | ✔️ |
+![](../../docs/img/cred-read.png)
 
 > 💡 Les cartes privées ne sont visibles que par les propriétaires de l'équipe et l'auteur de la carte ou via un lien fournis par un propriétaire à un éditeur.
 > Ce sont généralement des cartes en cours de rédaction.
 
 ### Qui peut modifier une carte dans une équipe ?
 
-via les outils d'édition
-
-| Rôle        | atlas   | publique   | privée   |
-| ----------- |: ----- :|: -------- :|: ------ :|
-| hors équipe      | ❌ | ❌ | ❌ |
-| membre           | ❌ | ❌ | ❌ |
-| éditeur          | ❌ | ❌ | ❌ |
-| éditeur (auteur) | ❌ | ✔️ | ✔️ |
-| propriétaire     | ✔️ | ✔️ | ✔️ |
-
-
-via un lien d'édition (fourni par le propriétaire)
-
-| Rôle        | atlas   | publique   | privée   |
-| ----------- |: ----- :|: -------- :|: ------ :|
-| hors équipe      | ❌ | ❌ | ❌ |
-| membre           | ❌ | ❌ | ❌ |
-| éditeur          | ✔️ | ✔️ | ✔️ |
-| éditeur (auteur) | ✔️ | ✔️ | ✔️ |
-| propriétaire     | ✔️ | ✔️ | ✔️ |
+![](../../docs/img/cred-write.png)
 
 
 > 💡 Les cartes dans l'atlas sont figées et ne peuvent être modifiées que par les propriétaires de l'équipe ou via un lien fournis par un propriétaire. 
