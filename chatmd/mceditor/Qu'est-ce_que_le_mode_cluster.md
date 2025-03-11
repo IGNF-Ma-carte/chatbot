@@ -1,7 +1,11 @@
 - couche
 - calque
 - layer
+- mode
+- afficher
+- affichage
 - cluster
+- clusters
 - grappes
 
 Pour les objets ponctuels ou pour des objets surfaciques de petite taille, on peut utiliser la méthode des **clusters**.

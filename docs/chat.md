@@ -848,6 +848,7 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 
 ## mceditor/Afficher les clusters statistiques
 - cluster
+- clusters
 - statistique
 
 Le mode cluster statistique permet de regrouper les objets et de les afficher sous forme de graphique en anneau (donuts), dont les couleurs dépendent des couleurs des objets inclus dans le cluster.
@@ -862,7 +863,7 @@ Les couleurs utilisées sont :
 
 📌 Les objets non représentés sur la carte (sans style) ne seront pas inclus dans les clusters statistique (contrairement aux autres type de clusters).
 
-1. [Qu'est-ce que le mode cluster](mceditor/Qu'est-ce que le mode cluster)
+1. [Qu'est-ce que le mode cluster ?](mceditor/Qu'est-ce que le mode cluster)
 1. [Comment voir ce que contient un cluster](mceditor/Comment voir ce que contient un cluster)
 
 
@@ -1074,6 +1075,7 @@ Pour cela vous devez l'ajouter à la légende de la carte via le menu <i class="
 - affichage
 - carte
 - cluster
+- clusters
 - affichage image
 - mode image
 
@@ -1449,7 +1451,11 @@ S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du ge
 - couche
 - calque
 - layer
+- mode
+- afficher
+- affichage
 - cluster
+- clusters
 - grappes
 
 Pour les objets ponctuels ou pour des objets surfaciques de petite taille, on peut utiliser la méthode des **clusters**.
@@ -1731,6 +1737,9 @@ Ce mode utilise une répartition équidistante mais sur une échelle logarithmiq
 ### Cluster ou k-moyenne
 Une répartition par cluster (ou k-moyenne) consiste à découper un jeu de données en parts, appelées clusters, de façon à minimiser une fonction de distance entre les individus. 
 📌 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
+
+### Jenks
+La méthode de Jenks maximise la variance entre les classe et minimise la variance à l'intérieur des classes de la discrétisation. Elle aboutit à un résultat où les individus regroupés dans une même classe sont le moins dispersés possible au sens statistique et donc les plus homogènes tandis que les moyennes des classes sont les plus éloignées.
 
 ### Head / tail
 La discrétisation Head/tail, proposée en 2013 par le géographe Bin Jiang, dessine fort bien les données hiérarchisées dont la distribution dissymétrique comprend typiquement beaucoup de petites valeurs et quelques valeurs élevées. 

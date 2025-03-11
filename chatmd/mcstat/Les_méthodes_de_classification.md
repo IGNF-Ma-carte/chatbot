@@ -23,6 +23,9 @@ Ce mode utilise une répartition équidistante mais sur une échelle logarithmiq
 Une répartition par cluster (ou k-moyenne) consiste à découper un jeu de données en parts, appelées clusters, de façon à minimiser une fonction de distance entre les individus. 
 📌 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
 
+### Jenks
+La méthode de Jenks maximise la variance entre les classe et minimise la variance à l'intérieur des classes de la discrétisation. Elle aboutit à un résultat où les individus regroupés dans une même classe sont le moins dispersés possible au sens statistique et donc les plus homogènes tandis que les moyennes des classes sont les plus éloignées.
+
 ### Head / tail
 La discrétisation Head/tail, proposée en 2013 par le géographe Bin Jiang, dessine fort bien les données hiérarchisées dont la distribution dissymétrique comprend typiquement beaucoup de petites valeurs et quelques valeurs élevées. 
 Head/tail prend la moyenne comme premier seuil, puis calcule de façon itérative des moyennes emboîtées sur les données supérieures (head).

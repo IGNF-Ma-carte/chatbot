@@ -1,4 +1,5 @@
 - cluster
+- clusters
 - statistique
 
 Le mode cluster statistique permet de regrouper les objets et de les afficher sous forme de graphique en anneau (donuts), dont les couleurs dépendent des couleurs des objets inclus dans le cluster.
@@ -13,5 +14,5 @@ Les couleurs utilisées sont :
 
 📌 Les objets non représentés sur la carte (sans style) ne seront pas inclus dans les clusters statistique (contrairement aux autres type de clusters).
 
-1. [Qu'est-ce que le mode cluster](./Qu'est-ce_que_le_mode_cluster.md)
+1. [Qu'est-ce que le mode cluster ?](./Qu'est-ce_que_le_mode_cluster.md)
 1. [Comment voir ce que contient un cluster](./Comment_voir_ce_que_contient_un_cluster.md)

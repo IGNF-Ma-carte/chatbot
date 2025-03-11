@@ -3,6 +3,7 @@
 - affichage
 - carte
 - cluster
+- clusters
 - affichage image
 - mode image
 
