@@ -21,10 +21,15 @@ Ce mode utilise une répartition équidistante mais sur une échelle logarithmiq
 
 ### Cluster ou k-moyenne
 Une répartition par cluster (ou k-moyenne) consiste à découper un jeu de données en parts, appelées clusters, de façon à minimiser une fonction de distance entre les individus. 
-📝 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
+📌 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
+
+### Head / tail
+La discrétisation Head/tail, proposée en 2013 par le géographe Bin Jiang, dessine fort bien les données hiérarchisées dont la distribution dissymétrique comprend typiquement beaucoup de petites valeurs et quelques valeurs élevées. 
+Head/tail prend la moyenne comme premier seuil, puis calcule de façon itérative des moyennes emboîtées sur les données supérieures (head).
+📌 Elle permet de faire ressortir les têtes du classement.
 
 ### Manuelle
-Vous définissez vous-même les bornes des classes.
+Vous définissez vous-même les bornes des classes à la main.
 
 1. [Faire une carte statistique](./Comment_créer_une_carte_statistique.md)
 1. [Quels sont les types de cartes statistiques ?](./Quels_sont_les_types_de_cartes_statistiques_proposés.md)

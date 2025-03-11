@@ -846,6 +846,26 @@ Il peut également être enregistré dans une carte pour être repris dans les a
 
 1. [Quels sont les outils de Ma carte ?](macarte/macarte)
 
+## mceditor/Afficher les clusters statistiques
+- cluster
+- statistique
+
+Le mode cluster statistique permet de regrouper les objets et de les afficher sous forme de graphique en anneau (donuts), dont les couleurs dépendent des couleurs des objets inclus dans le cluster.
+
+![](./img/cluster-stat-ani.gif)
+
+Les couleurs utilisées sont :
+* la couleur du symbole, pour un point en mode symbole ;
+* la couleur de la forme pour un point en mode image. Si aucune forme n'est indiquée, une couleur gris clair est utilisée ;
+* la couleur de l'étiquette en mode étiquette
+* pour les lignes et polygones, c'est la couleur du contour qui est utilisée.
+
+📌 Les objets non représentés sur la carte (sans style) ne seront pas inclus dans les clusters statistique (contrairement aux autres type de clusters).
+
+1. [Qu'est-ce que le mode cluster](mceditor/Qu'est-ce que le mode cluster)
+1. [Comment voir ce que contient un cluster](mceditor/Comment voir ce que contient un cluster)
+
+
 ## mceditor/Ajouter un filtre à une couche
 - couche
 - layer
@@ -1272,6 +1292,27 @@ Des options vous permettent également de vous accrocher aux objets existants ou
 1. [Parle-moi du gestionnaire de couche](mceditor/Parle-moi du gestionnaire de couche)
 
 
+## mceditor/Comment voir ce que contient un cluster
+- cluster
+- bulle
+- popup
+
+**En mode visualisation** deux actions sont disponibles au clic sur un cluster : soit la carte zoom sur les éléments du cluster, soit on affiche une info-bulle pour naviguer dans le cluster.
+
+💡 si le cluster n'a qu'un seul élément, c'est dans tous les cas la bulle qui s'affiche (s'il y en a une).
+
+<i class="fi-configuration fa-fw"></i> Le choix se fait dans la fenêtre de configuration du calque du gestionnaire de calque.
+Il est nécessaire de [paramétrer les bulles des objets](#mceditor/Comment paramétrer l'info-bulle d'un objet) ou l'[affichage des info-bulles du calque](#mceditor/Qu'est-ce que l'info-bulle d'une couche) afin de bien présenter le contenu du cluster dans la bulle.
+
+![](./img/cluster-popup.gif)
+
+**En mode édition**, il vous suffit d'afficher le popup de l'objet. 
+⚠️ Attention cependant, les objets du cluster ne sont pas modifiable en mode cluster, vous devrez désactiver le mode cluster ou zoomer au delà du seuil d'agrégation pour pouvoir éditer les objets contenus dans le cluster.
+
+1. [Qu'est-ce que le mode cluster](mceditor/Qu'est-ce que le mode cluster)
+1. [Utiliser des clusters statistiques](mceditor/Afficher les clusters statistiques)
+
+
 ## mceditor/créer une carte
 - carte
 - création
@@ -1413,16 +1454,20 @@ S'il s'agit d'une couche image (WMS, WMTS) la bulle affichera le résultat du ge
 
 Pour les objets ponctuels ou pour des objets surfaciques de petite taille, on peut utiliser la méthode des **clusters**.
 
-![](https://viglino.github.io/Macarte-MI/assets/img/ch4.1-cluster.png)
+![](./img/clusters.png)
 
-Le principe des clusters (ou grappes) permet de regrouper un ensemble de données en différents “paquets” homogènes suivant un critère de proximité que l'on définit en introduisant une distance entre objets (40 pixels par défaut). En dessous de cette distance les points vont s'agréger.
+Le principe des clusters (ou grappes) permet de regrouper un ensemble de données en différents "paquets" homogènes suivant un critère de proximité que l'on définit en introduisant une distance entre objets (40 pixels par défaut). En dessous de cette distance les points vont s'agréger.
 
 ![](https://viglino.github.io/Macarte-MI/assets/img/ch4.1-clusters.gif)
 
 Cela a l'avantage d'améliorer la lisibilité de la carte en présentant les regroupements. On peut également définir un niveau de zoom à partir duquel les objets ne seront plus regroupés afin de permettre une meilleure visibilité de l'information granulaire.
 
-⚠️ En mode édition il n'est plus possible d'accéder aux objets que contiennent les clusters. En particulier vous ne pourrez plus modifier le style des objets ou les déplacer (vous déplacerez le cluster qui se recalculera au prochain déplacement). Vous devrez déactiver le mode d'affichage des clusters ou zoomer au-delà du seuil de clustérisation.
+⚠️ En mode édition il n'est plus possible d'accéder aux objets que contiennent les clusters. En particulier vous ne pourrez plus modifier le style des objets ou les déplacer (vous déplacerez le cluster qui se recalculera au prochain déplacement). Vous devrez déactiver le mode d'affichage des clusters ou zoomer au-delà du seuil d'agrégation.
 
+Il existe 3 type de clusters : les clusters standards avec 3 couleurs en fonction du nombre d'objets dans le cluster, les clusters colorés pour lesquels on peut choisir la couleur et [les clusters statistiques](#mceditor/Afficher les clusters statistiques).
+
+1. [Utiliser des clusters statistiques](mceditor/Afficher les clusters statistiques)
+1. [Comment voir ce que contient un cluster](mceditor/Comment voir ce que contient un cluster)
 
 
 ## mceditor/Qu'est-ce que le style d'une couche
@@ -1685,10 +1730,15 @@ Ce mode utilise une répartition équidistante mais sur une échelle logarithmiq
 
 ### Cluster ou k-moyenne
 Une répartition par cluster (ou k-moyenne) consiste à découper un jeu de données en parts, appelées clusters, de façon à minimiser une fonction de distance entre les individus. 
-📝 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
+📌 Cette méthode de répartition ne garantit pas d'obtenir exactement le nombre de classes demandé par l'utilisateur, car ce nombre de classes est par construction lié à la répartition des valeurs de la variable à cartographier.
+
+### Head / tail
+La discrétisation Head/tail, proposée en 2013 par le géographe Bin Jiang, dessine fort bien les données hiérarchisées dont la distribution dissymétrique comprend typiquement beaucoup de petites valeurs et quelques valeurs élevées. 
+Head/tail prend la moyenne comme premier seuil, puis calcule de façon itérative des moyennes emboîtées sur les données supérieures (head).
+📌 Elle permet de faire ressortir les têtes du classement.
 
 ### Manuelle
-Vous définissez vous-même les bornes des classes.
+Vous définissez vous-même les bornes des classes à la main.
 
 1. [Faire une carte statistique](mcstat/Comment créer une carte statistique)
 1. [Quels sont les types de cartes statistiques ?](mcstat/Quels sont les types de cartes statistiques proposés)
