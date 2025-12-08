@@ -2017,6 +2017,119 @@ Vous pouvez également utiliser les attributs de l'objet sélectionné pour affi
 1. [Qu'est-ce que le Makdown ?](md/markdown)
 
 
+## md/Afficher une gestionnaire de couche en Markdown
+- filtrer
+- filtrage
+- widget
+- MD
+- couche
+- layer
+
+Pour afficher un gestionnaire de couche dans une narration (sur une étape ou dans la description d'une carte), utilisez le widget `layerSwitcher`. Il faut lui indiquer les identifiants des couches à gérer (`layer`). Pour vous aider à récupérer l'identifiant de la couche, utilisez l'outil <i class="fg-layer-stack-o"></i> de la barre de Markdown étendue.
+Si vous spécifiez plusieurs couche (séparées par de espaces), elles s'afficheront / masqueront en même temps.
+
+
+```md
+&#96layerSwitcher center
+layer: 1
+layer: 2 3
+className: maClasse
+background: rgba(255,255,255,0.5)
+&#96
+```
+Vous pouvez spécifier la classe du widget (`className` pour utilisation avec une feuille de style personnalisée).
+Vous pouvez modifier la couleur du fond du widget (`background`) et lui ajouter une bordure (`border: 1`).
+
+Le widget propose 3 types d'affichage : 
+- case à coché (par défaut),
+- menu (`type: menu`), 
+- ou boutons (`type: button`)
+Il est possible de rendre les affichages exclusifs en ajoutant l'option `radio: 1`. <br/> Dans ce cas, l'affichage d'une couche masquera les autres (avec le type menu, l'affichage est toujours exclusif, seule la couche sélectionnée dans le menu est visible).
+
+NB : Si la couche a un logo paramétré (via <i class="fa fa-info-circle"></i> `+ de paramètres...`) celui s'affichera.
+NB : Pour l'affichage d'un bouton, il est possible de définit la taille d'un bouton sous la forme `size: longueurxlargeur`
+
+Par exemple pour afficher 2 gestionnaires de couches une sous forme de menu (pour choisir parmi les couches "qualité" : 7, 9, 10 ou 11) et pour le choix d'un fond de carte (couche "carte" : 4 et 5 ou couche "photo" : 6) sous forme de bouton.
+
+```md
+&#96layerSwitcher
+layer: 7
+layer: 9
+layer: 10
+layer: 11
+radio: true
+type: popup
+background: rgba(255,255,255,0.25)
+&#96
+
+|	**Fond de carte**
+&#96layerSwitcher center
+className: test
+size: 105x125
+radio: true
+type: button
+layer: 4 5
+layer: 6
+background: #212d38 
+&#96
+```
+
+![](./img/layerswitcher.png)
+
+1. [En savoir plus sur les widgets Markdown](md/En savoir plus sur les widget Markdown)
+1. [Ajouter un filtre sur les données](md/Ajouter un filtre sur les données)
+
+## md/Ajouter un filtre sur les données
+- filtrer
+- filtrage
+- widget
+- MD
+- symbolisation
+- paramétrique
+- couche
+- layer
+
+Si vous avez une couche dont l'affichage est piloté par une [symbolisation paramétrique](#symboliser/Qu'est-ce qu'une représentation paramétrique) vous pouvez proposer à vos utilisateurs un widget pour filtrer les données suivant le paramétrage configuré dans le style de la couche.
+
+```md
+&#96layerFilter
+layer: 1
+className: maClasse
+background: rgba(255,255,255,0.5)
+border: 1
+&#96
+```
+
+Le widget `layerFilter` permet donc de filtrer une couche sur sa symbolisation paramétrique. Il peut se mettre dans une étape ou dans la description d'une carte narrative pour s'afficher dans le volet de la carte.
+Il est possible de définir une couleur de fond (`background`) et d'afficher une bordure (`border`).
+
+Ainsi, si la couche est paramétré de la forme :
+![](./img/param-symbo.png)
+Un filtre permettra de n'afficher sur la carte que les objets qui satisfont la condition définie pour le style :
+![](./img/param-filter.png)
+
+NB : il est possible d'applique le filtrage sur plusieurs couches à condition qu'elles partage la même symbolisation en proposant plusieurs couches. Le numéro de la couche est disponible dans les options du gestionnaire de la couche (roue crantée) ou utilisez l'outil <i class="fg-layer-stack-o"></i> de la barre de Markdown étendu.
+
+```md
+&#96layerFilter
+layer: 1
+layer: 3
+&#96
+```
+
+Il est possible de réinitialiser le filtre en ajoutant le paramètre `reset` en particulier dans une carte par étape pour afficher tous les objets de la couche au début de l'étape :
+```md
+&#96layerFilter
+layer: 1
+layer: 3
+reset: 1
+&#96
+```
+
+1. [Qu'est-ce qu'une représentation paramétrique ?](symboliser/Qu'est-ce qu'une représentation paramétrique)
+1. [En savoir plus sur les widgets Markdown](md/En savoir plus sur les widget Markdown)
+1. [Afficher une gestionnaire de couche en Markdown](md/Afficher une gestionnaire de couche en Markdown)
+
 ## md/Comment ajouter un comparateur d'image
 - markdown
 - md
@@ -2091,9 +2204,20 @@ Vous pouvez ainsi afficher du code, un [comparateur d'images](#md/Comment ajoute
 
 Une aide en ligne est disponible dans le <i class="fi-info"></i> de la [barre de Markdown](#md/la barre de Markdown de Ma carte).
 
+```layerFilter
+layer: 1
+className: maClasse
+background: rgba(255,255,255,0.5)
+border: 1
+```
+
+Il est également possible de [personnaliser un gestionnaire de couche](#md/Afficher une gestionnaire de couche en Markdown) pour permettre à l'utilisateur de choisir l'affichage de certaines couches sur la carte ou un widget pour [filtrer les données sur la carte](#md/Ajouter un filtre sur les données).
+
 1. [Intégrer des médias en Markdown](md/Intégrer des médias dans Ma carte)
 1. [Afficher une diagramme en Markdown](md/Afficher une diagramme dans Ma carte)
 1. [Comment ajouter un comparateur d'images](md/Comment ajouter un comparateur d'image)
+1. [Afficher un filtre sur les données](md/Ajouter un filtre sur les données)
+1. [Afficher un gestionnaire de couches](md/Afficher une gestionnaire de couche en Markdown)
 
 ## md/Intégrer des médias dans Ma carte
 - media
@@ -2377,8 +2501,9 @@ Ensuite :
 On peut ajouter plusieurs critères qui vont se cumuler si `tous les mots` est coché 
 
 
-2. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
+1. [Comment créer une bibliothèque de symboles ?](symboliser/Comment créer une bibliothèque de symboles)
 1. [Quels sont les opérateurs de sélection ?](selection/opérateurs)
 1. [Comment symboliser un objet ?](symboliser/Comment symboliser un objet)
 1. [Modifier les attributs d'un objet](mceditor/Comment ajouter des attributs à un objet)
+1. [Ajouter un filtre sur les données](md/Ajouter un filtre sur les données)
 
